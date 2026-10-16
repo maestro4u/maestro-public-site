@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jekyll과 Github Pages로 무료 블로그 만들기 (2탄) · Maestro for You</title>
+<meta name="description" content="Jekyll과 Github">
+<link rel="canonical" href="https://maestro4u.kr/blog/Jekyll%EA%B3%BC-Github-Pages%EB%A1%9C-%EB%AC%B4%EB%A3%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2%ED%83%84)/">
+<meta property="og:title" content="Jekyll과 Github Pages로 무료 블로그 만들기 (2탄)"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/Jekyll%EA%B3%BC-Github-Pages%EB%A1%9C-%EB%AC%B4%EB%A3%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-(2%ED%83%84)/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2025.03.11</p><h1>Jekyll과 Github Pages로 무료 블로그 만들기 (2탄)</h1><p class="article-deck">Jekyll과 Github</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2025-03-11T12:03:11+00:00">2025년 03월 11일</time></div></header>
+
+<div class="prose"><h1 id="jekyll과-github-pages로-무료-블로그-만들기-초보자-가이드-2탄">Jekyll과 GitHub Pages로 무료 블로그 만들기: 초보자 가이드 (2탄)</h1>
+
+<p>1편에서는 GitHub 웹사이트를 통해 블로그를 만드는 방법을 알아보았습니다. 2편에서는 본격적으로 내 컴퓨터에 Jekyll을 설치하고 GitHub와 연동하여 블로그를 더 효율적으로 관리하는 방법을 알아보겠습니다.</p>
+
+<h2 id="로컬-환경에서-jekyll을-사용하는-이점">로컬 환경에서 Jekyll을 사용하는 이점</h2>
+
+<p>내 컴퓨터에 Jekyll을 설치하면 다음과 같은 장점이 있습니다:</p>
+
+<ul>
+  <li>블로그 글을 발행하기 전에 미리 확인할 수 있습니다.</li>
+  <li>인터넷 연결 없이도 콘텐츠를 작성할 수 있습니다.</li>
+  <li>여러 파일을 한 번에 편집하고 관리할 수 있습니다.</li>
+  <li>더 복잡한 디자인 변경도 쉽게 테스트할 수 있습니다.</li>
+</ul>
+
+<h2 id="준비물">준비물</h2>
+
+<ol>
+  <li>컴퓨터 (윈도우 또는 맥)</li>
+  <li>인터넷 연결</li>
+  <li>GitHub 계정 (1편에서 만든 계정)</li>
+  <li>약 1시간의 시간</li>
+</ol>
+
+<h2 id="맥mac에서-jekyll-설치하기">맥(Mac)에서 Jekyll 설치하기</h2>
+
+<h3 id="1-필수-프로그램-설치">1. 필수 프로그램 설치</h3>
+
+<p>맥에는 기본적으로 Ruby가 설치되어 있지만, 최신 버전이 필요합니다.</p>
+
+<ol>
+  <li>
+    <p>터미널 앱을 엽니다. (Finder에서 응용 프로그램 &gt; 유틸리티 &gt; 터미널)</p>
+  </li>
+  <li>
+    <p>Homebrew라는 프로그램을 설치합니다. 터미널에 다음 명령어를 복사하여 붙여넣고 Enter를 누릅니다:</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>설치 과정에서 암호 입력이나 엔터 키를 눌러 진행하라는 메시지가 나오면 지시에 따라주세요.</p>
+  </li>
+  <li>
+    <p>Homebrew 설치가 완료되면 다음 명령어로 Ruby를 설치합니다:</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install ruby
+</code></pre></div></div>
+
+<ol>
+  <li>Ruby 경로를 시스템에 추가합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' &gt;&gt; ~/.zshrc
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>터미널을 닫고 다시 열어 변경사항을 적용합니다.</p>
+  </li>
+  <li>
+    <p>이제 Jekyll을 설치합니다:</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<h3 id="2-github-저장소-가져오기">2. GitHub 저장소 가져오기</h3>
+
+<ol>
+  <li>터미널에서 블로그 파일을 저장할 폴더로 이동합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Documents
+mkdir Blog
+cd Blog
+</code></pre></div></div>
+
+<ol>
+  <li>GitHub에서 저장소를 가져옵니다 (클론):</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/사용자이름/사용자이름.github.io.git
+</code></pre></div></div>
+
+<ol>
+  <li>클론한 폴더로 이동합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd 사용자이름.github.io
+</code></pre></div></div>
+
+<h3 id="3-jekyll-웹사이트-실행하기">3. Jekyll 웹사이트 실행하기</h3>
+
+<ol>
+  <li>필요한 gem 파일들을 설치합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<ol>
+  <li>로컬 서버를 실행합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+<ol>
+  <li>웹 브라우저를 열고 <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>으로 이동하면 블로그가 표시됩니다.</li>
+</ol>
+
+<h2 id="윈도우windows에서-jekyll-설치하기">윈도우(Windows)에서 Jekyll 설치하기</h2>
+
+<h3 id="1-필수-프로그램-설치-1">1. 필수 프로그램 설치</h3>
+
+<ol>
+  <li>Ruby 설치:
+    <ul>
+      <li><a href="https://rubyinstaller.org/downloads/">RubyInstaller for Windows</a>에 접속합니다.</li>
+      <li>“Ruby+Devkit” 버전을 다운로드합니다 (예: Ruby+Devkit 3.2.X (x64)).</li>
+      <li>다운로드한 파일을 실행하고 설치 과정을 진행합니다.</li>
+      <li>설치 마지막에 “Run ‘ridk install’“에 체크한 상태로 마침을 클릭합니다.</li>
+      <li>명령 프롬프트 창이 열리면 옵션 1, 2, 3을 차례로 입력하고 Enter를 눌러 모두 설치합니다.</li>
+    </ul>
+  </li>
+  <li>Git 설치:
+    <ul>
+      <li><a href="https://gitforwindows.org/">Git for Windows</a>에서 다운로드합니다.</li>
+      <li>다운로드한 파일을 실행하고 설치 과정을 진행합니다.</li>
+      <li>대부분의 기본 옵션으로 진행해도 무방합니다.</li>
+    </ul>
+  </li>
+  <li>Jekyll 설치:
+    <ul>
+      <li>시작 메뉴에서 “Start Command Prompt with Ruby”를 찾아 실행합니다.</li>
+      <li>다음 명령어를 입력합니다:</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<h3 id="2-github-저장소-가져오기-1">2. GitHub 저장소 가져오기</h3>
+
+<ol>
+  <li>명령 프롬프트에서 블로그 파일을 저장할 폴더로 이동합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Documents
+mkdir Blog
+cd Blog
+</code></pre></div></div>
+
+<ol>
+  <li>GitHub에서 저장소를 클론합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/사용자이름/사용자이름.github.io.git
+</code></pre></div></div>
+
+<ol>
+  <li>클론한 폴더로 이동합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd 사용자이름.github.io
+</code></pre></div></div>
+
+<h3 id="3-jekyll-웹사이트-실행하기-1">3. Jekyll 웹사이트 실행하기</h3>
+
+<ol>
+  <li>필요한 gem 파일들을 설치합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<ol>
+  <li>로컬 서버를 실행합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+<ol>
+  <li>웹 브라우저를 열고 <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>으로 이동하면 블로그가 표시됩니다.</li>
+</ol>
+
+<h2 id="로컬에서-블로그-편집하기">로컬에서 블로그 편집하기</h2>
+
+<p>이제 컴퓨터에서 직접 블로그를 편집할 수 있습니다.</p>
+
+<h3 id="글-작성하기">글 작성하기</h3>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">_posts</code> 폴더 내에 새 파일을 만듭니다.
+    <ul>
+      <li>파일 이름은 <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-제목.md</code> 형식으로 지정합니다.</li>
+      <li>텍스트 편집기(메모장, TextEdit, VS Code 등)로 파일을 엽니다.</li>
+    </ul>
+  </li>
+  <li>파일 상단에 다음과 같은 헤더를 추가합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: "새 글 제목"
+date: 2025-03-09
+categories: blog
+---
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>헤더 아래에 마크다운 형식으로 내용을 작성합니다.</p>
+  </li>
+  <li>
+    <p>저장 후 터미널에서 <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>에 접속하여 글이 어떻게 보이는지 확인합니다.</p>
+  </li>
+</ol>
+
+<h3 id="변경사항-github에-업로드하기">변경사항 GitHub에 업로드하기</h3>
+
+<p>편집이 완료되면 변경사항을 GitHub에 업로드해야 합니다.</p>
+
+<ol>
+  <li>터미널 또는 명령 프롬프트에서 다음 명령어를 입력합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+</code></pre></div></div>
+
+<ol>
+  <li>변경사항을 커밋합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "새 글 추가" 
+</code></pre></div></div>
+
+<ol>
+  <li>GitHub에 변경사항을 업로드합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>GitHub 계정 로그인 정보를 입력하라는 메시지가 나타나면 입력합니다.</p>
+  </li>
+  <li>
+    <p>약 1-2분 후 <code class="language-plaintext highlighter-rouge">https://사용자이름.github.io</code>에서 변경사항이 적용된 것을 확인할 수 있습니다.</p>
+  </li>
+</ol>
+
+<h2 id="유용한-텍스트-에디터-사용하기">유용한 텍스트 에디터 사용하기</h2>
+
+<p>마크다운 파일을 더 쉽게 편집하려면 전용 텍스트 에디터를 사용하는 것이 좋습니다.</p>
+
+<h3 id="vs-code-설치하기">VS Code 설치하기</h3>
+
+<ol>
+  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> 웹사이트에서 에디터를 다운로드합니다.</li>
+  <li>설치 프로그램을 실행하고 안내에 따라 설치합니다.</li>
+  <li>VS Code를 열고 “File” &gt; “Open Folder”를 선택한 후 블로그 폴더를 엽니다.</li>
+  <li>“Extensions” 탭(왼쪽 메뉴)에서 “Markdown All in One”과 “Jekyll Snippets”을 검색하여 설치하면 더 편리하게 사용할 수 있습니다.</li>
+</ol>
+
+<h2 id="로컬-작업-흐름-정리">로컬 작업 흐름 정리</h2>
+
+<ol>
+  <li>로컬 서버 시작:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>브라우저에서 <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> 접속하여 미리보기</p>
+  </li>
+  <li>
+    <p>글 작성 및 수정</p>
+  </li>
+  <li>
+    <p>변경사항 저장</p>
+  </li>
+  <li>GitHub에 업로드:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "변경 내용 설명"
+git push origin main
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="문제-해결">문제 해결</h2>
+
+<h3 id="bundle-command-not-found-오류가-발생하는-경우">‘bundle: command not found’ 오류가 발생하는 경우</h3>
+
+<p>Ruby가 제대로 설치되지 않았거나 경로 설정에 문제가 있는 것입니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div></div>
+
+<p>명령어로 Bundler를 다시 설치해보세요.</p>
+
+<h3 id="jekyll-서버가-시작되지-않는-경우">Jekyll 서버가 시작되지 않는 경우</h3>
+
+<p><code class="language-plaintext highlighter-rouge">bundle update</code> 명령어를 실행하여 모든 gem을 최신 버전으로 업데이트해보세요.</p>
+
+<h3 id="github-인증-오류가-발생하는-경우">GitHub 인증 오류가 발생하는 경우</h3>
+
+<p>GitHub에서 개인 액세스 토큰을 생성하여 사용해야 할 수 있습니다:</p>
+
+<ol>
+  <li>GitHub에 로그인하고 오른쪽 상단의 프로필 아이콘을 클릭한 후 “Settings”를 선택합니다.</li>
+  <li>왼쪽 메뉴에서 “Developer settings” &gt; “Personal access tokens” &gt; “Tokens (classic)”을 선택합니다.</li>
+  <li>“Generate new token”을 클릭하고 필요한 권한을 부여한 후 토큰을 생성합니다.</li>
+  <li>생성된 토큰을 비밀번호 대신 사용합니다.</li>
+</ol>
+
+<h2 id="마치며">마치며</h2>
+
+<p>이제 여러분은 내 컴퓨터에서 Jekyll 블로그를 관리하고 GitHub Pages에 배포하는 방법을 배웠습니다. 이 방식은 처음에는 조금 복잡해 보일 수 있지만, 익숙해지면 블로그 관리가 훨씬 편리해집니다.</p>
+
+<p>블로그 테마를 변경하거나 커스터마이징하는 방법, 댓글 시스템 추가하는 방법 등 더 고급 기능은 다음 기회에 알아보도록 하겠습니다.</p>
+</div><div class="article-tags"><a href="/garden/#jekyll">#Jekyll</a><a href="/garden/#github">#Github</a><a href="/garden/#블로그">#블로그</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

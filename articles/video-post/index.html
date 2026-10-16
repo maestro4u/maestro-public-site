@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Post with a Video · Maestro for You</title>
+<meta name="description" content="Custom written post descriptions are the way to go... if you&#x27;re not lazy.">
+<link rel="canonical" href="https://maestro4u.kr/articles/video-post/">
+<meta property="og:title" content="A Post with a Video"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/articles/video-post/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2013.06.25</p><h1>A Post with a Video</h1><p class="article-deck">Custom written post descriptions are the way to go... if you're not lazy.</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2013-06-25T00:00:00+00:00">2013년 06월 25일</time></div></header>
+
+<div class="prose"><iframe width="560" height="315" src="//www.youtube.com/embed/pdSp4Y4GOQs" frameborder="0"> </iframe>
+
+<p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
+
+<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code> tags and remove <code class="language-plaintext highlighter-rouge">allowfullscreen</code>. Example below:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"560"</span> <span class="na">height=</span><span class="s">"315"</span> <span class="na">src=</span><span class="s">"http://www.youtube.com/embed/PWf4WUoMXwg"</span> <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span></code></pre></figure>
+
+<p>And here’s a Vimeo embed for testing purposes.</p>
+
+<iframe src="//player.vimeo.com/video/98146708?title=0&amp;byline=0" width="500" height="281" frameborder="0"> </iframe>
+</div><div class="article-tags"><a href="/garden/#sample-post">#sample-post</a><a href="/garden/#video">#video</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

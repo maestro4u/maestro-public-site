@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>바탕화면 정리용 액션스크립트 · Maestro for You</title>
+<meta name="description" content="스크립트를 이용한 바탕화면 정리방법(런치바를 활용)">
+<link rel="canonical" href="https://maestro4u.kr/blog/actionscript-for-cleaning-home/">
+<meta property="og:title" content="바탕화면 정리용 액션스크립트"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/actionscript-for-cleaning-home/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2015.06.18</p><h1>바탕화면 정리용 액션스크립트</h1><p class="article-deck">스크립트를 이용한 바탕화면 정리방법(런치바를 활용)</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2015-06-18T00:00:00+00:00">2015년 06월 18일</time></div></header>
+
+<div class="prose"><p>지금 자신의 컴퓨터로 개인 오디오방송(screencast)을 컴퓨터로 진행한다고 가정합시다. 대부분은 함께 방송을 함께하는 분들도 자리에 함께 있을 것입니다.</p>
+
+<p>또는 그런 방송뿐 아니라 자신의 컴퓨터로 프리젠테이션을 한다고 가정합시다.  프로젝터에 컴퓨터를 연결하고 관련자료를 로딩하게 되는데 지저분한 바탕화면이 보여진다고 상상해보십시요.</p>
+
+<p>어쩌면 시작도 하기전에 얼굴을 붉히고, 미리 정리하지 못한 자신을 탓하면서, 좀더 멋진 쇼나 프리젠테이션을 망칠수도 있을 것입니다.</p>
+
+<p>만약 위와 같은 경우가 발생했을경우, 여러분들은 어떻게 하시겠습니까?
+바탕화면에 임의의 폴더를 만든 후, 널려있는 각종 자료를 폴더에 그냥 쓸어담을 것입니다. 그리곤 컴퓨터 설정을 통해 바탕화면을 변경하실것 입니다. 그런데, 바탕화면에 Geektool과 같은 화면요소들을 설정했다고 한다면 그 마저도 쉽지 않습니다. 아마도 그럴상황이 발생하면, 대부분은 자신이 나중에 후회할지라도 지금의 상황을 모면하기 위해 Geektool 설정을 지우고 화면을 깨끗이 할 것입니다.</p>
+
+<p>하지만, 만약 이러한 상황들을 간단한 Applescript를 통해 간단히 변경할 수 있다면 여러분들은 어떤걸 선택하시겠습니까?</p>
+
+<p>지금부터 바로 위의 상황과 같은 일련의 작업들을 수행하는 스크립트를 작성해보도록 하겠습니다.</p>
+
+<h3 id="일련의-작업과정">일련의 작업과정</h3>
+
+<p>작업의 순서는 다음과 같습니다.</p>
+
+<ol>
+  <li>바탕화면에 여러가지 파일들이 있는지 확인합니다.</li>
+  <li>있다면(status = 1) 바탕화면에 있는 파일 혹은 폴더등을 숨깁니다.</li>
+  <li>바탕화면에 적용된 Geektool 정보를 저장합니다.</li>
+  <li>독화면을 자동 숨깁니다.(나의 경우 항상 숨기기를 선호함에 따라 항상 적용함)</li>
+  <li>TotalFinder를 실행시킵니다.(개인취향에 따라 선택가능한 옵션임)</li>
+</ol>
+
+<p>이렇게 변경한 내용들을 스크린캐스터나 프리젠테이션이 마치고 나면 복원과정을 거쳐야 하는데 복원과정은 다음과 같습니다.</p>
+
+<ol>
+  <li>숨겨진 바탕화면 파일들을 다시 보이도록 합니다.</li>
+  <li>저장된 Geektool 정보를 다시 불러와서 호출합니다.</li>
+  <li>독화면은 자동 숨기기 합니다.(나의 선호도임)</li>
+  <li>TotalFinder를 실행시킵니다.(개인취향에 따라 선택가능한 옵션임)</li>
+</ol>
+
+<h3 id="코드입력">코드입력</h3>
+
+<p>코드를 설명하기 전에 본 내용은 <a href="http://brettterpstra.com/2012/06/06/desktop-cleanup-scripts-for-screencasting/">Brett Terpstra의 블로그를</a> 참고하여 작성되었음을 미리 말씀드립니다.</p>
+
+<p>저의 경우에는 LaunchBar를 통한 실행을 주로 하다보니, LaunchBar 액션에 아래의 코드를 삽입하여 처리하였습니다.</p>
+
+<figure class="highlight"><pre><code class="language-io" data-lang="io"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="code"><pre><span class="o">--</span> <span class="nc">Script</span> <span class="n">to</span> <span class="n">toggle</span> <span class="s">"screencast mode"</span> <span class="p">(</span><span class="nc">LaunchBar</span> <span class="nc">Action</span> <span class="n">compatible</span><span class="p">)</span>
+<span class="o">--</span> <span class="nc">Assumes</span> <span class="n">you</span> <span class="n">normally</span> <span class="n">have</span> <span class="n">your</span> <span class="nc">Desktop</span> <span class="n">icons</span> <span class="n">showing</span>
+<span class="o">--</span> <span class="n">and</span> <span class="n">uses</span> <span class="n">that</span> <span class="n">boolean</span> <span class="n">to</span> <span class="n">determine</span> <span class="n">which</span> <span class="n">state</span> <span class="n">to</span> <span class="n">activate</span>
+
+<span class="o">--</span> <span class="nc">Brett</span> <span class="nc">Terpstra</span> <span class="p">(</span><span class="n">http</span><span class="err">:</span><span class="c1">//brettterpstra.com)</span>
+<span class="o">--</span> <span class="nc">No</span> <span class="n">license</span><span class="o">,</span> <span class="n">all</span> <span class="n">yours</span><span class="o">,</span> <span class="n">modify</span> <span class="n">at</span> <span class="n">will</span>
+
+<span class="n">on</span> <span class="n">run</span>
+    <span class="n">set</span> <span class="n">current_state</span> <span class="n">to</span> <span class="nb">do</span> <span class="n">shell</span> <span class="n">script</span> <span class="s">"defaults read com.apple.finder CreateDesktop"</span>
+	<span class="nb">if</span> <span class="n">current_state</span> <span class="o">=</span> <span class="s">"1"</span> <span class="nb">then</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"Finder"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">old_wallpaper</span> <span class="n">to</span> <span class="nc">POSIX</span> <span class="n">path</span> <span class="n">of</span> <span class="p">(</span><span class="n">desktop</span> <span class="n">picture</span> <span class="n">as</span> <span class="n">alias</span><span class="p">)</span>
+        <span class="nb">do</span> <span class="n">shell</span> <span class="n">script</span> <span class="s">"echo "</span> <span class="o">&amp;</span> <span class="n">old_wallpaper</span> <span class="o">&amp;</span> <span class="s">" &gt; ~/.olddesktop"</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"Finder"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">desktop</span> <span class="n">picture</span> <span class="n">to</span> <span class="p">(</span><span class="nc">POSIX</span> <span class="n">file</span> <span class="s">"/Users/hoonkim/Wallpaper/fun_with_colors_by_vikraj-d5vk6d5-2.png"</span><span class="p">)</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"System Events"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">the</span> <span class="n">autohide</span> <span class="n">of</span> <span class="n">the</span> <span class="n">dock</span> <span class="n">preferences</span> <span class="n">to</span> <span class="kc">true</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"GeekTool Helper"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">visible</span> <span class="n">of</span> <span class="n">group</span> <span class="s">"Default Group"</span> <span class="n">to</span> <span class="kc">false</span>
+        <span class="nb">do</span> <span class="n">shell</span> <span class="n">script</span> <span class="s">"defaults write com.apple.finder CreateDesktop 0 &amp;&amp; killall \"Finder\""</span>
+        <span class="n">delay</span> <span class="mf">5</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"TotalFinderCrashWatcher"</span> <span class="n">to</span> <span class="n">launch</span>
+	<span class="nb">else</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"System Events"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">the</span> <span class="n">autohide</span> <span class="n">of</span> <span class="n">the</span> <span class="n">dock</span> <span class="n">preferences</span> <span class="n">to</span> <span class="kc">true</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"GeekTool Helper"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">visible</span> <span class="n">of</span> <span class="n">group</span> <span class="s">"Default Group"</span> <span class="n">to</span> <span class="kc">true</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"GeekTool Helper"</span> <span class="n">to</span> <span class="n">refresh</span>
+        <span class="n">set</span> <span class="n">old_wallpaper</span> <span class="n">to</span> <span class="nb">do</span> <span class="n">shell</span> <span class="n">script</span> <span class="s">"cat ~/.olddesktop"</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"Finder"</span> <span class="n">to</span> <span class="n">set</span> <span class="n">desktop</span> <span class="n">picture</span> <span class="n">to</span> <span class="p">(</span><span class="nc">POSIX</span> <span class="n">file</span> <span class="n">old_wallpaper</span><span class="p">)</span>
+        <span class="nb">do</span> <span class="n">shell</span> <span class="n">script</span> <span class="s">"defaults write com.apple.finder CreateDesktop 1 &amp;&amp; killall \"Finder\""</span>
+        <span class="n">delay</span> <span class="mf">5</span>
+        <span class="n">tell</span> <span class="n">application</span> <span class="s">"TotalFinderCrashWatcher"</span> <span class="n">to</span> <span class="n">launch</span>
+	<span class="n">end</span> <span class="nb">if</span>
+<span class="n">end</span> <span class="n">run</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="액션-삽입">액션 삽입</h3>
+
+<p>액션 추가 방법은 LaunchBar를 실행시키고 설정&gt;액션코드편집 을 선택합니다. +버튼을 눌러 사용자 정의 액션을 추가하고,</p>
+
+<p>General 탭의 Action Name과 File Name 에는 Screencast mode, Required Application 에는 com.apple.finder, Text Input Title과 Abbreviation에는 scm 을 입력하고,</p>
+
+<p>Scripts 탭의 Difaul Script 의 종류를 AppleScript로 선택하고 Edit 버튼을 눌러 상기의 코드를 복사하여 붙여넣기 하면 모든것이 완료됩니다.</p>
+
+<p>코드 중간에 이미지 파일명을 입력하는 부분이 있는데 Screencast를 위한 각자의 배경화면 이미지에 맞추어 폴더위치 및 파일이름을 지정해야 한다는점을 잊지말도록 주의바랍니다.</p>
+
+<p></p>
+</div><div class="article-tags"><a href="/garden/#actionscript">#Actionscript</a><a href="/garden/#automation">#Automation</a><a href="/garden/#clean">#clean</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

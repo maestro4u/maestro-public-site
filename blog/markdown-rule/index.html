@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Markdown Rule · Maestro for You</title>
+<meta name="description" content="Jekyll에서 사용가능한 Markdown 기법">
+<link rel="canonical" href="https://maestro4u.kr/blog/markdown-rule/">
+<meta property="og:title" content="Markdown Rule"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/markdown-rule/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2017.07.04</p><h1>Markdown Rule</h1><p class="article-deck">Jekyll에서 사용가능한 Markdown 기법</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2017-07-04T00:00:00+00:00">2017년 07월 04일</time></div></header>
+
+<div class="prose"><h3 id="왜-마크다운-문법인가">왜 마크다운 문법인가?</h3>
+
+<p>마크다운 문법은 블로그 작성자들에게는 무척이나 편리한 글쓰기 도구이다. 하지만, 자주 사용하는 사람들에게는 익숙한 문범이 아주 가끔 사용하는 사람들에게는 기억해야하는 또다른 숙제이기도 하다.</p>
+
+<p>특히 지금의 나처럼 1년이 넘도록 마크다운 문법을 접하지 못한 상태에서 갑작스레 마크다운 문법을 사용할려고 하니, 또다른 멘붕상태에 빠지고, 한편으론 지금의 홈페이지 표현 기법을 약간 새롭게 바꿔야 겠다는 욕심에 CSS까지 배워야겠다는 도전정신까지 생겨나게 하는 계륵같은 존재같다.</p>
+
+<h3 id="title">Title</h3>
+
+<p>Title 에 관한 문법사항이다.</p>
+
+<h1 id="-heading-1"># Heading 1</h1>
+
+<h2 id="-heading-2">## Heading 2</h2>
+
+<h3 id="-heading-3">### Heading 3</h3>
+
+<h4 id="-heading-4">#### Heading 4</h4>
+
+<h5 id="-heading-5">##### Heading 5</h5>
+
+<h6 id="-heading-6">###### Heading 6</h6>
+
+<h3 id="body-text">Body text</h3>
+
+<p><code class="language-plaintext highlighter-rouge">**This is strong**</code>
+<strong>This is strong</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">*This is italic*</code>
+<em>This is emphasized</em></p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;cite&gt;(That’s a citation)&lt;/cite&gt;</code>
+<cite>(That’s a citation)</cite></p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;u&gt;Underline&lt;/u&gt;</code>
+<u>Underline</u></p>
+
+<p><code class="language-plaintext highlighter-rouge">H&lt;sub&gt;2&lt;/sub&gt;O</code>
+H<sub>2</sub>O</p>
+
+<p><code class="language-plaintext highlighter-rouge">m&lt;sup&gt;3&lt;/sup&gt;/sec</code>
+m<sup>3</sup>/sec</p>
+
+<p><code class="language-plaintext highlighter-rouge">도움말 표현: &lt;abbr title="단어에 해당하는 도움말 내용 기입"&gt;단어&lt;abbr&gt;</code>
+<abbr title="cascading stylesheets">CSS<abbr></abbr></abbr></p>
+
+<p><code class="language-plaintext highlighter-rouge">![Image name](https://maestro4u.kr/images/filename.jpg){: .pull-right/center/left}</code></p>
+
+<h4 id="for-example">For Example</h4>
+
+<p class="pull-right"></p>
+
+<p><em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>(That’s a citation)</cite>. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+<p>HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</abbr></abbr></p>
+
+<h3 id="블록인용blockquotes">블록인용(Blockquotes)</h3>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.</p>
+</blockquote>
+
+<h3 id="개요-형식">개요 형식</h3>
+
+<h4 id="숫자형">숫자형</h4>
+
+<ol>
+  <li>Item one
+    <ol>
+      <li>sub item one</li>
+      <li>sub item two</li>
+      <li>sub item three</li>
+    </ol>
+  </li>
+  <li>Item two</li>
+</ol>
+
+<h4 id="불릿형">불릿형</h4>
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+
+<h3 id="표-작성">표 작성</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h3 id="코드형식">코드형식</h3>
+
+<h4 id="스타일에-맞춘-코드-형식">스타일에 맞춘 코드 형식</h4>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#container</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">-240px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h4 id="스타일적용이-없는-코드형식">스타일적용이 없는 코드형식</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="awesome"&gt;
+    &lt;p&gt;This is great isn't it?&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h3 id="buttons">Buttons</h3>
+
+<p>버튼 클래스 (<code class="language-plaintext highlighter-rouge">.btn</code> class) 를 이용한 링크설정</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;div markdown="0"&gt;&lt;a href="http://mademistakes.com" class="btn"&gt;This is a button&lt;/a&gt;&lt;/div&gt;</code></p>
+
+<div><a href="http://mademistakes.com" class="btn">This is a button</a></div>
+
+</div><div class="article-tags"><a href="/garden/#markdown">#markdown</a><a href="/garden/#blog">#Blog</a><a href="/garden/#jekyll">#Jekyll</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

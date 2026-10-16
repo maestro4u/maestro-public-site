@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>make를 이용한 유투브내용 요약후 이메일전송 · Maestro for You</title>
+<meta name="description" content="make를 이용한 자동화(유투브 요약 -&gt; 이메일 전송)">
+<link rel="canonical" href="https://maestro4u.kr/blog/make%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9C%A0%ED%88%AC%EB%B8%8C%EB%82%B4%EC%9A%A9-%EC%9A%94%EC%95%BD%ED%9B%84-%EC%9D%B4%EB%A9%94%EC%9D%BC%EC%A0%84%EC%86%A1/">
+<meta property="og:title" content="make를 이용한 유투브내용 요약후 이메일전송"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/make%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9C%A0%ED%88%AC%EB%B8%8C%EB%82%B4%EC%9A%A9-%EC%9A%94%EC%95%BD%ED%9B%84-%EC%9D%B4%EB%A9%94%EC%9D%BC%EC%A0%84%EC%86%A1/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2025.03.12</p><h1>make를 이용한 유투브내용 요약후 이메일전송</h1><p class="article-deck">make를 이용한 자동화(유투브 요약 -> 이메일 전송)</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2025-03-12T12:36:47+00:00">2025년 03월 12일</time></div></header>
+
+<div class="prose"><h1 id="침대에-누워서-유튜브-영상-요약-받는-자동화-시스템-만들기">침대에 누워서 유튜브 영상 요약 받는 자동화 시스템 만들기</h1>
+
+<p>여러분, 침대에 누워서 유튜브를 보다가 끌리는 썸네일을 보고 클릭했는데, 계속 봐도 제목과 전혀 상관없는 내용이 나와서 실망한 적 있으신가요? 만약 클릭하기 전에 AI가 영상을 한눈에 요약해준다면 어떨까요? 불필요한 시간 낭비를 줄일 수 있겠죠?</p>
+
+<p>이 블로그에서는 핸드폰에서 터치 몇 번으로 유튜브 영상을 순식간에 요약해주는 자동화 시스템을 만드는 방법을 소개합니다.</p>
+
+<h2 id="기존-유튜브-요약-서비스의-한계">기존 유튜브 요약 서비스의 한계</h2>
+
+<p>현재 시중에 있는 유튜브 요약 서비스들은 대부분 다음과 같은 한계가 있습니다:</p>
+<ul>
+  <li>PC 웹 기반으로 이동 중 사용하기 어려움</li>
+  <li>앱스토어에 있는 앱들은 대부분 유료이거나 광고가 많음</li>
+</ul>
+
+<p>하지만 오늘 소개해드릴 방법은:</p>
+<ol>
+  <li>한 번만 구축해두면 누워서 터치 몇 번으로 요약을 받아볼 수 있음</li>
+  <li>사용자의 필요에 맞게 변형 가능 (예: 유튜브 대본 전체 추출, 특정 질문에 대한 답변 등)</li>
+  <li>무료로 사용 가능</li>
+</ol>
+
+<h2 id="시스템-작동-방식">시스템 작동 방식</h2>
+
+<p>이 시스템은 크게 세 단계로 움직입니다:</p>
+
+<ol>
+  <li>메일함에 유튜브 주소가 담긴 요약 요청 메일이 도착하면 시스템이 감지하고 URL을 찾아냄</li>
+  <li>Apify라는 도구를 사용해 유튜브의 자막(대본)을 추출</li>
+  <li>추출한 자막 정보를 OpenAI에 보내 요약한 후, 다시 이메일로 결과 전송</li>
+</ol>
+
+<p>이 모든 과정은 Make.com(메이크 닷컴)이라는 노코드 자동화 플랫폼을 활용해 구현합니다.</p>
+
+<h2 id="구현-단계">구현 단계</h2>
+
+<h3 id="1-makecom에서-웹훅-설정하기">1. Make.com에서 웹훅 설정하기</h3>
+
+<p>먼저 메일 데이터를 Make.com으로 받아오는 통로를 만들어야 합니다.</p>
+
+<ol>
+  <li>Make.com에 로그인하고 대시보드에서 ‘+ Create new scenario’ 클릭</li>
+  <li>웹훅(Webhook) 선택 후 ‘커스텀 메일 훅’ 선택</li>
+  <li>웹훅 주소 생성 및 복사</li>
+</ol>
+
+<h3 id="2-gmail-설정하기">2. Gmail 설정하기</h3>
+
+<p>이제 Gmail에서 특정 메일을 Make.com으로 전달하도록 설정합니다.</p>
+
+<ol>
+  <li>Gmail 설정 → ‘모든 설정 보기’ → ‘전달 및 POP/IMAP’ 클릭</li>
+  <li>‘전달 주소 추가’ 클릭 후 앞서 복사한 웹훅 주소 붙여넣기</li>
+  <li>본인 인증 진행</li>
+  <li>메이크로 돌아가 ‘런 원스(Run once)’ 클릭 후 Gmail로 돌아가 이메일 확인 절차 완료</li>
+</ol>
+
+<h3 id="3-gmail-필터-설정하기">3. Gmail 필터 설정하기</h3>
+
+<p>모든 메일이 아닌, 유튜브 요약 요청 메일만 필터링하도록 설정합니다.</p>
+
+<ol>
+  <li>Gmail 설정 → ‘필터’ → ‘새 필터 만들기’ 클릭</li>
+  <li>제목에 “유튜브에서” 입력 (핸드폰에서 유튜브 공유 시 자동으로 들어가는 문구)</li>
+  <li>‘필터 만들기’ → ‘다음 주소로 전달’ 선택 → 웹훅 주소 선택 → ‘필터 만들기’ 클릭</li>
+</ol>
+
+<h3 id="4-유튜브-url-추출하기">4. 유튜브 URL 추출하기</h3>
+
+<p>이메일에서 유튜브 URL만 깔끔하게 추출합니다.</p>
+
+<ol>
+  <li>Make.com에서 ‘+ 모듈 추가’ → ‘텍스트 파서’ → ‘매치 패턴’ 선택</li>
+  <li>정규식 패턴 입력 (유튜브 URL에서 필요한 부분만 추출하기 위한 패턴)</li>
+  <li>텍스트 입력 부분에 웹훅으로 받아온 URL 추가</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pattern에 입력할 패턴
+
+([^?]+)
+</code></pre></div></div>
+
+<h3 id="5-apify-연결하기">5. Apify 연결하기</h3>
+
+<p>Apify를 사용해 유튜브 자막을 추출합니다.</p>
+
+<ol>
+  <li>Make.com에서 ‘+ 모듈 추가’ → ‘Apify’ → ‘Run Actor’ 선택</li>
+  <li>Apify.com 접속 → API 토큰 복사 → Make.com에 붙여넣기</li>
+  <li>Apify 스토어에서 ‘YouTube Scraper’ 검색 후 설정:
+    <ul>
+      <li>직접 URL 옵션 활성화</li>
+      <li>자막 다운로드 옵션 활성화</li>
+      <li>원하는 자막 포맷 설정</li>
+    </ul>
+  </li>
+  <li>설정한 옵션의 JSON 코드 복사 → Make.com에 붙여넣기</li>
+  <li>URL 부분에 텍스트 파서에서 추출한 유튜브 URL 추가</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>JSON 칼럼에 입력할 데이타
+
+{  
+     "downloadSubtitles": true,  
+     "hasCC": false,  
+     "hasLocation": false,  
+     "hasSubtitles": false,  
+     "is360": false,  
+     "is3D": false,  
+     "is4K": false,  
+     "isBought": false,  
+     "isHD": false,  
+     "isHDR": false,  
+     "isLive": false,  
+     "isVR180": false,  
+     "maxResultStreams": 0,  
+     "maxResults": 10,  
+     "maxResultsShorts": 0,  
+     "preferAutoGeneratedSubtitles": false,  
+     "saveSubsToKVS": false,  
+      "startUrls": [    
+             {     
+                  "url": "",      
+                  "method": "GET"    
+             } 
+        ]
+}
+</code></pre></div></div>
+
+<h3 id="6-자막-데이터-가져오기">6. 자막 데이터 가져오기</h3>
+
+<p>Apify가 추출한 자막 데이터를 가져옵니다.</p>
+
+<ol>
+  <li>’+ 모듈 추가’ → ‘Apify’ → ‘Get Dataset Items’ 선택</li>
+  <li>데이터셋 ID에 ‘defaultDatasetId’ 선택</li>
+  <li>자막 준비 시간을 고려해 ‘+ 모듈 추가’ → ‘Tools’ → ‘Sleep’ 선택 (대기 시간 30초 설정)</li>
+</ol>
+
+<h3 id="7-ai로-자막-요약하기">7. AI로 자막 요약하기</h3>
+
+<p>OpenRouter를 통해 다양한 AI 모델을 활용해 자막을 요약합니다.</p>
+
+<ol>
+  <li>’+ 모듈 추가’ → ‘OpenRouter’ → ‘Create Chat Completion’ 선택</li>
+  <li>역할 부분에 ‘user’ 선택</li>
+  <li>콘텐츠에 프롬프트 입력</li>
+  <li>프롬프트 끝에 Apify에서 가져온 자막 데이터 추가</li>
+  <li>원하는 AI 모델 선택 (예: GPT-4-mini)</li>
+  <li>고급 설정에서 Temperature 조정 (0.3 추천)</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>콘텐츠에 입력할 프롬프트. 
+아래 내용을 그대로 카피해서 입력하면 됨.
+
+# IDENTITY and PURPOSE
+
+You extract surprising, insightful, and interesting information from text content. You are interested in insights related to the purpose and meaning of life, human flourishing, the role of technology in the future of humanity, artificial intelligence and its affect on humans, memes, learning, reading, books, continuous improvement, and similar topics.
+
+Take a step back and think step-by-step about how to achieve the best possible summary of the input by following the restrictions below.
+
+#RESTRICTIONS 
+- Use emojis and &lt;p&gt;, &lt;br&gt;, &lt;b&gt;, &lt;h3&gt; tags to enhance readability
+
+- MAKE SURE to display ALL the output in natural korean. Even though the input is in english.
+
+-Ensure you follow ALL these instructions when creating your output.
+
+# INPUT
+: 
+Here is the input (enclosed in triple quotes):
+"""여기에 유튜브 대본 입력"""
+</code></pre></div></div>
+
+<h3 id="8-요약-결과-이메일로-보내기">8. 요약 결과 이메일로 보내기</h3>
+
+<p>AI가 요약한 내용을 다시 이메일로 받습니다.</p>
+
+<ol>
+  <li>’+ 모듈 추가’ → ‘Gmail’ → ‘Send Email’ 선택</li>
+  <li>이메일 주소에 자신의 이메일 주소 입력</li>
+  <li>제목에 “유튜브 요약: [유튜브 제목]” 형식으로 입력</li>
+  <li>내용에 OpenRouter에서 생성된 요약 내용 추가</li>
+  <li>‘immediately execute this scenario’ 옵션 활성화</li>
+</ol>
+
+<h2 id="사용-방법">사용 방법</h2>
+
+<p>시스템 구축이 완료되면 매우 간단하게 사용할 수 있습니다:</p>
+
+<ol>
+  <li>유튜브 앱에서 요약하고 싶은 영상 선택</li>
+  <li>공유 버튼 클릭 → Gmail 선택</li>
+  <li>자신의 이메일 주소 선택 → 전송</li>
+  <li>잠시 후 요약본이 이메일로 도착</li>
+</ol>
+
+<h2 id="활용-팁">활용 팁</h2>
+
+<ol>
+  <li>프롬프트를 수정하여 다양한 형태의 요약 가능</li>
+  <li>유튜브 영상의 특정 질문에 대한 답변 요청 가능</li>
+  <li>장시간 영상도 빠르게 핵심 내용 파악 가능</li>
+</ol>
+
+<p>이 시스템을 통해 불필요한 시간 낭비 없이 유튜브 영상의 핵심 내용을 빠르게 파악할 수 있습니다. 한 번 설정해두면 앞으로 유튜브를 더 스마트하게 활용할 수 있을 것입니다.</p>
+
+<h2 id="마치며">마치며</h2>
+
+<p>오늘은 Make.com, Apify, OpenAI를 활용해 유튜브 영상을 자동으로 요약해주는 시스템을 만들어보았습니다. 이 방법은 무료로 사용 가능하며, 한번 설정해두면 언제든지 편리하게 유튜브 영상 요약을 받아볼 수 있다는 장점이 있습니다.</p>
+
+<p>여러분만의 창의적인 방식으로 이 시스템을 활용해보세요!</p>
+</div><div class="article-tags"><a href="/garden/#make">#make</a><a href="/garden/#automation">#automation</a><a href="/garden/#youtube">#Youtube</a><a href="/garden/#email">#Email</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

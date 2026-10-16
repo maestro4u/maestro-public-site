@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jekyll과 Github Pages로 무료 블로그 만들기 (1탄) · Maestro for You</title>
+<meta name="description" content="Jekyll과 Github의 만남">
+<link rel="canonical" href="https://maestro4u.kr/blog/Jekyll%EA%B3%BC-Github-Pages%EB%A1%9C-%EB%AC%B4%EB%A3%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
+<meta property="og:title" content="Jekyll과 Github Pages로 무료 블로그 만들기 (1탄)"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/Jekyll%EA%B3%BC-Github-Pages%EB%A1%9C-%EB%AC%B4%EB%A3%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2025.03.11</p><h1>Jekyll과 Github Pages로 무료 블로그 만들기 (1탄)</h1><p class="article-deck">Jekyll과 Github의 만남</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2025-03-11T09:58:17+00:00">2025년 03월 11일</time></div></header>
+
+<div class="prose"><h1 id="jekyll과-github-pages로-무료-블로그-만들기-1탄">Jekyll과 GitHub Pages로 무료 블로그 만들기 (1탄)</h1>
+
+<p>컴퓨터에 익숙하지 않아도 걱정하지 마세요. 이 글에서는 Jekyll과 GitHub Pages를 사용하여 무료로 전문적인 블로그를 만드는 과정을 쉽게 설명해 드립니다.</p>
+
+<h2 id="왜-jekyll과-github-pages인가">왜 Jekyll과 GitHub Pages인가?</h2>
+
+<ul>
+  <li><strong>완전 무료</strong>: 호스팅 비용이 전혀 없습니다.</li>
+  <li><strong>광고 없음</strong>: 자신의 콘텐츠만 표시됩니다.</li>
+  <li><strong>커스터마이징</strong>: 원하는 대로 디자인을 변경할 수 있습니다.</li>
+  <li><strong>속도</strong>: 매우 빠르게 로드되는 웹사이트를 가질 수 있습니다.</li>
+  <li><strong>백업</strong>: GitHub에 모든 콘텐츠가 안전하게 저장됩니다.</li>
+</ul>
+
+<h2 id="준비물">준비물</h2>
+
+<ol>
+  <li>컴퓨터 (윈도우, 맥, 리눅스 모두 가능)</li>
+  <li>인터넷 연결</li>
+  <li>이메일 주소</li>
+  <li>약 30분의 시간</li>
+</ol>
+
+<h2 id="단계별-가이드">단계별 가이드</h2>
+
+<h3 id="1-github-계정-만들기">1. GitHub 계정 만들기</h3>
+
+<ol>
+  <li>웹 브라우저에서 <a href="https://github.com">GitHub.com</a>으로 이동합니다.</li>
+  <li>오른쪽 상단의 “Sign up” 버튼을 클릭합니다.</li>
+  <li>이메일 주소, 비밀번호를 입력하고 사용자 이름을 선택합니다.
+    <ul>
+      <li>사용자 이름은 나중에 블로그 주소의 일부가 됩니다 (예: username.github.io).</li>
+    </ul>
+  </li>
+  <li>화면의 지시에 따라 계정 설정을 완료합니다.</li>
+</ol>
+
+<h3 id="2-새-저장소repository-만들기">2. 새 저장소(Repository) 만들기</h3>
+
+<ol>
+  <li>GitHub에 로그인한 상태에서 오른쪽 상단의 “+” 아이콘을 클릭하고 “New repository”를 선택합니다.</li>
+  <li>저장소 이름을 <code class="language-plaintext highlighter-rouge">사용자이름.github.io</code>로 설정합니다.
+    <ul>
+      <li>예: 만약 GitHub 사용자 이름이 “kimjihye”라면, <code class="language-plaintext highlighter-rouge">kimjihye.github.io</code>로 입력합니다.</li>
+    </ul>
+  </li>
+  <li>저장소를 공개(Public)로 설정합니다.</li>
+  <li>“Create repository” 버튼을 클릭합니다.</li>
+</ol>
+
+<h3 id="3-jekyll-테마-선택하기">3. Jekyll 테마 선택하기</h3>
+
+<p>쉬운 방법으로 이미 만들어진 테마를 사용해 봅시다.</p>
+
+<ol>
+  <li>웹 브라우저에서 <a href="https://jekyllthemes.io/free">Jekyll Themes</a> 또는 <a href="https://jamstackthemes.dev/ssg/jekyll/">jamstackthemes.dev</a>로 이동합니다.</li>
+  <li>마음에 드는 무료 테마를 찾아 클릭합니다.</li>
+  <li>대부분의 테마는 GitHub 페이지로 연결됩니다. “Download” 또는 “Clone” 버튼을 찾습니다.</li>
+  <li>해당 테마의 GitHub 페이지에서 오른쪽 상단의 “Fork” 버튼을 클릭합니다.
+    <ul>
+      <li>Fork란 다른 사람의 프로젝트를 내 계정으로 복사하는 것입니다.</li>
+    </ul>
+  </li>
+  <li>Fork 설정에서 저장소 이름을 <code class="language-plaintext highlighter-rouge">사용자이름.github.io</code>로 변경합니다.</li>
+  <li>“Create fork” 버튼을 클릭합니다.</li>
+</ol>
+
+<h3 id="4-설정-파일-수정하기">4. 설정 파일 수정하기</h3>
+
+<ol>
+  <li>방금 생성한 저장소 페이지에서 <code class="language-plaintext highlighter-rouge">_config.yml</code> 파일을 찾아 클릭합니다.</li>
+  <li>오른쪽 상단의 연필 아이콘(Edit this file)을 클릭합니다.</li>
+  <li>파일에서 다음 정보를 찾아 수정합니다:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">title</code>: 블로그 제목</li>
+      <li><code class="language-plaintext highlighter-rouge">description</code>: 블로그 설명</li>
+      <li><code class="language-plaintext highlighter-rouge">url</code>: “https://사용자이름.github.io”로 변경</li>
+      <li><code class="language-plaintext highlighter-rouge">baseurl</code>: 비워두거나 지시사항을 따릅니다</li>
+      <li><code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">email</code> 등 개인 정보 항목</li>
+    </ul>
+  </li>
+  <li>페이지 하단으로 스크롤하여 “Commit changes” 버튼을 클릭합니다.
+    <ul>
+      <li>간단한 설명(예: “Update configuration”)을 추가하고 “Commit changes” 버튼을 클릭합니다.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="5-첫-블로그-글-작성하기">5. 첫 블로그 글 작성하기</h3>
+
+<ol>
+  <li>저장소 메인 페이지에서 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더를 클릭합니다.</li>
+  <li>“Add file” 버튼을 클릭하고 “Create new file”을 선택합니다.</li>
+  <li>파일 이름을 <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-제목.md</code> 형식으로 입력합니다.
+    <ul>
+      <li>예: <code class="language-plaintext highlighter-rouge">2025-03-09-첫-블로그-글.md</code></li>
+    </ul>
+  </li>
+  <li>파일 내용에 다음과 같은 형식으로 작성합니다:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: "블로그 첫 글입니다"
+date: 2025-03-09
+categories: blog
+---
+
+여기에 블로그 내용을 작성합니다.
+
+## 소제목도 넣을 수 있습니다
+
+- 글머리 기호로
+- 목록도 만들 수 있습니다
+
+1. 번호가 있는
+2. 목록도 가능합니다
+
+**굵은 글씨**와 *기울임체*도 사용할 수 있습니다.
+</code></pre></div></div>
+
+<ol>
+  <li>페이지 하단의 “Commit new file” 버튼을 클릭합니다.</li>
+</ol>
+
+<h3 id="6-블로그-확인하기">6. 블로그 확인하기</h3>
+
+<ol>
+  <li>약 1-2분 정도 기다립니다. GitHub Pages가 사이트를 생성하는 데 시간이 걸릴 수 있습니다.</li>
+  <li>웹 브라우저의 새 탭에서 <code class="language-plaintext highlighter-rouge">https://사용자이름.github.io</code>로 이동합니다.</li>
+  <li>축하합니다! 이제 자신만의 블로그가 생겼습니다!</li>
+</ol>
+
+<h2 id="블로그-관리하기">블로그 관리하기</h2>
+
+<h3 id="새-글-추가하기">새 글 추가하기</h3>
+
+<ol>
+  <li>GitHub 저장소의 <code class="language-plaintext highlighter-rouge">_posts</code> 폴더로 이동합니다.</li>
+  <li>“Add file” &gt; “Create new file”을 클릭합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">YYYY-MM-DD-제목.md</code> 형식으로 파일 이름을 지정합니다.</li>
+  <li>위에서 설명한 형식대로 내용을 작성합니다.</li>
+  <li>“Commit new file”을 클릭합니다.</li>
+</ol>
+
+<h3 id="이미지-추가하기">이미지 추가하기</h3>
+
+<ol>
+  <li>저장소에서 <code class="language-plaintext highlighter-rouge">images</code> 또는 <code class="language-plaintext highlighter-rouge">assets</code> 폴더를 찾습니다 (없다면 직접 생성).</li>
+  <li>“Add file” &gt; “Upload files”를 클릭하여 이미지를 업로드합니다.</li>
+  <li>블로그 글에서 다음과 같이 이미지를 참조합니다:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![이미지 설명](/images/파일이름.jpg)
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="문제-해결">문제 해결</h2>
+
+<h3 id="블로그가-보이지-않는-경우">블로그가 보이지 않는 경우</h3>
+
+<ol>
+  <li>저장소 이름이 정확히 <code class="language-plaintext highlighter-rouge">사용자이름.github.io</code> 형식인지 확인합니다.</li>
+  <li>GitHub 저장소 페이지 상단의 “Settings” 탭을 클릭합니다.</li>
+  <li>왼쪽 메뉴에서 “Pages”를 클릭합니다.</li>
+  <li>“Source” 섹션에서 “Branch”가 “main” 또는 “master”로 설정되어 있는지 확인합니다.</li>
+  <li>최대 10분 정도 기다린 후 다시 확인합니다.</li>
+</ol>
+
+<h3 id="테마나-디자인이-적용되지-않은-경우">테마나 디자인이 적용되지 않은 경우</h3>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">_config.yml</code> 파일에서 테마 설정이 올바른지 확인합니다.</li>
+  <li>저장소의 루트 디렉토리에 <code class="language-plaintext highlighter-rouge">Gemfile</code>이 있는지 확인합니다.</li>
+  <li>위의 파일들이 있는데도 문제가 해결되지 않으면, GitHub 저장소 페이지의 “Actions” 탭을 확인하여 오류 메시지가 있는지 살펴봅니다.</li>
+</ol>
+
+<h2 id="마치며">마치며</h2>
+
+<p>이제 여러분은 전문적인 블로그를 무료로 운영할 수 있게 되었습니다. Jekyll과 GitHub Pages의 장점은 한 번 설정해두면 유지 관리가 매우 쉽다는 것입니다. 새 글을 작성하기만 하면 되니, 콘텐츠 제작에 집중할 수 있습니다.</p>
+
+<p>더 많은 기능을 원한다면, Jekyll 테마 문서를 참고하여 추가 기능(댓글 시스템, 소셜 미디어 공유 버튼 등)을 구현할 수 있습니다.</p>
+</div><div class="article-tags"><a href="/garden/#jekyll">#Jekyll</a><a href="/garden/#github">#Github</a><a href="/garden/#블로그">#블로그</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

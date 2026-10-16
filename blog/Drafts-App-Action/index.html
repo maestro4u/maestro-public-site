@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Draft App Action · Maestro for You</title>
+<meta name="description" content="Draft 엡을 이용한 자동화방법">
+<link rel="canonical" href="https://maestro4u.kr/blog/Drafts-App-Action/">
+<meta property="og:title" content="Draft App Action"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/Drafts-App-Action/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2016.07.02</p><h1>Draft App Action</h1><p class="article-deck">Draft 엡을 이용한 자동화방법</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2016-07-02T00:00:00+00:00">2016년 07월 02일</time></div></header>
+
+<div class="prose"><h3 id="시작하기에-앞서">시작하기에 앞서</h3>
+
+<p>iOS와 연계한 Mac의 자동화 혹은 개별 앱들의 자동화에 대해 얘기를 하기 위해서는 URL 제어, 소위 URL Schemes, 에 대한 얘기를 하지 않고서는 자동화에 대한 논의가 무의미합니다. 최근에 Mac/iOS 자동화에 대해 얘기하게 되면 늘 언급되는 앱 혹은 웹서비스 등을 보자면 iOS용의 <a href="http://agiletortoise.com/drafts/">Drafts</a>, <a href="http://es.thefreedictionary.com/editorial">Editorial</a>, <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> 와 Mac용의 <a href="https://www.alfredapp.com/">Alfred 2</a>, Hazel, <a href="https://smilesoftware.com/TextExpander">TextExpander</a>, <a href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a> 및 웹서비스인 <a href="https://ifttt.com/">IFTTT</a> 등이 자동화의 중심에 서있는 앱들입니다. Mac/iOS를 사용하면서 한번쯤은 들어보았던지, 아니면 몇몇 앱들에는 광팬들도 많이 있을거라 생각합니다.</p>
+
+<p>얼마전 블로그에서도 아이폰으로 맥을 원격조정하는 방법에 대해 3회에 걸쳐 기술한 적이 있는데, 자동화를 생각할 때 가장 중요한 것은 뭐니뭐니해도 다른 앱과의 상호 소통방식이라 할 수 있을 것입니다.</p>
+
+<p>소통을 위해 현재 가장 많이 사용되는 일반적인 방법이 -앞으로 몇회가 될지 모르겠지만- URL을 통한 소통방식입니다.(이하 URL Schemes 로 명명하겠습니다. 솔직히 한글로 옮기기에 적당한 어휘가 떠오르지 않습니다.) URL Schemes은 웹에서 익숙했던 용어인데 앞으로 앱간의 소통을 위해서도 사용될 것이며, 더 나아가서는 소통을 확장시키고 타 앱의 호출을 원할히 하기 위해 추가적으로 x-callback-url 도 함께 사용할 예정입니다.</p>
+
+<p>미국에서는 꽤 오래전부터 이러한 노력들이 이루어진 반면, 상대적으로 Mac의 보급이 늦은 우리나라의 경우에는 아직은 걸음마 단계인것 같습니다. 앞으로는 더욱 많은 개발자들에 의해 AppleScript를 이용한 자동화 툴들도 많이 나왔으면 하는 바램입니다. 잠깐 글이 옆으로 흘렀는데, 다시 돌아와서 이 글에서는 몇회에 걸쳐 이러한 프로토콜 사용 방법을 설명하기 위해 Drafts 라는 iOS용 앱을 가지고 설명을 하면서, 그외 각종 팁과 추가적인 접근 방법들에 대해서도 원문에 근거하여 설명하도록 하겠습니다.  <a href="http://www.macstories.net/tutorials/guide-url-scheme-ios-drafts">원문보기</a></p>
+
+<h3 id="목차">목차</h3>
+
+<h4 id="1편">1편</h4>
+
+<ul>
+  <li>Drafts 기초</li>
+  <li>Drafts URL Schemes</li>
+  <li>다양한 태그들</li>
+  <li>Drafts 를 더욱 유용하게 만들기</li>
+</ul>
+
+<h4 id="2편">2편</h4>
+
+<ul>
+  <li>Dropbox 액션</li>
+  <li>Evernote 액션</li>
+  <li>Email 액션</li>
+  <li>Message 액션</li>
+  <li>URL 액션 : 모든것을 한자리에 모아놓은 가교역할</li>
+  <li>세개 혹은 그 이상 액션을 순차적으로 연결하기</li>
+  <li>draft  세분화</li>
+  <li>긴 연속된 액션을 하나의 실타래로 고려하기</li>
+  <li>“allowEmpty” 매개변수 사용하기</li>
+  <li>결론</li>
+</ul>
+
+<h3 id="drafts-기초">Drafts 기초</h3>
+
+<p>Drafts를 이용한 iOS앱의 자동화 방식은 상당히 유용한 편입니다. App.net, Google+, Facebook 포스트, 캘린더 이벤트 및 블로그 포스트 까지 상당히 많은 앱간에 Drafts를 이용할 경우 자동화가 가능해 집니다..</p>
+
+<p>실제 이러한 모든 과정들은 액션으로 실행이 가능합니다. 액션들의 모음인 액션리스트는 아이콘 제일 우측의 나눔버튼(share icon)을 통해 접근할 수 있으며, 현재 등록된 모든 액션 리스트 뿐 아니라, 사용자가 만든 액션까지도 보여집니다. 이러한 액션은 탭과 동시에 실행이 되며 Drafts 화면에 입력된 내용을 복사, 이동, 및 기타 사용자가 원하는 활용 용도로 사용될 수 있고 드랍박스, 에버노트, 이메일, 메시지, 혹은 다른 앱들로 수행할 명령을 전달하는 용도로도 사용됩니다.</p>
+
+<p>다시말하면 Drafts를 단순하게 접근하면, 노트용 앱 수준으로 볼 수 있지만, 크게 보면 텍스트 하나하나를 명령어로 둔갑시킬 수 있는 특별한 기능이 내장되어 있다고도 볼 수 있는 부분입니다.</p>
+
+<p>아래의 URL Schemes은 Drafts로 작성된 텍스트를 App.net과 Twitter에 자동적으로 동시에 글을 포스팅하는 일례입니다.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">drafts</span><span class="o">://</span><span class="nt">x-callback-url</span><span class="o">/</span><span class="nt">import_action</span><span class="o">?</span><span class="nt">type</span><span class="o">=</span><span class="nt">URL</span><span class="o">&amp;</span><span class="nt">name</span><span class="o">=</span><span class="nt">crossPost</span><span class="o">&amp;</span><span class="nt">url</span><span class="o">=</span><span class="nt">drafts</span><span class="o">%</span><span class="err">3</span><span class="nt">A</span><span class="o">%</span><span class="err">2</span><span class="nt">F</span><span class="o">%</span><span class="err">2</span><span class="nt">Fx-callback-url</span><span class="o">%</span><span class="err">2</span><span class="nt">Fcreate</span><span class="o">%</span><span class="err">3</span><span class="nt">Ftext</span><span class="o">%</span><span class="err">3</span><span class="nt">D</span><span class="o">%</span><span class="err">5</span><span class="nt">B</span><span class="o">%</span><span class="err">5</span><span class="nt">Bdraft</span><span class="o">%</span><span class="err">5</span><span class="nt">D</span><span class="o">%</span><span class="err">5</span><span class="nt">D</span><span class="o">%</span><span class="err">26</span><span class="nt">action</span><span class="o">%</span><span class="err">3</span><span class="nt">D</span><span class="o">%</span><span class="err">7</span><span class="nt">B</span><span class="o">%</span><span class="err">7</span><span class="nt">BPost</span><span class="o">%</span><span class="err">20</span><span class="nt">to</span><span class="o">%</span><span class="err">20</span><span class="nt">App</span><span class="nc">.net</span><span class="o">%</span><span class="err">7</span><span class="nt">D</span><span class="o">%</span><span class="err">7</span><span class="nt">D</span><span class="o">%</span><span class="err">26</span><span class="nt">x-success</span><span class="o">%</span><span class="err">3</span><span class="nt">D</span><span class="o">%</span><span class="err">7</span><span class="nt">B</span><span class="o">%</span><span class="err">7</span><span class="nt">Bdrafts</span><span class="o">%</span><span class="err">3</span><span class="nt">A</span><span class="o">%</span><span class="err">2</span><span class="nt">F</span><span class="o">%</span><span class="err">2</span><span class="nt">Fx-callback-url</span><span class="o">%</span><span class="err">2</span><span class="nt">Fcreate</span><span class="o">%</span><span class="err">3</span><span class="nt">Ftext</span><span class="o">%</span><span class="err">3</span><span class="nt">D</span><span class="o">%</span><span class="err">5</span><span class="nt">B</span><span class="o">%</span><span class="err">5</span><span class="nt">Bdraft</span><span class="o">%</span><span class="err">5</span><span class="nt">D</span><span class="o">%</span><span class="err">5</span><span class="nt">D</span><span class="o">%</span><span class="err">26</span><span class="nt">action</span><span class="o">%</span><span class="err">3</span><span class="nt">DTweet</span><span class="o">%</span><span class="err">253</span><span class="nt">A</span><span class="o">%</span><span class="err">2520</span><span class="nt">ajguyot</span><span class="o">%</span><span class="err">7</span><span class="nt">D</span><span class="o">%</span><span class="err">7</span><span class="nt">D</span></code></pre></figure>
+
+<p>다만, 액션과 관련하여 숙지해야 할 중요한 사항은 여러개의 액션의 조합은 이미 언급한데로 자동적으로 처리를 의미하는 거지 동시에 를 의미하는건 아닙니다. 이말은 다시말해 순차적으로 라는 의미로 이해를 하셔도 됩니다. 자세한 사항은 계속되는 절에서 예문과 함께 제시되겠지만, 미리 숙지해야 할 것은 액션의 조합은 순차적으로 실행시킬 업무의 연속이다 라고 이해하고 있으면 좋을 듯 합니다. 이말에는 선행의 액션에서 오류가 발생하면 후행의 액션은 절대로 수행되지 못한다 라는 것을 암시하고 있는 말입니다. 따라서, 액션을 작성하실때는 개별 액션을 먼저 작성해서 수행여부를 확인하신 후에 액션을 합쳐야지만, 사용이 가능함을 의미하는 말이기도 합니다. 아무튼 더욱 자세한 사항은 뒤편에서 얘기하겠습니다.</p>
+
+<p>그리고 이러한 액션의 확장성은 이미 보셨을 수도 있는 x-callback-url 과 더불어 아주 많은 업무를 수행할 수 있습니다. 혹시라도 x-callback-url에 대해 궁금하신분 들은 이글을 읽기전에 먼저 여기를 방문하고 오셔도 좋을 듯 합니다.</p>
+
+<p>Drafts의 액션 추가는 Settings &gt; Custom Actions에서 할 수 있으며, 현재는 Email Actions, Message Actions, Dropbox Actions, Google Drive Actions, Evernote Actions, URL Actions 이 있고, 액션의 작성은 태그( [[action name]] )의 조합으로 대부분 가능하지만, 각각의 액션마다 특징이 있어 입력방식은 액션마다 상이합니다. 자세한 스트립에 대한 내용을 확인하기 위해서는 Actions &gt; Tag Help 를 탭하면 사용가능한 태그 목록이 나옵니다.</p>
+
+<p>그외 사용자가 등록한 Actions을 다운받기 위해서는 Visit the Action Directory를 눌러 Drafts를 선택하면 사용자 등록 액션이 나타나며, 설치를 원하는 액션에서 install버튼을 누르면 앱에 자동으로 설치가 이루어집니다.</p>
+
+<p>URL Scheme은 그 작성 형태가 웹사이트 URL 구성형태와 매우 흡사합니다. 즉 모든 웹사이트가 자신만의 도메인명을 가지고 있듯이 iOS 앱들또한 자신만의 도메인명에 해당하는 워크플로우명을 가지고 있고, 자신만의 액션들이 있습니다. 다시말해 웹사이트 도메인명은 “http://yourwebsite.com”의 형태로 사용되는 반면 iOS 앱의 URL Scheme은 yourapp:// 의 형태로 사용되며, 웹사이트에서 지정된 사이트로 가기위해 “http://yourwebsite.com/yourspecialsitename” 하듯이 URL Scheme도 yourapp://yourspecialaction?의 형태로 작성됩니다.</p>
+
+<p>자세한 사항은 다음장의 Drafts URL Scheme를 참고하시면 됩니다.</p>
+
+<h3 id="drafts-url-scheme">Drafts URL Scheme</h3>
+
+<p>액션을 쉽고 빠르게 연결하기 위해서는 URL에 대한 체계를 먼저 이해하는게 중요합니다. Safari for iOS 의 주소창에 drafts://라고 입력 (만약 Safari가 아닌 Google Chrome을 사용한다면 Safari에서처럼 바로 엔터를 치지말고 입력후에 나타나는 Omni-bar 하부의 문서열기 옵션을 눌러줘야 합니다. 그렇지 않고 그냥 엔터를 칠경우 그냥 drafts:// 에 대한 검색을 하게 됩니다.) 하고 엔터키를 치면 웹페이지에서는 어떤 변화도 없이 단순히 Drafts 앱이 실행될 것입니다.</p>
+
+<p>이제 Drafts의 실행방법을 알았다면, 다음 단계인 액션을 수행시키는 단계입니다. Drafts는 create라는 단일 액션을 가지고 있습니다. (여기에 대한 자세한 내용은 여기를 읽어보시기 바랍니다.) 따라서 이러한 액션을 URL 형식으로 적용해야하는데, 여기서 알아야 할 내용이 있습니다. 바로 x-callback-url 입니다.</p>
+
+<p>x-callback-url은 Greg Pierce에 의해 만들어진 URL 표기법으로 샌드박스 정책으로 앱간 접근이 제한되어 있는 상황에서 그나마 앱간 자료의 전달 및 공유를 자유롭게 할 수 있도록 해주는 매우 유용한 명기법입니다. 현재 x-callback-url 을 사용할 수 있는 앱들이 점차로 늘어나고 있는 실정이며, 사용가능한 앱들의 확인은 여기를 방문하시면 됩니다.</p>
+
+<p>x-callback-url 사용법은 매우 단순하여 성기의 drafts:// 에 x-callback-url 만 추가하면 됩니다: drafts://x-callback-url/. 따라서 Drafts로 어떠한 액션을 수행하기 위해서는 다음과 같이 표기합니다: drafts://x-callback-url/create?.</p>
+
+<p>참고로 웹사이트 URL과 마찬가지로 액션 URL도 percent-encoded를 사용해야합니다. 즉 공백은 %20을 사용해야 한다는 의미입니다. 예를들어 Drafts앱에 Hello World를 나타내는 액션을 표현하고자 한다면, drafts://x-callback-url/create?text=Hello%20World라고 입력하면 됩니다. Safari에서 실행해보면 상당히 기분좋은 액션실행결과를 보게 될 것입니다.</p>
+
+<p>다시금 위의 액션을 살펴보겠습니다. 이유는 실제 액션이 어떤 단계로 작동하는지를 이해해야만 긴문장의 액션 뿐만아니라, 다중 액션도 사용법을 확실히 이해할 수 있기 때문입니다.</p>
+
+<ul>
+  <li>drafts:// : iOS에게 Drafts를 호출하도록 합니다.</li>
+  <li>x-callback-url : Drafts에게 x-callback 매개변수를 사용할수 있도록 해줍니다.</li>
+  <li>create? : Drafts에게 새로운 draft를 하나 만들도록 합니다.</li>
+  <li>text=Hello%20World : draft에 “Hello World” 를 보이도록 합니다.</li>
+</ul>
+
+<p>이번에는 더 나아가서 “Hello World”를 연속해서 twitter에 올리도록 하는 액션을 만들어 보겠습니다. Drafts 앱에서 트윗을 할 거면, 단순히 설정버튼을 눌러 액션 리스트 중에 트윗리스트를 선택하면 되지만, 액션으로 처리하기 위해서는 &amp;action= 을 포함해야 합니다. 그리고는 올리는사람의 트윗명을 포함하는 Tweet: username 액션을 추가합니다. - 여기서 username은 트위터 사용자 이름입니다. 저의 경우 트윗네임이 hunikim이므로 username에는 hunikim을 입력합니다. - 여기에 추가로 콜론(:)에 해당하는 퍼센트인코드값이 %3A이므로 전체적인 입력은 다음과 같습니다. drafts://x-callback-url/create?text=Hello%20World&amp;action=Tweet%3A%20hunikim</p>
+
+<p>앞서도 기초단계에서 얘길 했지만 다시 한번더 얘기하자면, 액션은 동시에 두개의 액션을 실행시킬수 없고 같은 draft에서 다중 액션을 실행시킬수도 없습니다. 다중액션을 실행시키기 위해서는 일단 액션을 실행시킨 후에 x-callback 매개변수를 불러서 다음 액션을 실행시켜야 합니다.</p>
+
+<p>x-callback 매개변수는 4가지가 있습니다: x-source, x-success, x-error, x-cancel. 변수에 대한 더욱 자세한 사항은 여기를 참조하시기 바랍니다.</p>
+
+<ul>
+  <li>x-success : 액션수행후에 소스앱으로 되돌아간다든지 할 경우에 사용되는 변수입니다. 언급이 없을 경우는 수행된 앱에 머물게 됩니다.</li>
+  <li>x-source : 액션을 수행할 앱을 부르는 변수입니다. 만약 다른 앱을 통해 수행할 액션이 있을 경우 사용하게 됩니다.</li>
+  <li>x-error : 수행할 앱에서 에러가 발생할 경우 수행할 URL을 지칭합니다.</li>
+  <li>x-cancel : 수행할 앱을 사용자가 취소하엿을 경우 수행할 URL을 지칭합니다.</li>
+</ul>
+
+<p>이어서“Hello World”를 App.net에 포스팅하는 액션을 x-success의 액션으로 추가해보도록 하겠습니다. 추가 액션은 다음과 같습니다.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">drafts</span><span class="o">://</span><span class="nt">x-callback-url</span><span class="o">/</span><span class="nt">create</span><span class="o">?</span><span class="nt">text</span><span class="o">=</span><span class="nt">Hello</span><span class="o">%</span><span class="err">20</span><span class="nt">World</span><span class="o">&amp;</span><span class="nt">action</span><span class="o">=</span><span class="nt">Post</span><span class="o">%</span><span class="err">20</span><span class="nt">to</span><span class="o">%</span><span class="err">20</span><span class="nt">App</span><span class="nc">.net</span></code></pre></figure>
+
+<p>액션 추가를 위해 한가지 주의해야 할 사항은 다음과 같습니다.
+<code class="language-plaintext highlighter-rouge">yourapp://x-callback-url/액션1&amp;x-success=⎨⎨액션2⎬⎬&amp;x-success=⎨⎨⎨⎨액션3⎬⎬⎬⎬…</code></p>
+
+<p>즉, 두번째 액션부터는 위에서 보듯이 액션을 첨부해 줄때마다 ⎨⎨⎬⎬ 를 계속 더붙여줘야 한다는 것입니다. 여기서는 편의상 <code class="language-plaintext highlighter-rouge">{}</code> 기호를 <code class="language-plaintext highlighter-rouge">⎨⎬</code> 로 표현하도록 합니다.</p>
+
+<p>그런데 상기 액션을 보면 알겠지만, 퍼센트-인코드 문자가 포함된 내용을 해석 혹은 읽기가 상당히 어려운걸 느끼실겁니다. 또 코드 자체를 잘몰라 입력에 어려움을 겪을 수도 있고요. 그래서 Drafts 앱은 간편하게 퍼센트-인코드를 자동으로 입력하게 하는 방법이 있는데 그방법도 액션추가와 동일한 ⎨⎨⎬⎬ 입니다. 따라서 상기의 두가지 액션을 덧붙이고서 자동 퍼센트-인코드 입력을 하도록 액션코드를 입력하면 다음과 같습니다.</p>
+
+<figure class="highlight"><pre><code class="language-drafts" data-lang="drafts">drafts://x-callback-url/create?text=⎨⎨Hello World⎬⎬&amp;action=⎨⎨Tweet: hunikim⎬⎬&amp;x-success=⎨⎨drafts://x-callback-url/create?text=Hello%20World&amp;action=Post%20to%20App.net⎬⎬ 혹은 drafts://x-callback-url/create?text=⎨⎨Hello World⎬⎬&amp;action=⎨⎨Tweet: hunikim⎬⎬&amp;x-success=⎨⎨drafts://x-callback-url/create?text=⎨⎨Hello World⎬⎬&amp;action=⎨⎨Post to App.net⎬⎬⎬⎬</code></pre></figure>
+
+<h3 id="태그tags">태그(Tags)</h3>
+
+<p>Drafts에는 입력의 간편화와 효율적인 URL 관리를 위해 몇가지 태그들을 지원합니다.</p>
+
+<figure class="highlight"><pre><code class="language-drafts" data-lang="drafts">[[draft]] : 입력했던 내용들(draft) 전체를 대신합니다. 
+[[title]] : draft 내용중 첫줄의 내용을 대신합니다.
+[[body]] : draft 내용중 첫줄을 제외한 모든 내용을 대신합니다. 
+[[clipboard]] : iOS 시스템 메모리에 저장된 내용을 대신합니다. 
+[[line|n]] : draft 내용중 n 줄에 해당하는 내용을 대신합니다. 
+[[line|n..]] : draft 내용중 n 줄 이전의 내용을 제외한 나머지 내용을 대신합니다. 
+[[line|..n]] : draft 내용중 처음부터 n 줄까지의 내용을 대신합니다. 
+[[line|a..b]] : draft 내용중 a줄부터 b줄 까지의 내용을 대신합니다. 
+[[Selection]] : draft 내용중 마지막에 선택된 내용물을 대신하되, 선택된 내용이 없다면 전체 내용을 대신합니다.</code></pre></figure>
+
+<p>앞줄에서 언급된 Hello World 대신에 draft에 입력한 내용을 트위하기 위해서는 액션코드를 다음과 같이 수정합니다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">drafts://x-callback-url/create?text=[[draft]]&amp;action=⎨⎨Tweet: hunikim⎬⎬</code></p>
+
+<p>마찬가지로 [[draft]]에 작성자의 요구에 맞추어 적당한 태그를 사용할 수 있습니다. 이러한 URL 액션상용의 확장성으로 인해 많은 사람들이 Drafts 의 매력에 빠져있는 것 같습니다.</p>
+
+<h3 id="drafts-를-더욱-유용하게-만들기">Drafts 를 더욱 유용하게 만들기</h3>
+
+<p>상기의 내용에서와 같이 Draft 액션 만드는 과정이 어느정도 숙지되고 나면 다중액션에 대한 자신감과 Drafts를 유용하게 사용할 수 있는 각자의 최선의 방법들을 발견하게 될 것입니다.</p>
+
+<p>만약 상기의 예와같은 다중액션에 대한 일을 직접한다고 하면 얼마나 많은 잔손이 가야할지를 찬찬히 생각해본다면, URL 액션의 효과가 얼마나 클지를 알수있습니다.</p>
+
+<p>더 많은 액션과 방법들을 추가적으로 공부하고자 한다면, 여기를 방문해 볼것을 추천합니다. 다양한 앱리뷰 및 앱활용에 대해, 특히 액션관련한 다양한 예제들을 포함하고 있어 Drafts 활용도를 더욱 높여줄 것이라 생각합니다.</p>
+
+<p>또한 더 나아가 x-callback-url 매개변수(x-success, x-cancel, x-source, x-error) 등의 활용에 대해서도 더욱 구체적을 배울수 있는 예제들이 많이 있어 앱을 활용하는데 있어 매우 유용합니다.</p>
+</div><div class="article-tags"><a href="/garden/#draft">#Draft</a><a href="/garden/#action">#Action</a><a href="/garden/#automation">#Automation</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

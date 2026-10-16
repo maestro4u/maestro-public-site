@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Post with Images · Maestro for You</title>
+<meta name="description" content="Examples and code for displaying images in posts.">
+<link rel="canonical" href="https://maestro4u.kr/articles/sample-post-images/">
+<meta property="og:title" content="A Post with Images"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/articles/sample-post-images/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2013.05.22</p><h1>A Post with Images</h1><p class="article-deck">Examples and code for displaying images in posts.</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2013-05-22T00:00:00+00:00">2013년 05월 22일</time></div></header>
+
+<div class="prose"><p>Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use <code class="language-plaintext highlighter-rouge">figure</code> with the appropriate <code class="language-plaintext highlighter-rouge">class</code>. Each instance of <code class="language-plaintext highlighter-rouge">figure</code> is auto-numbered and displayed in the caption.</p>
+
+<h2 id="figures-for-images-or-video">Figures (for images or video)</h2>
+
+<h3 id="one-up">One Up</h3>
+
+<figure>
+	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+</figure>
+
+<h3 id="two-up">Two Up</h3>
+
+<p>Apply the <code class="language-plaintext highlighter-rouge">half</code> class like so to display two images side by side that share the same caption.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"half"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-1.jpg"</span> <span class="na">alt=</span><span class="s">"image"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/image-filename-2.jpg"</span> <span class="na">alt=</span><span class="s">"image"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these two images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span></code></pre></figure>
+
+<p>And you’ll get something that looks like this:</p>
+
+<figure class="half">
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	
+	
+	<figcaption>Two images.</figcaption>
+</figure>
+
+<h3 id="three-up">Three Up</h3>
+
+<p>Apply the <code class="language-plaintext highlighter-rouge">third</code> class like so to display three images side by side that share the same caption.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"third"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://placehold.it/1200x600.jpg"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/600x300.jpg"</span> <span class="na">alt=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/a&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing these three images.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span></code></pre></figure>
+
+<p>And you’ll get something that looks like this:</p>
+
+<figure class="third">
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<a href="http://placehold.it/1200x600.jpg"></a>
+	<figcaption>Three images.</figcaption>
+</figure>
+</div><div class="article-tags"><a href="/garden/#sample-post">#sample-post</a><a href="/garden/#images">#images</a><a href="/garden/#test">#test</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>

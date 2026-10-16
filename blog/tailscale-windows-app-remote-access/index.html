@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tailscale과 Windows App으로 사무실 PC 원격접속하기 · Maestro for You</title>
+<meta name="description" content="양쪽 Tailscale 연결부터 Windows App의 PC 추가와 로그인까지. 설정 화면과 2분 46초 영상으로 따라 하는 원격접속 실습입니다.">
+<link rel="canonical" href="https://maestro4u.kr/blog/tailscale-windows-app-remote-access/">
+<meta property="og:title" content="Tailscale과 Windows App으로 사무실 PC 원격접속하기"><meta property="og:description" content="토목엔지니어 Hoon Kim의 업무와 배움, 일상과 여행을 연결하는 기록 공간."><meta property="og:url" content="https://maestro4u.kr/blog/tailscale-windows-app-remote-access/"><meta property="og:type" content="article">
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
+<link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
+<link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
+
+<link rel="stylesheet" href="/assets/maestro/site.css?v=20261016-journeys2"><script src="/assets/maestro/site.js?v=20261016-journeys2" defer></script>
+
+
+</head><body>
+<a class="skip" href="#main">본문으로 바로 가기</a>
+<header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"><path d="m15 15 5 5"></svg><span>검색</span></a></nav></header>
+<main id="main"><article class="article-shell shell"><a class="back-link" href="/blog/">← 기록으로 돌아가기</a><header class="article-heading"><p class="eyebrow">THE JOURNAL / 2026.10.16</p><h1>Tailscale과 Windows App으로 사무실 PC 원격접속하기</h1><p class="article-deck">양쪽 Tailscale 연결부터 Windows App의 PC 추가와 로그인까지. 설정 화면과 2분 46초 영상으로 따라 하는 원격접속 실습입니다.</p><div class="article-byline"><span>Hoon Kim</span><span>·</span><time datetime="2026-10-16T03:00:00+00:00">2026년 10월 16일</time></div></header>
+
+<div class="prose"><p>오늘 교육은 <strong>Tailscale과 Windows App으로 사무실 Windows PC에 원격 접속하는 방법</strong>을 다룹니다. Tailscale로 두 기기를 연결한 뒤, Windows App에서 사무실 PC의 화면을 엽니다.</p>
+
+<h2 id="교육-영상">교육 영상</h2>
+
+<p>강사의 설명과 함께 보거나, 필요한 설정 화면에서 멈춰 따라 할 수 있는 <strong>2분 46초 무음 영상</strong>입니다. 화면은 공식 문서를 바탕으로 만든 교육용 재구성입니다. 표시된 기기명·IP·계정은 예시입니다.</p>
+
+<video controls="" playsinline="" preload="metadata" style="width:100%;height:auto;border-radius:12px;background:#f4f1e9" aria-label="Tailscale과 Windows App 원격접속 설정 교육 영상">
+<source src="/assets/education/2026-10-16-remote-access/tailscale-windows-app.mp4" type="video/mp4">
+브라우저에서 영상이 재생되지 않으면 아래 다운로드 링크를 사용하세요.
+</video>
+
+<p><a href="/assets/education/2026-10-16-remote-access/tailscale-windows-app.mp4">교육 영상 다운로드 · MP4</a></p>
+
+<h2 id="실습-전에-준비할-것">실습 전에 준비할 것</h2>
+
+<ul>
+  <li><strong>접속받을 사무실 PC:</strong> Windows Pro·Enterprise·Education, 전원과 인터넷 연결. Windows Home은 기본 원격 데스크톱의 접속 대상이 될 수 없습니다.</li>
+  <li><strong>접속할 기기:</strong> Windows PC 또는 Mac. Tailscale과 Windows App을 설치합니다.</li>
+  <li><strong>사용 권한:</strong> 회사 장비는 담당자의 승인을 받고 설정합니다. 접속할 Windows 계정과 암호를 준비합니다.</li>
+</ul>
+
+<h2 id="1-사무실-pc에서-원격-데스크톱-켜기">1. 사무실 PC에서 원격 데스크톱 켜기</h2>
+
+<p>사무실 PC에서 <strong>설정 → 시스템 → 원격 데스크톱</strong>으로 이동합니다. 원격 데스크톱을 켜고 확인합니다. 접속할 계정의 권한과 전원 연결 중 절전 설정을 확인합니다. 네트워크 수준 인증(NLA)과 방화벽 보호는 유지합니다.</p>
+
+<p></p>
+
+<h2 id="2-양쪽-기기를-tailscale로-연결하기">2. 양쪽 기기를 Tailscale로 연결하기</h2>
+
+<ol>
+  <li><a href="https://tailscale.com/download">Tailscale 다운로드</a>에서 각 기기에 맞는 앱을 설치합니다.</li>
+  <li>앱의 <strong>Log in</strong>을 선택하고 브라우저에서 인증합니다.</li>
+  <li>본인의 두 기기가 같은 tailnet에 연결됐는지 확인합니다. tailnet은 Tailscale의 사설 연결망입니다.</li>
+  <li>관리 콘솔의 <strong>Machines</strong>에서 접속받을 사무실 PC를 찾습니다. 그 PC의 <strong>100.x.x.x 주소</strong>를 복사합니다.</li>
+</ol>
+
+<p></p>
+
+<p>조직에서는 각자 초대된 계정과 허용된 접근 정책을 사용합니다. 계정 암호를 공유하지 않습니다. 재부팅 후 Windows 로그인 전에도 연결이 필요하면 사무실 PC의 Tailscale에서 <strong>Preferences → Run Unattended</strong> 사용 여부를 담당자와 확인합니다.</p>
+
+<h2 id="3-windows-app에-pc-추가하기">3. Windows App에 PC 추가하기</h2>
+
+<p>Windows App은 <strong>접속할 기기</strong>에서 실행합니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>접속할 기기</th>
+      <th>PC 추가 경로</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Windows</td>
+      <td>Devices → Add(+) → PC 추가 창</td>
+    </tr>
+    <tr>
+      <td>Mac</td>
+      <td>Devices → +(더하기) → Add PC</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>PC Name</strong>에 앞에서 복사한 사무실 PC의 Tailscale IP를 입력합니다. <strong>Add</strong>를 누르고 추가된 PC 카드를 엽니다. Windows에서는 <strong>Add &amp; Connect</strong>로 바로 연결할 수도 있습니다. 앱 버전과 언어에 따라 메뉴가 다를 수 있습니다.</p>
+
+<p></p>
+
+<h2 id="4-windows-계정으로-로그인하기">4. Windows 계정으로 로그인하기</h2>
+
+<p>접속 대상 PC의 <strong>Windows 계정과 암호</strong>를 사용합니다. Tailscale 로그인 계정과 구분합니다. 로컬 계정의 입력 예시는 <code class="language-plaintext highlighter-rouge">OFFICE-PC\trainee</code>입니다. 실제로는 본인의 PC 이름과 사용자 이름을 입력합니다. Microsoft 계정이나 도메인 계정은 지정된 계정 형식을 확인합니다.</p>
+
+<p>Windows Hello PIN 대신 Windows 계정의 암호를 사용합니다. 인증서 경고가 나타나면 접속 대상 PC의 정보를 확인합니다. 예상과 다른 대상이면 중단하고 담당자에게 확인합니다.</p>
+
+<h2 id="5-외부망에서-실습-결과-확인하기">5. 외부망에서 실습 결과 확인하기</h2>
+
+<p>휴대폰 핫스폿 등 외부 네트워크에서 접속합니다. 사무실 PC 화면이 열리고 마우스와 키보드로 조작할 수 있으면 기본 실습을 마친 것입니다.</p>
+
+<p>접속이 안 되면 다음 순서로 확인합니다.</p>
+
+<ol>
+  <li>사무실 PC의 전원·절전 상태와 인터넷 연결</li>
+  <li>양쪽 Tailscale 연결·기기 승인·접근 권한</li>
+  <li>Tailscale IP·원격 데스크톱 허용·Windows 에디션</li>
+  <li>Windows 계정·암호·원격 접속 권한</li>
+</ol>
+
+<p>공유기에서 <strong>3389 포트를 인터넷에 개방할 필요는 없습니다.</strong> 조직의 접근 정책과 Windows 방화벽은 통신을 허용해야 합니다. 방화벽 전체를 끄지 말고 담당자와 확인합니다.</p>
+
+<h2 id="공식-안내">공식 안내</h2>
+
+<p>2026년 10월 16일 확인한 공식 문서를 바탕으로 작성했습니다. 이 교육자료 자체는 특정 PC의 실제 접속 성공을 검증한 기록이 아닙니다.</p>
+
+<ul>
+  <li><a href="https://tailscale.com/docs/solutions/access-remote-desktops-using-windows-rdp">Tailscale — Windows RDP 원격접속</a></li>
+  <li><a href="https://learn.microsoft.com/en-us/windows-app/get-started-connect-devices-desktops-apps?pivots=remote-pc">Microsoft — Windows App에서 Remote PC 연결</a></li>
+  <li><a href="https://support.microsoft.com/en-us/windows/experience/connectivity-networking/how-to-use-remote-desktop">Microsoft — 원격 데스크톱 사용</a></li>
+</ul>
+</div><div class="article-tags"><a href="/garden/#tailscale">#Tailscale</a><a href="/garden/#windows-app">#Windows App</a><a href="/garden/#원격접속">#원격접속</a><a href="/garden/#교육">#교육</a></div><div class="article-end"><span>기록은 여기서 이어집니다.</span><a class="text-link" href="/archive/">다른 기록 찾아보기 →</a></div></article>
+</main>
+<footer class="site-footer shell"><div><a class="footer-wordmark" href="/">maestro<span>for you</span></a><p>일하고, 배우고, 살아가는 기록.</p></div><div class="footer-links"><a href="/archive/">연도별 기록</a><a href="/feed.xml">RSS</a><a href="https://github.com/maestro4u">GitHub ↗</a></div><p class="copyright">© 2026 Hoon Kim · 오래 남을 것들을 차곡차곡.</p></footer>
+</body></html>
