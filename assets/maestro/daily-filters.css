@@ -1,0 +1,9 @@
+.daily-filters{display:flex;align-items:end;gap:24px;flex-wrap:wrap;margin:30px 0 18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.daily-filters label{display:grid;gap:8px;min-width:180px;font-size:13px;color:var(--muted)}
+.daily-filters select{width:100%;min-height:48px;padding:10px 38px 10px 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.daily-filters select:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+.daily-filters button{margin-left:auto;min-height:48px;border:0;background:transparent;color:var(--muted);font-size:13px;padding:10px 0 10px 16px}
+.daily-filters button:hover{color:var(--green)}
+.daily-filter-status{color:var(--muted);font-size:13px;margin:0 0 12px}
+[data-daily-list]:focus{outline:none}
+@media(max-width:600px){.daily-filters{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;padding-top:18px}.daily-filters label{min-width:0}.daily-filters select{font-size:14px;padding-left:12px}.daily-filters button{grid-column:1/-1;justify-self:end;min-height:36px;padding:0}.daily-filter-status{font-size:12px}}
