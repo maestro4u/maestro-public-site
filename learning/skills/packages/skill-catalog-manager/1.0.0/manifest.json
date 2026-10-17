@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "id": "direct-skill-catalog-manager",
+  "version": "1.0.0",
+  "license": "MIT",
+  "entrypoint": "SKILL.md",
+  "source": {
+    "repository": "https://maestro4u.kr/learning/skills/",
+    "skill_path": "/learning/skills/packages/skill-catalog-manager/1.0.0/",
+    "skill_path_status": "confirmed",
+    "installed_upstream_commit": null,
+    "bundle_version": "1.0.0"
+  },
+  "installed_copy": {
+    "local_policy_overrides": false,
+    "upstream_byte_identical": true
+  },
+  "bundle": {
+    "id": "skill-catalog-manager",
+    "skill_count": 1,
+    "skill_names": [
+      "skill-catalog-manager"
+    ]
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1064,
+      "sha256": "cce56249ae56a7f04d39e819aeadab2b5016f8fabdc4afc28ea1524f4a4903bb"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 3494,
+      "sha256": "38aded048e31f8ce96658362e7e39a2451d2e930e623470746a2855ea62800aa"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 178,
+      "sha256": "6d2ab5276cdf28e6e1949f0f070324efe56a2a964f22e128dedaf4d3365adc11"
+    },
+    {
+      "path": "assets/catalog-shell.html",
+      "bytes": 48724,
+      "sha256": "44e825401261f662c66946591171aae2eaf556eb8b3f70cc43b32905db965eaf"
+    },
+    {
+      "path": "references/catalog-data.md",
+      "bytes": 2493,
+      "sha256": "eaf6e16deb835dd7e848c6443c38c973bf753a5bb5865e069c7c714f1b15bcaf"
+    },
+    {
+      "path": "references/design.md",
+      "bytes": 1745,
+      "sha256": "644413bd665d270a2d3dda954c6722a7273cf59ca917a01daeadaf00e8c6c5da"
+    },
+    {
+      "path": "references/maestro.md",
+      "bytes": 1405,
+      "sha256": "9cc11a6b9c102c8c7e5047e7c165a012677d098d8d51e78decbb16262ecae4c5"
+    },
+    {
+      "path": "scripts/render_catalog.py",
+      "bytes": 1224,
+      "sha256": "559e5b57c6831e2c8bf3cfbac9394be0f5e5c933e86bc0fa7f4f6762b229959b"
+    }
+  ],
+  "dependency_audit": "Python 3 standard library for rendering; no package installation or MCP required by the renderer",
+  "redistribution_review": "MIT; authored package reviewed for public catalog",
+  "install_ready": true,
+  "runtime_verified": false,
+  "download_url": "/learning/skills/packages/skill-catalog-manager/1.0.0/skill-catalog-manager.zip",
+  "download_sha256": "0626c2fe3f20ecfe0bfa6d6005bfe0ea1d0ed2a168ba2b0ebe277ae723672dd4",
+  "manifest_url": "/learning/skills/packages/skill-catalog-manager/1.0.0/manifest.json",
+  "uninstall": {
+    "owned_skill_files": "files in this manifest",
+    "owned_links": "remove only links pointing to this skill after local verification",
+    "shared_runtime": "Python is shared; retain",
+    "user_outputs": "retain generated catalogs and site content",
+    "recovery": "backup original skill directory before removing"
+  }
+}

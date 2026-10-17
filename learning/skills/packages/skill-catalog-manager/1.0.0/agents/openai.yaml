@@ -1,0 +1,3 @@
+interface:
+  display_name: "스킬 카탈로그 관리"
+  short_description: "이름 중심 카드와 원문·패키지·설치·삭제 정보를 갖춘 웹 카탈로그 관리"
