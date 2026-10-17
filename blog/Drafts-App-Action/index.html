@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="/assets/maestro/site.css?v=20261017-pagination"><script src="/assets/maestro/site.js?v=20261017-pagination" defer></script>
 
 
+
 </head><body>
 <a class="skip" href="#main">본문으로 바로 가기</a>
 <header class="site-header shell"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="brand-mark">m<span>°</span></span><span>maestro<span class="brand-for">for you</span></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span>검색</span></a></nav></header>
@@ -128,14 +129,14 @@
 
 <p>Drafts에는 입력의 간편화와 효율적인 URL 관리를 위해 몇가지 태그들을 지원합니다.</p>
 
-<figure class="highlight"><pre><code class="language-drafts" data-lang="drafts">[[draft]] : 입력했던 내용들(draft) 전체를 대신합니다.
+<figure class="highlight"><pre><code class="language-drafts" data-lang="drafts">[[draft]] : 입력했던 내용들(draft) 전체를 대신합니다. 
 [[title]] : draft 내용중 첫줄의 내용을 대신합니다.
-[[body]] : draft 내용중 첫줄을 제외한 모든 내용을 대신합니다.
-[[clipboard]] : iOS 시스템 메모리에 저장된 내용을 대신합니다.
-[[line|n]] : draft 내용중 n 줄에 해당하는 내용을 대신합니다.
-[[line|n..]] : draft 내용중 n 줄 이전의 내용을 제외한 나머지 내용을 대신합니다.
-[[line|..n]] : draft 내용중 처음부터 n 줄까지의 내용을 대신합니다.
-[[line|a..b]] : draft 내용중 a줄부터 b줄 까지의 내용을 대신합니다.
+[[body]] : draft 내용중 첫줄을 제외한 모든 내용을 대신합니다. 
+[[clipboard]] : iOS 시스템 메모리에 저장된 내용을 대신합니다. 
+[[line|n]] : draft 내용중 n 줄에 해당하는 내용을 대신합니다. 
+[[line|n..]] : draft 내용중 n 줄 이전의 내용을 제외한 나머지 내용을 대신합니다. 
+[[line|..n]] : draft 내용중 처음부터 n 줄까지의 내용을 대신합니다. 
+[[line|a..b]] : draft 내용중 a줄부터 b줄 까지의 내용을 대신합니다. 
 [[Selection]] : draft 내용중 마지막에 선택된 내용물을 대신하되, 선택된 내용이 없다면 전체 내용을 대신합니다.</code></pre></figure>
 
 <p>앞줄에서 언급된 Hello World 대신에 draft에 입력한 내용을 트위하기 위해서는 액션코드를 다음과 같이 수정합니다.</p>
