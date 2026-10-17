@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "id": "direct-skill-catalog-manager",
+  "version": "1.1.0",
+  "license": "MIT",
+  "entrypoint": "SKILL.md",
+  "source": {
+    "repository": "https://maestro4u.kr/learning/skills/",
+    "skill_path": "/learning/skills/packages/skill-catalog-manager/1.1.0/",
+    "skill_path_status": "confirmed",
+    "installed_upstream_commit": null,
+    "bundle_version": "1.1.0"
+  },
+  "installed_copy": {
+    "local_policy_overrides": false,
+    "upstream_byte_identical": true
+  },
+  "bundle": {
+    "id": "skill-catalog-manager",
+    "skill_count": 1,
+    "skill_names": [
+      "skill-catalog-manager"
+    ]
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1064,
+      "sha256": "cce56249ae56a7f04d39e819aeadab2b5016f8fabdc4afc28ea1524f4a4903bb"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4124,
+      "sha256": "c69db8c59adc5b1983a2d2a0519151e2cf3c40ff2e3003626f454862214658f7"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 178,
+      "sha256": "6d2ab5276cdf28e6e1949f0f070324efe56a2a964f22e128dedaf4d3365adc11"
+    },
+    {
+      "path": "assets/catalog-fragment.html",
+      "bytes": 3607,
+      "sha256": "074b46adcff1aa7a037a9cc0e4260cd0cf9e46399db07824afc8ef38f29c6d76"
+    },
+    {
+      "path": "assets/catalog-shell.html",
+      "bytes": 40194,
+      "sha256": "154a4527dd119e16ae61466d7a5a3d4abd6d5c628dd8d92726ff79af50a21979"
+    },
+    {
+      "path": "assets/catalog.css",
+      "bytes": 8784,
+      "sha256": "4c59b16684a50c33ed829e1b6c70b47a236ab290e792214a7e75397cc3788132"
+    },
+    {
+      "path": "assets/catalog.js",
+      "bytes": 27765,
+      "sha256": "2b31c26bb9d2593fdd26c6ab6868df40d9b568d618e49547ada561b225b588fb"
+    },
+    {
+      "path": "references/catalog-data.md",
+      "bytes": 2493,
+      "sha256": "eaf6e16deb835dd7e848c6443c38c973bf753a5bb5865e069c7c714f1b15bcaf"
+    },
+    {
+      "path": "references/design.md",
+      "bytes": 2266,
+      "sha256": "6660b7826461f89631f4f46c7483dd7f92eb6150e9ad033d2c40d9aaa0332bf5"
+    },
+    {
+      "path": "references/lifecycle.md",
+      "bytes": 2355,
+      "sha256": "b12864a6f42789193c72fba9edfe37daf34ced85074ecaa2098bf05b94217a8e"
+    },
+    {
+      "path": "references/maestro.md",
+      "bytes": 1930,
+      "sha256": "cd4dd9101c7f9823b015ced61bc5cbe6c4a839ad1037f9582fcbc9e59e14cede"
+    },
+    {
+      "path": "scripts/render_catalog.py",
+      "bytes": 1224,
+      "sha256": "559e5b57c6831e2c8bf3cfbac9394be0f5e5c933e86bc0fa7f4f6762b229959b"
+    }
+  ],
+  "dependency_audit": "Python 3 standard library for rendering; no package installation or MCP required by the renderer",
+  "redistribution_review": "MIT; authored package reviewed for public catalog",
+  "install_ready": true,
+  "runtime_verified": false,
+  "download_url": "/learning/skills/packages/skill-catalog-manager/1.1.0/skill-catalog-manager.zip",
+  "download_sha256": "d3ea3fc253f6ecd995c55413d01b4b797c60871ba7a001d586af56d636bd9797",
+  "manifest_url": "/learning/skills/packages/skill-catalog-manager/1.1.0/manifest.json",
+  "uninstall": {
+    "owned_skill_files": "files in this manifest",
+    "owned_links": "remove only links pointing to this skill after local verification",
+    "shared_runtime": "Python is shared; retain",
+    "user_outputs": "retain generated catalogs and site content",
+    "recovery": "backup original skill directory before removing"
+  },
+  "history": [
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "install",
+      "version": "1.0.0",
+      "date": "2026-10-18",
+      "summary": "카탈로그 제작 스킬 작성 및 목록·홈페이지 등록."
+    },
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "update",
+      "previous_version": "1.0.0",
+      "version": "1.1.0",
+      "date": "2026-10-18",
+      "summary": "홈페이지 공통 레이아웃 재사용, 본문 스타일 분리, Codex·Claude의 스킬 변경 후 카탈로그 동기화 절차 추가."
+    }
+  ]
+}

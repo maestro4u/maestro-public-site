@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "install",
+      "version": "1.0.0",
+      "date": "2026-10-18",
+      "summary": "카탈로그 제작 스킬 작성 및 목록·홈페이지 등록."
+    },
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "update",
+      "previous_version": "1.0.0",
+      "version": "1.1.0",
+      "date": "2026-10-18",
+      "summary": "홈페이지 공통 레이아웃 재사용, 본문 스타일 분리, Codex·Claude의 스킬 변경 후 카탈로그 동기화 절차 추가."
+    }
+  ]
+}
