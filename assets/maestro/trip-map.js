@@ -5,6 +5,7 @@
   const root=document.querySelector('.trip-explorer'),rail=document.querySelector('.trip-reading-panel');
   const lookup=Object.fromEntries(data.locations.map(p=>[p.id,p]));
   const base=data.base_url||'/journeys/business/tanzania-2026/';
+  const localIds=new Set(data.local_location_ids||data.locations.filter(p=>p.coord[1]<0).map(p=>p.id));
   const dayLabel=day=>day?Number(day.date.slice(5,7))+'월 '+Number(day.date.slice(8,10))+'일':'전체 일정';
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const status=document.querySelector('.trip-map-status'),label=document.getElementById('trip-map-label'),placeLabel=document.getElementById('trip-map-place');
@@ -17,7 +18,7 @@
   for(const day of data.days){
     for(let i=1;i<day.locations.length;i++){
       const a=lookup[day.locations[i-1]],b=lookup[day.locations[i]];if(!a||!b)continue;
-      const international=a.coord[1]>0||b.coord[1]>0;
+      const international=!localIds.has(a.id)||!localIds.has(b.id);
       routeData.features.push({type:'Feature',properties:{day:day.id,international},geometry:{type:'LineString',coordinates:[a.coord,b.coord]}});
     }
   }
@@ -53,7 +54,7 @@
   }
   function view(which,animate=true){
     mode=which;document.querySelectorAll('[data-map-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mapView===which)));
-    if(loaded){map.setFilter('international-routes',which==='all'?['==',['get','international'],true]:['==',['get','day'],'none']);fitPlaces(data.locations.filter(p=>which==='all'||p.coord[1]<0),animate,13);}
+    if(loaded){map.setFilter('international-routes',which==='all'?['==',['get','international'],true]:['==',['get','day'],'none']);fitPlaces(data.locations.filter(p=>which==='all'||localIds.has(p.id)),animate,13);}
   }
   function spacePins(){
     const placed=[];
@@ -99,7 +100,7 @@
     renderPins(day);map.setFilter('selected-route',['all',['==',['get','international'],false],['==',['get','day'],selected||'none']]);
     map.setFilter('international-routes',mode==='all'?['==',['get','international'],true]:['==',['get','day'],'none']);
     if(!day)view('local',animate);
-    else if(known.length){const local=known.filter(p=>p.coord[1]<0);fitPlaces(local.length?local:known,animate,13.5);}
+    else if(known.length){const local=known.filter(p=>localIds.has(p.id));fitPlaces(local.length?local:known,animate,13.5);}
   }
   function stopPlayback(){clearTimeout(timer);playing=false;play.textContent='▷ 일정 따라보기';play.setAttribute('aria-pressed','false');}
   function playDays(){
@@ -127,7 +128,7 @@
   lightbox.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close();});
   showDay(selected,{push:false,animate:false});
   try{
-    map=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/liberty',center:[39.28,-6.78],zoom:11,attributionControl:true});
+    map=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/liberty',center:data.map_center||[39.28,-6.78],zoom:11,attributionControl:true});
     map.scrollZoom.disable();map.dragRotate.disable();map.touchZoomRotate.disableRotation();
     map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');map.addControl(new maplibregl.ScaleControl({maxWidth:90,unit:'metric'}),'bottom-left');
     map.on('load',()=>{
