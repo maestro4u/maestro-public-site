@@ -4798,7 +4798,2997 @@
       "rank": 249,
       "original": "Vercel Workflow SDK expert guidance. Use when building durable workflows, long-running tasks, API routes or agents that need pause/resume, retries, step-based execution, or crash-safe orchestration with Vercel Workflow.",
       "package": null
+    },
+    {
+      "id": "direct-remotion-best-practices",
+      "name": "remotion-best-practices",
+      "title": "Remotion 영상 제작 종합 안내",
+      "category": "영상·미디어",
+      "summary": "영상 제작 요청을 상황에 맞는 Remotion 작업 지침으로 연결합니다.",
+      "example": "Remotion 영상 제작 종합 안내 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "Remotion 영상 제작 종합 안내 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "영상 제작 요청을 상황에 맞는 Remotion 작업 지침으로 연결합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-best-practices",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-best-practices",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 4215,
+              "sha256": "4e9123f17ee753af08d8a32d011c05e0d3a012d134f46ea5e63afbb4bea1c725",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 311,
+              "sha256": "752b402c013ba6f02bd827a7cc56d19e8facb159b52e2e3cecaf2d0229fdefb3",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-captions/REFERENCE.md",
+              "bytes": 1152,
+              "sha256": "f8b204bafd5d234289141f9a206a06a3247226f604284ed96361f25a0a81aef4",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/REFERENCE.md"
+            },
+            {
+              "path": "remotion-captions/agents/openai.yaml",
+              "bytes": 305,
+              "sha256": "3b39a48bd00251cf124e80090fe1b792b73020bee858c5d48b5629256cc5f045",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-captions/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-captions/display-captions.md",
+              "bytes": 5940,
+              "sha256": "12676a7250f33f126a8ccb0a2b28de22f5ccc9cad0d5baab53a736e205690a17",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/display-captions.md"
+            },
+            {
+              "path": "remotion-captions/import-srt-captions.md",
+              "bytes": 2231,
+              "sha256": "e328b6845babd08ed2a747f82c59796fd1d7b85140c8eb4d36e41639779473ad",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/import-srt-captions.md"
+            },
+            {
+              "path": "remotion-captions/transcribe-captions.md",
+              "bytes": 5533,
+              "sha256": "0830184ed1f634a6912536768a3aabc0092313db22796c4455e8b46dad874803",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-captions/transcribe-captions.md"
+            },
+            {
+              "path": "remotion-create/REFERENCE.md",
+              "bytes": 2973,
+              "sha256": "f5ba0061f1b6a2ca7166e64e8a43bd58e1e02fca47e5430a7d844d1047ba35c2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-create/REFERENCE.md"
+            },
+            {
+              "path": "remotion-create/agents/openai.yaml",
+              "bytes": 310,
+              "sha256": "ff3b357b492da1791c672e18ae401a23c31bd1e6f1fa6f98c5efabbb3124bd9c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-create/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-create/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-create/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-create/tailwind.md",
+              "bytes": 386,
+              "sha256": "3ef07d3225d212af6a5076e62797a04d22d394434dcdbe2c050dab0d92806f36",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-create/tailwind.md"
+            },
+            {
+              "path": "remotion-create/video-layout.md",
+              "bytes": 498,
+              "sha256": "7ad94c22e3ad87671292ebb9b22f234c544d6c7fed13f8cb112b84b0f7077d4c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-create/video-layout.md"
+            },
+            {
+              "path": "remotion-docs/REFERENCE.md",
+              "bytes": 1355,
+              "sha256": "2b896a4b0f252af2a47514f06f195d8adeff4722291cb4d0c37bce8862096da2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-docs/REFERENCE.md"
+            },
+            {
+              "path": "remotion-docs/agents/openai.yaml",
+              "bytes": 307,
+              "sha256": "ab02cb3008e6fc0702d7a601bfdd2f332e1224fda3c37de0265c24311c00d456",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-docs/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-docs/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-docs/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-interactivity/REFERENCE.md",
+              "bytes": 17974,
+              "sha256": "57f60292d314e5a49df25e3692a0f6ca7b598de029e5745a1fb7ce9863cc68c6",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-interactivity/REFERENCE.md"
+            },
+            {
+              "path": "remotion-interactivity/agents/openai.yaml",
+              "bytes": 320,
+              "sha256": "84cd86b0b10e1f8b5be97bbd46677d5f618304303d922f1016ce0ea6a015d4b9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-interactivity/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-interactivity/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-interactivity/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-interactivity/inline-effects.md",
+              "bytes": 993,
+              "sha256": "e2204691164855f195ffefc88706785089153a1e97dae06781841575892a30a6",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-interactivity/inline-effects.md"
+            },
+            {
+              "path": "remotion-interactivity/timeline-structure.md",
+              "bytes": 4140,
+              "sha256": "e3a747829f1b167447310a4265a17e55844ef387d7f0f02c590d82efe19bcfea",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-interactivity/timeline-structure.md"
+            },
+            {
+              "path": "remotion-maps/REFERENCE.md",
+              "bytes": 1030,
+              "sha256": "b6973344c4319e6570a8e56fa93f33452cefa9428b6d6dc5e55864e1c6186e56",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/REFERENCE.md"
+            },
+            {
+              "path": "remotion-maps/agents/openai.yaml",
+              "bytes": 293,
+              "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-maps/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+              "bytes": 3909,
+              "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+              "bytes": 8912,
+              "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/cesium-path.json",
+              "bytes": 12329,
+              "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/cesium-path.json"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/city-path.json",
+              "bytes": 223,
+              "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/city-path.json"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+              "bytes": 923,
+              "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+              "bytes": 1240,
+              "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/sample-river.geojson",
+              "bytes": 6409,
+              "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/sample-river.geojson"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-data-sources.md",
+              "bytes": 1451,
+              "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-data-sources.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+              "bytes": 7887,
+              "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+              "bytes": 6741,
+              "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-troubleshooting.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+              "bytes": 5561,
+              "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs"
+            },
+            {
+              "path": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+              "bytes": 13128,
+              "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/mapbox/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/mapbox/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/mapbox/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+              "bytes": 13843,
+              "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maplibre/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maplibre/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maplibre/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
+              "bytes": 4518,
+              "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+              "bytes": 1849,
+              "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+              "bytes": 2183,
+              "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+              "bytes": 10830,
+              "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+              "bytes": 1039,
+              "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+              "bytes": 333134,
+              "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+              "bytes": 13082,
+              "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
+              "bytes": 1256,
+              "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/tokens.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
+              "bytes": 4798,
+              "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-data-sources.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+              "bytes": 6871,
+              "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+              "bytes": 4098,
+              "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-geo-prep.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+              "bytes": 7553,
+              "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs"
+            },
+            {
+              "path": "remotion-maps/techniques/static-map/TECHNIQUE.md",
+              "bytes": 1151,
+              "sha256": "1d2b15f2e09cbb2b2ba0d5a6ec54ecf619b6696acced0b7bec7e010fbe1f1f03",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-maps/techniques/static-map/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/3d.md",
+              "bytes": 2292,
+              "sha256": "42cef6d68fb4a266ab495d35df0c60e03672b0d85c043f9b567f6aa7ff00dd0d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/3d.md"
+            },
+            {
+              "path": "remotion-markup/REFERENCE.md",
+              "bytes": 17601,
+              "sha256": "1afa4c51a81f7336a08f289471b0b3484d04b394c23e1bacaeb5051046f83048",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/REFERENCE.md"
+            },
+            {
+              "path": "remotion-markup/agents/openai.yaml",
+              "bytes": 310,
+              "sha256": "79e440561b613adf930f61b9f2ececc3284dfd92d06c4c282b73b461ffd16cb6",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-markup/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-markup/audio-visualization.md",
+              "bytes": 4892,
+              "sha256": "0f4043de86639b6390e5ab888eaa66a24a10a8bd540f1443327cb88107eae1e9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/audio-visualization.md"
+            },
+            {
+              "path": "remotion-markup/audio.md",
+              "bytes": 4121,
+              "sha256": "857bf47188c6de8936f51e862f670da7e1cafa38aea8e1ae4a4920789f224077",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/audio.md"
+            },
+            {
+              "path": "remotion-markup/calculate-metadata.md",
+              "bytes": 3498,
+              "sha256": "711743642a475970dcadddb71805939dd6ee8f348825818cc8897b6a01e1eef0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/calculate-metadata.md"
+            },
+            {
+              "path": "remotion-markup/color-correction.md",
+              "bytes": 4396,
+              "sha256": "0cab0efa3cc9bce42f136e4f22f58d7f332ba229997bb8b79dbdb923b5bb59f9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/color-correction.md"
+            },
+            {
+              "path": "remotion-markup/compositions.md",
+              "bytes": 5134,
+              "sha256": "2b09427165c8708510153c83add50c0f03992bf968962bfd5e3c373860d3853c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/compositions.md"
+            },
+            {
+              "path": "remotion-markup/connected-compositions.md",
+              "bytes": 1356,
+              "sha256": "49a64e5de329b593663bb226b3ab62bc0c1b63f51c3c4597e994070346c5af2b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/connected-compositions.md"
+            },
+            {
+              "path": "remotion-markup/cropping.md",
+              "bytes": 1324,
+              "sha256": "e775c020c44261ceb11e8aec83233b8d0dcc00517e512d30eb88fe955d6b64cd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/cropping.md"
+            },
+            {
+              "path": "remotion-markup/effects.md",
+              "bytes": 10809,
+              "sha256": "9c4efc0ae7d3e31e9681a26e91e94bca8556bc8be2622d8290e8737bcf7009da",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/effects.md"
+            },
+            {
+              "path": "remotion-markup/embedding-videos.md",
+              "bytes": 3725,
+              "sha256": "3b0484bc92cd1d54fd6c9a54bc75c4f837054c90bb35e5e8959701d320c6a551",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/embedding-videos.md"
+            },
+            {
+              "path": "remotion-markup/ffmpeg.md",
+              "bytes": 1112,
+              "sha256": "1d83085dfb63724f374acc5f01967f6c18f3aa7df62146438262a4061a839770",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/ffmpeg.md"
+            },
+            {
+              "path": "remotion-markup/gifs.md",
+              "bytes": 3783,
+              "sha256": "91e17126f7f0d57efdbdbaf34e0c234f874bd6aa66ec7854b80f17b0e32c3b22",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/gifs.md"
+            },
+            {
+              "path": "remotion-markup/google-fonts.md",
+              "bytes": 1714,
+              "sha256": "fff29cf692ccab0cda263cd85255cf634dbb4d1d2d99e8372b01d9fedbd6cbfd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/google-fonts.md"
+            },
+            {
+              "path": "remotion-markup/html-in-canvas.md",
+              "bytes": 2976,
+              "sha256": "9b896dab368f8d9aec41114f8d0b96c1fbee981419b7077d6fd61621a0a54be4",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/html-in-canvas.md"
+            },
+            {
+              "path": "remotion-markup/images.md",
+              "bytes": 1568,
+              "sha256": "0e6c2af8ad73483ebbc761237f230c8c0db1bd9db6b60d01d48a24b8a4059284",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/images.md"
+            },
+            {
+              "path": "remotion-markup/light-leaks.md",
+              "bytes": 3148,
+              "sha256": "531514d4740c5a1a3798782300db69ebfe8f61191fc7852960bc5bdf5b82200b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/light-leaks.md"
+            },
+            {
+              "path": "remotion-markup/local-fonts.md",
+              "bytes": 1533,
+              "sha256": "fcad2a2e3a05419d4555c59a75454c4891455dbea91ad596c1095e2887d26a11",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/local-fonts.md"
+            },
+            {
+              "path": "remotion-markup/lottie.md",
+              "bytes": 1806,
+              "sha256": "666268c8151d91042162f9efe3f02fe8c62b4c45053614eb1a9325c169428826",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/lottie.md"
+            },
+            {
+              "path": "remotion-markup/measuring-dom-nodes.md",
+              "bytes": 995,
+              "sha256": "a677b976eaf1cbc3cdd29cf29a3fd546c557b9a31e6b1fd70e473fde7e828733",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/measuring-dom-nodes.md"
+            },
+            {
+              "path": "remotion-markup/measuring-text.md",
+              "bytes": 2801,
+              "sha256": "4bed81d1ea818db3975f878152dc24ecbc17e163117dcab10761dc8690c33f0c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/measuring-text.md"
+            },
+            {
+              "path": "remotion-markup/motion-blur.md",
+              "bytes": 2039,
+              "sha256": "bc7559c9d0e56dffef72dcc4fb2d89d42c587ec2204ac21d33ae0c583d59632d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/motion-blur.md"
+            },
+            {
+              "path": "remotion-markup/multi-scene-video.md",
+              "bytes": 1236,
+              "sha256": "89be77fbfc10e53bf25ee48dee667df1f8be6b7dd757788af96c0b2b4a6542e1",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/multi-scene-video.md"
+            },
+            {
+              "path": "remotion-markup/parameters.md",
+              "bytes": 2403,
+              "sha256": "b002ac9959105b2b91da5786bcb20aa6ff4c6632ed37074b32711f248867dff0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/parameters.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/REFERENCE.md",
+              "bytes": 1030,
+              "sha256": "b6973344c4319e6570a8e56fa93f33452cefa9428b6d6dc5e55864e1c6186e56",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/agents/openai.yaml",
+              "bytes": 293,
+              "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
+              "bytes": 3909,
+              "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+              "bytes": 8912,
+              "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json",
+              "bytes": 12329,
+              "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json",
+              "bytes": 223,
+              "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+              "bytes": 923,
+              "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts",
+              "bytes": 1240,
+              "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+              "bytes": 6409,
+              "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+              "bytes": 1451,
+              "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+              "bytes": 7887,
+              "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+              "bytes": 6741,
+              "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+              "bytes": 5561,
+              "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+              "bytes": 13128,
+              "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+              "bytes": 13843,
+              "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+              "bytes": 4518,
+              "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+              "bytes": 1849,
+              "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+              "bytes": 2183,
+              "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+              "bytes": 10830,
+              "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+              "bytes": 1039,
+              "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+              "bytes": 333134,
+              "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+              "bytes": 13082,
+              "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts",
+              "bytes": 1256,
+              "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+              "bytes": 4798,
+              "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+              "bytes": 6871,
+              "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+              "bytes": 4098,
+              "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+              "bytes": 7553,
+              "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs"
+            },
+            {
+              "path": "remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md",
+              "bytes": 1138,
+              "sha256": "6fcb61a66084f4037a2fa0deb988500dd18e4ae7fa3c6923fb1142c1e521e9be",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-markup/sequencing.md",
+              "bytes": 1946,
+              "sha256": "d7fe788a39d1cca99718fceb58a517e0e2bc8319524b1f28699c140becdfad60",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/sequencing.md"
+            },
+            {
+              "path": "remotion-markup/sfx.md",
+              "bytes": 1823,
+              "sha256": "1f72e2d8858505ae2d31fa89231432714f8bc34c36164d3c0cc43a290b3f826a",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/sfx.md"
+            },
+            {
+              "path": "remotion-markup/silence-detection.md",
+              "bytes": 2593,
+              "sha256": "7e777b141e339ade03bbdc1d002390e849781ebd3059183f60e1b24a91210f14",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/silence-detection.md"
+            },
+            {
+              "path": "remotion-markup/text-highlights.md",
+              "bytes": 1851,
+              "sha256": "70773952286e1aec2ba02f2f54d2d776dad7799d87744df03b0c75637ebfb21f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/text-highlights.md"
+            },
+            {
+              "path": "remotion-markup/timing-props.md",
+              "bytes": 3368,
+              "sha256": "9401cb2bb5754af3c4868cb4e5c02a98f19bfcf7d8e74802377be8c9686894ba",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/timing-props.md"
+            },
+            {
+              "path": "remotion-markup/timing.md",
+              "bytes": 3315,
+              "sha256": "48047e758b96aea519916479ede62b832bf51f982924978e091c37f569ab4bac",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/timing.md"
+            },
+            {
+              "path": "remotion-markup/transitions.md",
+              "bytes": 8798,
+              "sha256": "ab1f33f5ecbca6c12c5dbb3c2845189a036fdf782e13a820d28780bd18dd0707",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/transitions.md"
+            },
+            {
+              "path": "remotion-markup/video-editing.md",
+              "bytes": 6392,
+              "sha256": "d77460afe7fbfcc1d7e7879475f3d9137888c0a25574b59e76d09f2976306dfd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/video-editing.md"
+            },
+            {
+              "path": "remotion-markup/voiceover.md",
+              "bytes": 3642,
+              "sha256": "c310b9425559fac09c4ac660ae18243621565a00fb2aa052fd6e73ef34c57c7f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-markup/voiceover.md"
+            },
+            {
+              "path": "remotion-multimedia/REFERENCE.md",
+              "bytes": 705,
+              "sha256": "56605add808a2b71e1f987843dc734a2c436e8f3e201b0941d08223dcdd3aa67",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/REFERENCE.md"
+            },
+            {
+              "path": "remotion-multimedia/agents/openai.yaml",
+              "bytes": 317,
+              "sha256": "74e07a383bbf02808320ede199873d00a5fc976cb99d407056456b9abdfb0cb7",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-multimedia/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-multimedia/get-audio-duration.md",
+              "bytes": 1507,
+              "sha256": "53b2e2ff232cae14ff9c0f7bb3ddf95c6137f7f1804cdaf50f7fe742befe0fd0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/get-audio-duration.md"
+            },
+            {
+              "path": "remotion-multimedia/get-video-dimensions.md",
+              "bytes": 1797,
+              "sha256": "9d4cd07f11ce8fabda258b4d826e7c9b3d6827e87ee036a2c4c8a7a5aca7db76",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/get-video-dimensions.md"
+            },
+            {
+              "path": "remotion-multimedia/get-video-duration.md",
+              "bytes": 1469,
+              "sha256": "6df955602cf7fb591ecb3f529fa9740d26ec1a4893a816aa08ea9b780379a8a0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-multimedia/get-video-duration.md"
+            },
+            {
+              "path": "remotion-render/REFERENCE.md",
+              "bytes": 711,
+              "sha256": "f986a1d12807b1279ca54194ac6f154e97795d71ce66ddd9484bbe034977af7f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-render/REFERENCE.md"
+            },
+            {
+              "path": "remotion-render/agents/openai.yaml",
+              "bytes": 286,
+              "sha256": "386699c32fdc63840ce7ff7412953831095dc4cdf60368648378c32895281290",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-render/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-render/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-render/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-render/transparent-videos.md",
+              "bytes": 2267,
+              "sha256": "394ccda476e084522d544471fee92d7c65672e2cbaf2201a785c3dd5c74f31a4",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-render/transparent-videos.md"
+            },
+            {
+              "path": "remotion-saas/REFERENCE.md",
+              "bytes": 1053,
+              "sha256": "6aacd9f08d7602be06dba51c0a8f6c88901ce9f400ecef8b986487787f6463c5",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/REFERENCE.md"
+            },
+            {
+              "path": "remotion-saas/agents/openai.yaml",
+              "bytes": 283,
+              "sha256": "66be5403b3d10194c99e886372bbc1f4bdb2994fe560278bc7a39b4fbe7753a2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-saas/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-saas/framework.md",
+              "bytes": 908,
+              "sha256": "5e35ca3306ac15ad1df189789642cefbc62c59f4929372ffc10a67165d7b04b5",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/framework.md"
+            },
+            {
+              "path": "remotion-saas/player.md",
+              "bytes": 942,
+              "sha256": "cc2f2944f1158d6ff1ddfc421a6a790f99ae86f54bbe0f0b18ef8bc7485e1b05",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/player.md"
+            },
+            {
+              "path": "remotion-saas/rendering.md",
+              "bytes": 3343,
+              "sha256": "b2f30b53e0191ef9e7f2da7360b36c0c5448ab5bdcf55575e1f7e55c5bbd257f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-saas/rendering.md"
+            },
+            {
+              "path": "remotion-studio/REFERENCE.md",
+              "bytes": 1611,
+              "sha256": "d6fa60691f3f4ce094caac9904698470b240f7aedc17a311f9d47b964ad11dbd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-studio/REFERENCE.md"
+            },
+            {
+              "path": "remotion-studio/agents/openai.yaml",
+              "bytes": 237,
+              "sha256": "43afba3c8088614ece62949e33a7c8350092e76436bad87ad41e1a1ccaebea5d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-studio/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-studio/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-studio/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-upgrade/REFERENCE.md",
+              "bytes": 1930,
+              "sha256": "4fd2300d8b6e1fdfad35883587c1718e813ddac7f782b669d4d9af0da2545cf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-upgrade/REFERENCE.md"
+            },
+            {
+              "path": "remotion-upgrade/agents/openai.yaml",
+              "bytes": 282,
+              "sha256": "3f3bc995d3531cfb5a714fd8f951954e118909b749217cc8418a235326d003cb",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-upgrade/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-upgrade/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-best-practices/remotion-upgrade/assets/remotion-icon.svg"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-best-practices",
+              "name": "remotion-best-practices",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-best-practices",
+          "name": "remotion-best-practices",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-create",
+      "name": "remotion-create",
+      "title": "Remotion 프로젝트·장면 만들기",
+      "category": "영상·미디어",
+      "summary": "새 영상 프로젝트와 장면을 구성하는 절차를 안내합니다.",
+      "example": "Remotion 프로젝트·장면 만들기 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "Remotion 프로젝트·장면 만들기 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "새 영상 프로젝트와 장면을 구성하는 절차를 안내합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-create",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-create",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 2711,
+              "sha256": "42fecaf2295364fdcef089ed07aa516a7e060e16d90b672cc94f4a0436984b3b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 310,
+              "sha256": "ff3b357b492da1791c672e18ae401a23c31bd1e6f1fa6f98c5efabbb3124bd9c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/assets/remotion-icon.svg"
+            },
+            {
+              "path": "tailwind.md",
+              "bytes": 386,
+              "sha256": "3ef07d3225d212af6a5076e62797a04d22d394434dcdbe2c050dab0d92806f36",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/tailwind.md"
+            },
+            {
+              "path": "video-layout.md",
+              "bytes": 498,
+              "sha256": "7ad94c22e3ad87671292ebb9b22f234c544d6c7fed13f8cb112b84b0f7077d4c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-create/video-layout.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-create",
+              "name": "remotion-create",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-create",
+          "name": "remotion-create",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-markup",
+      "name": "remotion-markup",
+      "title": "영상 화면·애니메이션 구현",
+      "category": "영상·미디어",
+      "summary": "React 화면, 배치, 애니메이션과 음향 구현 기준을 제공합니다.",
+      "example": "영상 화면·애니메이션 구현 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "영상 화면·애니메이션 구현 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "React 화면, 배치, 애니메이션과 음향 구현 기준을 제공합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-markup",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-markup",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "3d.md",
+              "bytes": 2292,
+              "sha256": "42cef6d68fb4a266ab495d35df0c60e03672b0d85c043f9b567f6aa7ff00dd0d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/3d.md"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 17386,
+              "sha256": "0aec470b43251832adb0eafddc4402cf04d42dcbc19fba320449c41abd3f36ed",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 310,
+              "sha256": "79e440561b613adf930f61b9f2ececc3284dfd92d06c4c282b73b461ffd16cb6",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/assets/remotion-icon.svg"
+            },
+            {
+              "path": "audio-visualization.md",
+              "bytes": 4892,
+              "sha256": "0f4043de86639b6390e5ab888eaa66a24a10a8bd540f1443327cb88107eae1e9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/audio-visualization.md"
+            },
+            {
+              "path": "audio.md",
+              "bytes": 4121,
+              "sha256": "857bf47188c6de8936f51e862f670da7e1cafa38aea8e1ae4a4920789f224077",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/audio.md"
+            },
+            {
+              "path": "calculate-metadata.md",
+              "bytes": 3350,
+              "sha256": "ca904cd19d65bd926a1fb07519eb769cc55deeffe74f7c3282d5e3fd16a0dcba",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/calculate-metadata.md"
+            },
+            {
+              "path": "color-correction.md",
+              "bytes": 4396,
+              "sha256": "0cab0efa3cc9bce42f136e4f22f58d7f332ba229997bb8b79dbdb923b5bb59f9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/color-correction.md"
+            },
+            {
+              "path": "compositions.md",
+              "bytes": 5090,
+              "sha256": "3d1fcd25ebc11726b216e5e419d950469c3c6416edf45f69630bd11c8179f8dd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/compositions.md"
+            },
+            {
+              "path": "connected-compositions.md",
+              "bytes": 1305,
+              "sha256": "6f1a791179bd59da39d081fb2cd9a90a057358924d3a25b93a18338aa9504d3b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/connected-compositions.md"
+            },
+            {
+              "path": "cropping.md",
+              "bytes": 1282,
+              "sha256": "188cbf969c677629baaf83dbe0e85bb9a8ee22615561f58bfca30ff39b9fdc88",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/cropping.md"
+            },
+            {
+              "path": "effects.md",
+              "bytes": 10809,
+              "sha256": "9c4efc0ae7d3e31e9681a26e91e94bca8556bc8be2622d8290e8737bcf7009da",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/effects.md"
+            },
+            {
+              "path": "embedding-videos.md",
+              "bytes": 3725,
+              "sha256": "3b0484bc92cd1d54fd6c9a54bc75c4f837054c90bb35e5e8959701d320c6a551",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/embedding-videos.md"
+            },
+            {
+              "path": "ffmpeg.md",
+              "bytes": 1112,
+              "sha256": "1d83085dfb63724f374acc5f01967f6c18f3aa7df62146438262a4061a839770",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/ffmpeg.md"
+            },
+            {
+              "path": "gifs.md",
+              "bytes": 3783,
+              "sha256": "91e17126f7f0d57efdbdbaf34e0c234f874bd6aa66ec7854b80f17b0e32c3b22",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/gifs.md"
+            },
+            {
+              "path": "google-fonts.md",
+              "bytes": 1714,
+              "sha256": "fff29cf692ccab0cda263cd85255cf634dbb4d1d2d99e8372b01d9fedbd6cbfd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/google-fonts.md"
+            },
+            {
+              "path": "html-in-canvas.md",
+              "bytes": 2976,
+              "sha256": "9b896dab368f8d9aec41114f8d0b96c1fbee981419b7077d6fd61621a0a54be4",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/html-in-canvas.md"
+            },
+            {
+              "path": "images.md",
+              "bytes": 1568,
+              "sha256": "0e6c2af8ad73483ebbc761237f230c8c0db1bd9db6b60d01d48a24b8a4059284",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/images.md"
+            },
+            {
+              "path": "light-leaks.md",
+              "bytes": 3148,
+              "sha256": "531514d4740c5a1a3798782300db69ebfe8f61191fc7852960bc5bdf5b82200b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/light-leaks.md"
+            },
+            {
+              "path": "local-fonts.md",
+              "bytes": 1533,
+              "sha256": "fcad2a2e3a05419d4555c59a75454c4891455dbea91ad596c1095e2887d26a11",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/local-fonts.md"
+            },
+            {
+              "path": "lottie.md",
+              "bytes": 1806,
+              "sha256": "666268c8151d91042162f9efe3f02fe8c62b4c45053614eb1a9325c169428826",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/lottie.md"
+            },
+            {
+              "path": "measuring-dom-nodes.md",
+              "bytes": 995,
+              "sha256": "a677b976eaf1cbc3cdd29cf29a3fd546c557b9a31e6b1fd70e473fde7e828733",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/measuring-dom-nodes.md"
+            },
+            {
+              "path": "measuring-text.md",
+              "bytes": 2801,
+              "sha256": "4bed81d1ea818db3975f878152dc24ecbc17e163117dcab10761dc8690c33f0c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/measuring-text.md"
+            },
+            {
+              "path": "motion-blur.md",
+              "bytes": 2039,
+              "sha256": "bc7559c9d0e56dffef72dcc4fb2d89d42c587ec2204ac21d33ae0c583d59632d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/motion-blur.md"
+            },
+            {
+              "path": "multi-scene-video.md",
+              "bytes": 1185,
+              "sha256": "cdf53cbfce2b450976170df903e4bd3b1a29b88bceac13be6b2c946172192253",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/multi-scene-video.md"
+            },
+            {
+              "path": "parameters.md",
+              "bytes": 2403,
+              "sha256": "b002ac9959105b2b91da5786bcb20aa6ff4c6632ed37074b32711f248867dff0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/parameters.md"
+            },
+            {
+              "path": "remotion-maps/REFERENCE.md",
+              "bytes": 1030,
+              "sha256": "b6973344c4319e6570a8e56fa93f33452cefa9428b6d6dc5e55864e1c6186e56",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/REFERENCE.md"
+            },
+            {
+              "path": "remotion-maps/agents/openai.yaml",
+              "bytes": 293,
+              "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/agents/openai.yaml"
+            },
+            {
+              "path": "remotion-maps/assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/assets/remotion-icon.svg"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+              "bytes": 3909,
+              "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+              "bytes": 8912,
+              "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/cesium-path.json",
+              "bytes": 12329,
+              "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/city-path.json",
+              "bytes": 223,
+              "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+              "bytes": 923,
+              "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+              "bytes": 1240,
+              "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/assets/sample-river.geojson",
+              "bytes": 6409,
+              "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-data-sources.md",
+              "bytes": 1451,
+              "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+              "bytes": 7887,
+              "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+              "bytes": 6741,
+              "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md"
+            },
+            {
+              "path": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+              "bytes": 5561,
+              "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs"
+            },
+            {
+              "path": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+              "bytes": 13128,
+              "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/mapbox/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+              "bytes": 13843,
+              "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maplibre/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
+              "bytes": 4518,
+              "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+              "bytes": 1849,
+              "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+              "bytes": 2183,
+              "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+              "bytes": 10830,
+              "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+              "bytes": 1039,
+              "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+              "bytes": 333134,
+              "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+              "bytes": 13082,
+              "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
+              "bytes": 1256,
+              "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
+              "bytes": 4798,
+              "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+              "bytes": 6871,
+              "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+              "bytes": 4098,
+              "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md"
+            },
+            {
+              "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+              "bytes": 7553,
+              "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs"
+            },
+            {
+              "path": "remotion-maps/techniques/static-map/TECHNIQUE.md",
+              "bytes": 1083,
+              "sha256": "28fe6e300d249cf85493132a23f6e5392bb5933ac99011b3ac4a3868f5f2cae9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md"
+            },
+            {
+              "path": "sequencing.md",
+              "bytes": 1904,
+              "sha256": "82723b28df7dfd65c71b1c1f79ca7a5b997b6fb886971121174170182f1e6451",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/sequencing.md"
+            },
+            {
+              "path": "sfx.md",
+              "bytes": 1823,
+              "sha256": "1f72e2d8858505ae2d31fa89231432714f8bc34c36164d3c0cc43a290b3f826a",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/sfx.md"
+            },
+            {
+              "path": "silence-detection.md",
+              "bytes": 2593,
+              "sha256": "7e777b141e339ade03bbdc1d002390e849781ebd3059183f60e1b24a91210f14",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/silence-detection.md"
+            },
+            {
+              "path": "text-highlights.md",
+              "bytes": 1809,
+              "sha256": "6a3b7629b947e8657c42b73b1f53c91d9b1535af1bfed57e054981c51bb951cc",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/text-highlights.md"
+            },
+            {
+              "path": "timing-props.md",
+              "bytes": 3271,
+              "sha256": "346ff7f3778f3b7ba165ac212459034120cac7cffd3ead3fe68db179e15f7494",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/timing-props.md"
+            },
+            {
+              "path": "timing.md",
+              "bytes": 3315,
+              "sha256": "48047e758b96aea519916479ede62b832bf51f982924978e091c37f569ab4bac",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/timing.md"
+            },
+            {
+              "path": "transitions.md",
+              "bytes": 8747,
+              "sha256": "83b8b511044ef175244a4e9e81f66bd3f5062cf9cecacd30ae88ac17eda40b82",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/transitions.md"
+            },
+            {
+              "path": "video-editing.md",
+              "bytes": 6304,
+              "sha256": "40114c97138263ef00c8c992dfe6f3a74f100bcab95fec886895922c43fd9ccb",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/video-editing.md"
+            },
+            {
+              "path": "voiceover.md",
+              "bytes": 3594,
+              "sha256": "365abf92b89fb0393fc317a80632fddde60d982fa2d199475bbedd0023e77c69",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-markup/voiceover.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-markup",
+              "name": "remotion-markup",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-markup",
+          "name": "remotion-markup",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-studio",
+      "name": "remotion-studio",
+      "title": "영상 미리보기 실행",
+      "category": "영상·미디어",
+      "summary": "Remotion Studio를 실행하고 영상을 미리 확인하도록 안내합니다.",
+      "example": "영상 미리보기 실행 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "영상 미리보기 실행 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Remotion Studio를 실행하고 영상을 미리 확인하도록 안내합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-studio",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-studio",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-studio/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1611,
+              "sha256": "d6fa60691f3f4ce094caac9904698470b240f7aedc17a311f9d47b964ad11dbd",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-studio/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 237,
+              "sha256": "43afba3c8088614ece62949e33a7c8350092e76436bad87ad41e1a1ccaebea5d",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-studio/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-studio/assets/remotion-icon.svg"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-studio",
+              "name": "remotion-studio",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-studio",
+          "name": "remotion-studio",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-render",
+      "name": "remotion-render",
+      "title": "영상·정지 이미지 출력",
+      "category": "영상·미디어",
+      "summary": "Remotion 프로젝트를 영상이나 정지 이미지로 렌더링합니다.",
+      "example": "영상·정지 이미지 출력 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "영상·정지 이미지 출력 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Remotion 프로젝트를 영상이나 정지 이미지로 렌더링합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-render",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-render",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-render/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 711,
+              "sha256": "f986a1d12807b1279ca54194ac6f154e97795d71ce66ddd9484bbe034977af7f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-render/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 286,
+              "sha256": "386699c32fdc63840ce7ff7412953831095dc4cdf60368648378c32895281290",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-render/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-render/assets/remotion-icon.svg"
+            },
+            {
+              "path": "transparent-videos.md",
+              "bytes": 2267,
+              "sha256": "394ccda476e084522d544471fee92d7c65672e2cbaf2201a785c3dd5c74f31a4",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-render/transparent-videos.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-render",
+              "name": "remotion-render",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-render",
+          "name": "remotion-render",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-maps",
+      "name": "remotion-maps",
+      "title": "지도와 이동 경로 애니메이션",
+      "category": "영상·미디어",
+      "summary": "지도, 경로, 마커와 지리 설명 장면을 구성합니다.",
+      "example": "지도와 이동 경로 애니메이션 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "지도와 이동 경로 애니메이션 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "지도, 경로, 마커와 지리 설명 장면을 구성합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-maps",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-maps",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1030,
+              "sha256": "b6973344c4319e6570a8e56fa93f33452cefa9428b6d6dc5e55864e1c6186e56",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 293,
+              "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/assets/remotion-icon.svg"
+            },
+            {
+              "path": "techniques/cesium/TECHNIQUE.md",
+              "bytes": 3909,
+              "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/TECHNIQUE.md"
+            },
+            {
+              "path": "techniques/cesium/assets/CesiumFlythrough.tsx",
+              "bytes": 8912,
+              "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx"
+            },
+            {
+              "path": "techniques/cesium/assets/cesium-path.json",
+              "bytes": 12329,
+              "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/cesium-path.json"
+            },
+            {
+              "path": "techniques/cesium/assets/city-path.json",
+              "bytes": 223,
+              "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/city-path.json"
+            },
+            {
+              "path": "techniques/cesium/assets/example-Root.tsx",
+              "bytes": 923,
+              "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/example-Root.tsx"
+            },
+            {
+              "path": "techniques/cesium/assets/flight-path.ts",
+              "bytes": 1240,
+              "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/flight-path.ts"
+            },
+            {
+              "path": "techniques/cesium/assets/sample-river.geojson",
+              "bytes": 6409,
+              "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/assets/sample-river.geojson"
+            },
+            {
+              "path": "techniques/cesium/references/3d-data-sources.md",
+              "bytes": 1451,
+              "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/references/3d-data-sources.md"
+            },
+            {
+              "path": "techniques/cesium/references/3d-flyover-architecture.md",
+              "bytes": 7887,
+              "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md"
+            },
+            {
+              "path": "techniques/cesium/references/3d-troubleshooting.md",
+              "bytes": 6741,
+              "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/references/3d-troubleshooting.md"
+            },
+            {
+              "path": "techniques/cesium/scripts/prep-cesium-path.mjs",
+              "bytes": 5561,
+              "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs"
+            },
+            {
+              "path": "techniques/mapbox/TECHNIQUE.md",
+              "bytes": 13128,
+              "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/mapbox/TECHNIQUE.md"
+            },
+            {
+              "path": "techniques/mapbox/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/mapbox/references/render-stability.md"
+            },
+            {
+              "path": "techniques/maplibre/TECHNIQUE.md",
+              "bytes": 13843,
+              "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maplibre/TECHNIQUE.md"
+            },
+            {
+              "path": "techniques/maplibre/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maplibre/references/render-stability.md"
+            },
+            {
+              "path": "techniques/maptiler/TECHNIQUE.md",
+              "bytes": 4518,
+              "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/TECHNIQUE.md"
+            },
+            {
+              "path": "techniques/maptiler/assets/CountryLabel.tsx",
+              "bytes": 1849,
+              "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx"
+            },
+            {
+              "path": "techniques/maptiler/assets/MapTilerVectorElement.ts",
+              "bytes": 2183,
+              "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts"
+            },
+            {
+              "path": "techniques/maptiler/assets/RiverReveal.tsx",
+              "bytes": 10830,
+              "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx"
+            },
+            {
+              "path": "techniques/maptiler/assets/example-Root.tsx",
+              "bytes": 1039,
+              "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/example-Root.tsx"
+            },
+            {
+              "path": "techniques/maptiler/assets/sample-data/country-meta.json",
+              "bytes": 333134,
+              "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json"
+            },
+            {
+              "path": "techniques/maptiler/assets/sample-data/yarlung-flow.json",
+              "bytes": 13082,
+              "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json"
+            },
+            {
+              "path": "techniques/maptiler/assets/tokens.ts",
+              "bytes": 1256,
+              "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/assets/tokens.ts"
+            },
+            {
+              "path": "techniques/maptiler/references/map-data-sources.md",
+              "bytes": 4798,
+              "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/references/map-data-sources.md"
+            },
+            {
+              "path": "techniques/maptiler/references/map-explainer-architecture.md",
+              "bytes": 6871,
+              "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md"
+            },
+            {
+              "path": "techniques/maptiler/references/map-geo-prep.md",
+              "bytes": 4098,
+              "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/references/map-geo-prep.md"
+            },
+            {
+              "path": "techniques/maptiler/references/render-stability.md",
+              "bytes": 3639,
+              "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/references/render-stability.md"
+            },
+            {
+              "path": "techniques/maptiler/scripts/prep-geo.mjs",
+              "bytes": 7553,
+              "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs"
+            },
+            {
+              "path": "techniques/static-map/TECHNIQUE.md",
+              "bytes": 1062,
+              "sha256": "5c1dd66fe41a476fb54474f29388b2caea6d8f73c81c585a761dace5aa8d8647",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-maps/techniques/static-map/TECHNIQUE.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-maps",
+              "name": "remotion-maps",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-maps",
+          "name": "remotion-maps",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-captions",
+      "name": "remotion-captions",
+      "title": "영상 자막 작성",
+      "category": "영상·미디어",
+      "summary": "자막과 캡션을 영상에 구성하는 방법을 안내합니다.",
+      "example": "영상 자막 작성 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "영상 자막 작성 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "자막과 캡션을 영상에 구성하는 방법을 안내합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-captions",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-captions",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1137,
+              "sha256": "283282776ca781b94bdff88a065e6599dcc0008e482a9dd15ddf8663f0c31ae9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 305,
+              "sha256": "3b39a48bd00251cf124e80090fe1b792b73020bee858c5d48b5629256cc5f045",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/assets/remotion-icon.svg"
+            },
+            {
+              "path": "display-captions.md",
+              "bytes": 5940,
+              "sha256": "12676a7250f33f126a8ccb0a2b28de22f5ccc9cad0d5baab53a736e205690a17",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/display-captions.md"
+            },
+            {
+              "path": "import-srt-captions.md",
+              "bytes": 2231,
+              "sha256": "e328b6845babd08ed2a747f82c59796fd1d7b85140c8eb4d36e41639779473ad",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/import-srt-captions.md"
+            },
+            {
+              "path": "transcribe-captions.md",
+              "bytes": 5533,
+              "sha256": "0830184ed1f634a6912536768a3aabc0092313db22796c4455e8b46dad874803",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-captions/transcribe-captions.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-captions",
+              "name": "remotion-captions",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-captions",
+          "name": "remotion-captions",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-saas",
+      "name": "remotion-saas",
+      "title": "Remotion 기반 앱 설계",
+      "category": "영상·미디어",
+      "summary": "영상 제작 기능을 앱과 서비스에 통합하는 구조를 안내합니다.",
+      "example": "Remotion 기반 앱 설계 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "Remotion 기반 앱 설계 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "영상 제작 기능을 앱과 서비스에 통합하는 구조를 안내합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-saas",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-saas",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1053,
+              "sha256": "6aacd9f08d7602be06dba51c0a8f6c88901ce9f400ecef8b986487787f6463c5",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 283,
+              "sha256": "66be5403b3d10194c99e886372bbc1f4bdb2994fe560278bc7a39b4fbe7753a2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/assets/remotion-icon.svg"
+            },
+            {
+              "path": "framework.md",
+              "bytes": 908,
+              "sha256": "5e35ca3306ac15ad1df189789642cefbc62c59f4929372ffc10a67165d7b04b5",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/framework.md"
+            },
+            {
+              "path": "player.md",
+              "bytes": 942,
+              "sha256": "cc2f2944f1158d6ff1ddfc421a6a790f99ae86f54bbe0f0b18ef8bc7485e1b05",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/player.md"
+            },
+            {
+              "path": "rendering.md",
+              "bytes": 3343,
+              "sha256": "b2f30b53e0191ef9e7f2da7360b36c0c5448ab5bdcf55575e1f7e55c5bbd257f",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-saas/rendering.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-saas",
+              "name": "remotion-saas",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-saas",
+          "name": "remotion-saas",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-interactivity",
+      "name": "remotion-interactivity",
+      "title": "미리보기 편집 기능 구성",
+      "category": "영상·미디어",
+      "summary": "Studio에서 장면 요소를 선택하고 수정할 수 있도록 구성합니다.",
+      "example": "미리보기 편집 기능 구성 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "미리보기 편집 기능 구성 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Studio에서 장면 요소를 선택하고 수정할 수 있도록 구성합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-interactivity",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-interactivity",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 17794,
+              "sha256": "5fdef51e180538a745392817fe556597fd21dc39a9bac45ab46b27774e7331c0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 320,
+              "sha256": "84cd86b0b10e1f8b5be97bbd46677d5f618304303d922f1016ce0ea6a015d4b9",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/assets/remotion-icon.svg"
+            },
+            {
+              "path": "inline-effects.md",
+              "bytes": 993,
+              "sha256": "e2204691164855f195ffefc88706785089153a1e97dae06781841575892a30a6",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/inline-effects.md"
+            },
+            {
+              "path": "timeline-structure.md",
+              "bytes": 4103,
+              "sha256": "06da5fac3f078ea99d43df85201a328a18a6d7aad495e8b0236897f6b3188820",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-interactivity/timeline-structure.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-interactivity",
+              "name": "remotion-interactivity",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-interactivity",
+          "name": "remotion-interactivity",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-docs",
+      "name": "remotion-docs",
+      "title": "Remotion 공식 문서 조회",
+      "category": "영상·미디어",
+      "summary": "구현에 필요한 API와 패키지 안내를 공식 문서에서 확인합니다.",
+      "example": "Remotion 공식 문서 조회 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "Remotion 공식 문서 조회 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "구현에 필요한 API와 패키지 안내를 공식 문서에서 확인합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-docs",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-docs",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-docs/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1340,
+              "sha256": "d93460e741718f88b24f162cc5e4174cbe9200e68bdce43084b5140c9342c068",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-docs/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 307,
+              "sha256": "ab02cb3008e6fc0702d7a601bfdd2f332e1224fda3c37de0265c24311c00d456",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-docs/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-docs/assets/remotion-icon.svg"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-docs",
+              "name": "remotion-docs",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-docs",
+          "name": "remotion-docs",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-upgrade",
+      "name": "remotion-upgrade",
+      "title": "Remotion 프로젝트 업데이트",
+      "category": "영상·미디어",
+      "summary": "Remotion 관련 패키지와 스킬의 호환성을 맞춰 갱신합니다.",
+      "example": "Remotion 프로젝트 업데이트 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "Remotion 프로젝트 업데이트 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Remotion 관련 패키지와 스킬의 호환성을 맞춰 갱신합니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-upgrade",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-upgrade",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-upgrade/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 1930,
+              "sha256": "4fd2300d8b6e1fdfad35883587c1718e813ddac7f782b669d4d9af0da2545cf2",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-upgrade/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 282,
+              "sha256": "3f3bc995d3531cfb5a714fd8f951954e118909b749217cc8418a235326d003cb",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-upgrade/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-upgrade/assets/remotion-icon.svg"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-upgrade",
+              "name": "remotion-upgrade",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-upgrade",
+          "name": "remotion-upgrade",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
+    },
+    {
+      "id": "direct-remotion-multimedia",
+      "name": "remotion-multimedia",
+      "title": "영상·음향 파일 정보 처리",
+      "category": "영상·미디어",
+      "summary": "브라우저에서 미디어 정보와 처리 작업을 다루는 지침입니다.",
+      "example": "영상·음향 파일 정보 처리 작업을 Remotion 공식 지침에 따라 진행해줘.",
+      "result": "영상·음향 파일 정보 처리 작업 지침과 결과",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "remotion-dev/skills",
+      "modified": "2026-10-17T23:36:10.604418+00:00",
+      "installed_at": "2026-10-17T23:36:10.604418+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "브라우저에서 미디어 정보와 처리 작업을 다루는 지침입니다.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-remotion-multimedia",
+          "version": "4.0.536",
+          "license": "upstream repository: no explicit license file found",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/remotion-dev/skills",
+            "installed_upstream_commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+            "skill_path": "skills/remotion-multimedia",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/SKILL.md",
+            "bundle_version": "4.0.536"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "remotion-agent-skills",
+            "skill_count": 12,
+            "skill_names": [
+              "remotion-best-practices",
+              "remotion-create",
+              "remotion-markup",
+              "remotion-studio",
+              "remotion-render",
+              "remotion-maps",
+              "remotion-captions",
+              "remotion-saas",
+              "remotion-interactivity",
+              "remotion-docs",
+              "remotion-upgrade",
+              "remotion-multimedia"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 705,
+              "sha256": "56605add808a2b71e1f987843dc734a2c436e8f3e201b0941d08223dcdd3aa67",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/SKILL.md"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "bytes": 317,
+              "sha256": "74e07a383bbf02808320ede199873d00a5fc976cb99d407056456b9abdfb0cb7",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/agents/openai.yaml"
+            },
+            {
+              "path": "assets/remotion-icon.svg",
+              "bytes": 1303,
+              "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/assets/remotion-icon.svg"
+            },
+            {
+              "path": "get-audio-duration.md",
+              "bytes": 1507,
+              "sha256": "53b2e2ff232cae14ff9c0f7bb3ddf95c6137f7f1804cdaf50f7fe742befe0fd0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/get-audio-duration.md"
+            },
+            {
+              "path": "get-video-dimensions.md",
+              "bytes": 1797,
+              "sha256": "9d4cd07f11ce8fabda258b4d826e7c9b3d6827e87ee036a2c4c8a7a5aca7db76",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/get-video-dimensions.md"
+            },
+            {
+              "path": "get-video-duration.md",
+              "bytes": 1469,
+              "sha256": "6df955602cf7fb591ecb3f529fa9740d26ec1a4893a816aa08ea9b780379a8a0",
+              "url": "https://github.com/remotion-dev/skills/blob/1441a11e95db35443bd76bb318386c0d3ca00053/skills/remotion-multimedia/get-video-duration.md"
+            }
+          ],
+          "dependency_audit": "Skills and local references installed; Remotion/Node runtime must be checked in the target video project",
+          "redistribution_review": "Local copy installed at user request; catalog provides source links and file metadata rather than republishing upstream text",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-remotion-multimedia",
+              "name": "remotion-multimedia",
+              "action": "install",
+              "version": "4.0.536",
+              "date": "2026-10-18",
+              "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "manifest files inside the selected skill directory",
+            "owned_links": "owned Claude link pointing to the same Codex original",
+            "shared_runtime": "retain Node/Remotion project packages unless separately authorized and unused",
+            "user_outputs": "retain projects and rendered videos",
+            "recovery": "back up skill directory and owned links; reinstall the pinned source if needed"
+          }
+        },
+        "texts": {}
+      },
+      "references": [
+        {
+          "title": "Remotion Kit 마켓플레이스",
+          "url": "https://remotion-kit.com/marketplace",
+          "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+          "type": "reference"
+        },
+        {
+          "title": "Remotion 공식 스킬 안내",
+          "url": "https://www.remotion.dev/docs/ai/skills",
+          "purpose": "공식 스킬 기능과 사용 방법",
+          "type": "official"
+        }
+      ],
+      "history": [
+        {
+          "id": "direct-remotion-multimedia",
+          "name": "remotion-multimedia",
+          "action": "install",
+          "version": "4.0.536",
+          "date": "2026-10-18",
+          "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+        }
+      ]
     }
   ],
-  "counting": "직접 관리 항목은 실제 원본 경로로 중복 제거. 플러그인은 등록된 출처별 항목으로 구분. 예시 요청은 제안이며 사용 실적이 아님. 최근순은 SKILL.md 파일 수정 시각. 별도 앱에서 세션에 제공하는 미등록 확장과 내장 명령은 제외."
+  "counting": "직접 관리 항목은 실제 원본 경로로 중복 제거. 플러그인은 등록된 출처별 항목으로 구분. 예시 요청은 제안이며 사용 실적이 아님. 최근순은 SKILL.md 파일 수정 시각. 별도 앱에서 세션에 제공하는 미등록 확장과 내장 명령은 제외.",
+  "reference_sites": [
+    {
+      "title": "Remotion Kit 마켓플레이스",
+      "url": "https://remotion-kit.com/marketplace",
+      "purpose": "모션그래픽 예시와 카탈로그 카드·상세 구성 참고",
+      "type": "reference"
+    }
+  ]
 }

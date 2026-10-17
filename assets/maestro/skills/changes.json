@@ -17,6 +17,111 @@
       "version": "1.1.0",
       "date": "2026-10-18",
       "summary": "홈페이지 공통 레이아웃 재사용, 본문 스타일 분리, Codex·Claude의 스킬 변경 후 카탈로그 동기화 절차 추가."
+    },
+    {
+      "id": "direct-remotion-best-practices",
+      "name": "remotion-best-practices",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-create",
+      "name": "remotion-create",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-markup",
+      "name": "remotion-markup",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-studio",
+      "name": "remotion-studio",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-render",
+      "name": "remotion-render",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-maps",
+      "name": "remotion-maps",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-captions",
+      "name": "remotion-captions",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-saas",
+      "name": "remotion-saas",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-interactivity",
+      "name": "remotion-interactivity",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-docs",
+      "name": "remotion-docs",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-upgrade",
+      "name": "remotion-upgrade",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-remotion-multimedia",
+      "name": "remotion-multimedia",
+      "action": "install",
+      "version": "4.0.536",
+      "date": "2026-10-18",
+      "summary": "Remotion 공식 스킬 설치 및 Codex·Claude 공통 원본 연결. 참고 사이트 등록."
+    },
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "update",
+      "previous_version": "1.1.0",
+      "version": "1.1.1",
+      "date": "2026-10-18",
+      "summary": "참고 사이트 데이터·클릭 링크·외부 공식 원문 연결 기능 추가. Remotion 공식 스킬12개 목록 반영."
     }
   ]
 }
