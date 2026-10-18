@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://maestro4u.kr/feed.xml" />
 <link rel="alternate" type="text/html" href="https://maestro4u.kr" />
-<updated>2026-10-18T08:34:13+00:00</updated>
+<updated>2026-10-18T08:42:37+00:00</updated>
 <id>https://maestro4u.kr/</id>
 <author>
   <name>Hoon Kim</name>
@@ -287,7 +287,7 @@
 
   &lt;p&gt;배포 성공이나 HTTP 200만으로 사진 표시와 영상 재생까지 확인했다고 쓰지 않는다. 마지막 206장 배치에서는 업로드 전체의 크기·해시와 읽기 표본 9장을 확인했다. 새 사진·지도 배치는 게시 서버 자료를 임시 로컬 중계로 점검했다. 가족 본인 기기의 로그인 성공을 대신 검증한 것은 아니다.&lt;/p&gt;
 
-  &lt;p&gt;마지막 Chrome 자동화 탭에서는 루트 iframe이 비어 보이는 현상도 관찰했다. 서버 응답과 로컬 점검은 정상이었지만 원인은 확정하지 않았다. 앞서 Safari에서 확인한 결과와 이후 자동화에서 확인하지 못한 범위를 나눠 기록했다. 모든 기기에서 모든 문제가 해결됐다고 단정하지 않으려는 이유다.&lt;/p&gt;
+  &lt;p&gt;마지막 Chrome 자동화 탭에서는 루트 iframe이 비어 보이는 현상도 관찰했다. 이 글을 게시하며 다시 확인하니 개발자 도구의 문서 요청이 연결 시작 단계에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Stalled&lt;/code&gt; 상태였다. 자동화 디버깅 연결을 종료하고 일반 Chrome에서 새로고침하자, 사이트 코드를 바꾸지 않고도 실제 maestro4u.kr의 글과 사진이 정상 표시됐다. 주소창도 루트를 유지했다. 자동화 연결이 영향을 준 정황을 확인했지만 내부 원인까지 확정한 것은 아니다. 자동화 화면의 실패와 일반 브라우저의 사이트 동작을 구분해야 한다는 점도 이번에 배웠다.&lt;/p&gt;
 
   &lt;p&gt;예전 Make 글의 Liquid 경고, 촬영일이 없는 사진, 분류하지 않은 다른 업무 후보와 미검토 영상도 남아 있다. 비밀값 없는 작업 기록과 재개점을 파일에 남겼으므로, 다음에는 같은 지점에서 다시 시작할 수 있다.&lt;/p&gt;
 
