@@ -1,6 +1,9 @@
 /* Isolated proposal: the production homepage does not load this stylesheet. */
-html.scroll-preview{scroll-snap-type:y mandatory;scroll-behavior:smooth;scroll-padding:0}
-.scroll-preview .hero,.scroll-preview .chapter,.scroll-preview .records,.scroll-preview .scroll-final{scroll-snap-align:start;scroll-snap-stop:always}
+html.scroll-preview{scroll-behavior:auto;scroll-padding:0}
+.scroll-preview .stacked-pages{position:relative;isolation:isolate}
+.scroll-preview .hero,.scroll-preview .chapter,.scroll-preview .records,.scroll-preview .scroll-final{position:sticky;top:var(--stack-top,0px);z-index:var(--stack-layer,1);box-shadow:0 -12px 38px #10251a16}
+.scroll-preview .field,.scroll-preview .records{background:#f4f3ed}
+.stacked-marker,.stacked-anchor{display:block;height:0;margin:0;padding:0;pointer-events:none}
 .scroll-preview .hero{height:100svh;min-height:660px}
 .scroll-preview .field{height:100svh;min-height:700px;padding:52px 5% 36px;display:flex;flex-direction:column}
 .scroll-preview .field .chapter-heading{flex:none;padding-bottom:26px}

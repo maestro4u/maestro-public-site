@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ko"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>한 화면씩 넘기는 메인 시안 · Maestro for You</title>
-<meta name="description" content="기존 메인 구성을 한 화면씩 스크롤하는 별도 비교 시안입니다. 운영 홈페이지는 변경하지 않았습니다.">
+<title>겹쳐 올라오는 메인 스크롤 시안 · Maestro for You</title>
+<meta name="description" content="앞 화면은 머물고 다음 화면이 스크롤한 만큼 올라와 덮는 별도 시안입니다. 운영 메인은 그대로입니다.">
 <link rel="canonical" href="https://maestro4u.kr/previews/scroll/">
-<meta property="og:title" content="한 화면씩 넘기는 메인 시안"><meta property="og:description" content="기존 메인 구성을 한 화면씩 스크롤하는 별도 비교 시안입니다. 운영 홈페이지는 변경하지 않았습니다."><meta property="og:url" content="https://maestro4u.kr/previews/scroll/"><meta property="og:type" content="website">
+<meta property="og:title" content="겹쳐 올라오는 메인 스크롤 시안"><meta property="og:description" content="앞 화면은 머물고 다음 화면이 스크롤한 만큼 올라와 덮는 별도 시안입니다. 운영 메인은 그대로입니다."><meta property="og:url" content="https://maestro4u.kr/previews/scroll/"><meta property="og:type" content="website">
 <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Maestro for You">
 <link rel="stylesheet" href="/assets/maestro/fonts/pretendard.css">
 <link rel="stylesheet" href="/assets/maestro/fonts/maru.css">
@@ -13,16 +13,17 @@
 </head><body>
 <a class="skip" href="#main">본문으로 바로 가기</a>
 <header class="header"><a class="brand" href="/" aria-label="Maestro for You 홈"><span class="monogram">m<sup>°</sup></span><span class="brand-type">maestro<small>FOR YOU</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">메뉴 <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="주 메뉴"><a href="/blog/">기록</a><details class="nav-group"><summary>사진과 여행 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/journeys/">전체 보기</a><a href="/journeys/business/">업무상 출장</a><a href="/journeys/daily/">개인의 일상</a></div></details><a href="/projects/">프로젝트</a><details class="nav-group"><summary>배움과 교육 <span aria-hidden="true">⌄</span></summary><div class="nav-children"><a href="/learning/">전체 보기</a><a href="/learning/study/">배움과정</a><a href="/learning/education/">교육과정</a><a href="/learning/skills/">스킬 카탈로그</a></div></details><a href="/about/">소개</a><a class="search-link" href="/search/" aria-label="전체 기록 검색"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span>검색</span></a></nav></header>
-<main id="main"><link rel="stylesheet" href="/assets/maestro/intro/scroll-preview.css?v=1">
+<main id="main"><link rel="stylesheet" href="/assets/maestro/intro/scroll-preview.css?v=2">
 
 
+<div class="stacked-pages">
 <section class="hero" id="top" aria-labelledby="hero-title">
  <div class="hero-photo"><img src="/assets/maestro/intro/editorial/detail.jpg" alt="빛과 그림자가 드리운 곡선형 콘크리트 건축 공간" fetchpriority="high"></div>
  <div class="hero-copy"><p class="eyebrow">A JOURNAL BY HOON KIM</p><h1 id="hero-title">경험은 쌓이고.<br>시선은 <em>넓어진다.</em></h1><p class="hero-description">일에서 발견한 생각, 배움으로 열린 가능성,<br>그리고 오래 기억하고 싶은 하루.</p><a class="text-link" href="#story">세 가지 기록을 만나다 <span>↓</span></a></div>
  <div class="hero-inset"><img src="/assets/maestro/intro/editorial/sea.jpg" alt="저녁빛이 남은 바다와 바위 해안"><span>BETWEEN WORK & LIFE</span></div>
  <div class="hero-foot"><span>MAESTRO FOR YOU — AN ONGOING STORY</span><button id="motion-toggle" aria-pressed="false" aria-label="화면 움직임 멈추기"><span class="pause-icon">Ⅱ</span> <span class="motion-text">움직임 멈추기</span></button></div>
 </section>
-<section class="story" id="story">
+<div id="story" class="stacked-marker" aria-hidden="true"></div>
  <article class="chapter field" id="field">
   <div class="chapter-heading"><div><p class="eyebrow">01 / FIELD NOTES</p><h2>현장에서<br><em>시작한 생각.</em></h2></div><div class="chapter-intro"><p>멀리서 도시를 보고, 가까이서 삶을 읽습니다.<br>새로운 장소에서 발견한 질문과 일의 과정을 기록합니다.</p><a class="text-link" href="/journeys/business/">업무상 출장 <span>↗</span></a></div></div>
   <div class="field-montage">
@@ -50,7 +51,6 @@
   <figure class="life-inset"><img src="/assets/maestro/intro/editorial/dawn.jpg" alt="새벽의 황금빛 안개가 드리운 숲" loading="lazy"><figcaption>하루의 시작과 끝,<br>그 사이의 작은 기록들.</figcaption></figure>
   <span class="life-line">PAUSE. LOOK. REMEMBER.</span>
  </article>
-</section>
 <section class="records section-shell" id="records"><div class="records-heading reveal"><div><p class="eyebrow">THE LATEST CHAPTERS</p><h2>최근의 기록</h2></div><a href="/blog/">모든 기록 보기 <span>↗</span></a></div><div class="record-list">
 <a class="record" href="/blog/homepage-renewal-with-codex/"><time datetime="2026-10-17T02:55:40+00:00">2026.10.17</time><div><span class="record-kind">기록</span><h3>Codex로 홈페이지를 다시 만들다</h3><p>Jekyll 블로그의 불편함에서 시작해 사진과 기록의 자리를 정리하고, 여러 시안을 거쳐 Codex와 홈페이지를 마무리한 과정.</p></div><span class="record-arrow">↗</span></a>
 
@@ -62,8 +62,9 @@
 <section class="scroll-final" id="ending"><section class="closing section-shell reveal"><span class="closing-star">✳</span><p>오늘의 기록이,<br>내일의 길이 되도록.</p><a href="/about/" target="_blank" rel="noopener">Hoon Kim의 기록 공간 <span>↗</span></a></section>
 <details class="image-credits"><summary>대표 이미지 출처</summary><p>도시·건축·자연 사진은 화면 구성용 참고 이미지이며, 개인의 실제 출장·촬영 기록을 의미하지 않습니다.</p><p>사진: <a href="https://unsplash.com/photos/8GX0Bjci1kc">VacationTravelInsider</a> · <a href="https://unsplash.com/photos/e8o4kG2aRkg">Duc Nguyen</a> · <a href="https://unsplash.com/photos/yKjLaTB5_sM">Jakub Tomasik</a> · <a href="https://unsplash.com/photos/ts82PDi4fFo">Kevin Mueller</a> · <a href="https://unsplash.com/photos/W7YpQNhwmY0">Marco Grosso</a> / <a href="https://unsplash.com/license">Unsplash License</a>.</p><p>BIM 화면: <a href="https://commons.wikimedia.org/wiki/File:FreeCAD_1.0_Dark_BIM_Example.png">Maxwxyz, FreeCAD 1.0 Dark BIM Example</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. 원본 유지, CSS 크기·배치 조정. Civil 3D 화면: 기존 공개 교육자료.</p></details><footer class="footer section-shell"><span>© 2026 Hoon Kim</span><span>MAESTRO FOR YOU — AN ONGOING STORY</span><a href="#top">처음으로 ↑</a></footer></section>
 
+</div>
 <nav class="scroll-preview-dots" aria-label="화면 이동"></nav>
-<div class="scroll-preview-tools"><span class="scroll-preview-tag">스크롤 시안 · 미적용</span><button class="scroll-prev" aria-label="이전 화면">↑</button><span class="scroll-position" aria-live="polite">01 / 06</span><button class="scroll-next" aria-label="다음 화면">↓</button><a href="/">기존 메인 ↗</a></div>
-<script src="/assets/maestro/intro/scroll-preview.js?v=1" defer></script>
+<div class="scroll-preview-tools"><span class="scroll-preview-tag">겹침 스크롤 · 미적용</span><button class="scroll-prev" aria-label="이전 화면">↑</button><span class="scroll-position" aria-live="polite">01 / 06</span><button class="scroll-next" aria-label="다음 화면">↓</button><a href="/">기존 메인 ↗</a></div>
+<script src="/assets/maestro/intro/scroll-preview.js?v=2" defer></script>
 </main>
 <audio id="ambient-audio" src="/assets/maestro/intro/landscape-no-01.mp3" preload="none" loop></audio><div class="sound-control"><button id="sound-toggle" aria-pressed="false" aria-label="배경음악 켜기"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">음악 켜기</span></button><div class="sound-volume" hidden><label for="sound-volume">음량</label><input type="range" id="sound-volume" min="0" max="100" value="28" aria-label="배경음악 음량"></div><span class="sound-error" role="status"></span></div></body></html>
