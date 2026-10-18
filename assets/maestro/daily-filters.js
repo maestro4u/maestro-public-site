@@ -77,9 +77,18 @@
       });
       pager.append(link);
     };
-    if (page > 1) addLink('← 이전', page - 1, '이전 쪽');
-    for (let number = 1; number <= pages; number++) addLink(String(number), number, `${number}페이지`);
-    if (page < pages) addLink('다음 →', page + 1, '다음 쪽');
+    const first = Math.max(1, Math.min(page - 2, pages - 4));
+    const last = Math.min(pages, first + 4);
+    const gap = () => {
+      const mark = document.createElement('span');
+      mark.className = 'pagination-gap'; mark.textContent = '…';
+      mark.setAttribute('aria-hidden', 'true'); pager.append(mark);
+    };
+    if (page > 1) { addLink('«', 1, '처음 쪽'); addLink('‹', page - 1, '이전 쪽'); }
+    if (first > 1) gap();
+    for (let number = first; number <= last; number++) addLink(String(number), number, `${number}쪽`);
+    if (last < pages) gap();
+    if (page < pages) { addLink('›', page + 1, '다음 쪽'); addLink('»', pages, '마지막 쪽'); }
     // Normalize invalid filters or an out-of-range page without creating a history entry.
     history.replaceState(null, '', urlFor(page));
   };

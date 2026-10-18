@@ -47,9 +47,18 @@
       });
       pager.append(link);
     };
-    if (page > 1) addLink('← 이전', page - 1, '이전 쪽');
-    for (let number = 1; number <= totalPages; number++) addLink(String(number), number, `${number}쪽`);
-    if (page < totalPages) addLink('다음 →', page + 1, '다음 쪽');
+    const first = Math.max(1, Math.min(page - 2, totalPages - 4));
+    const last = Math.min(totalPages, first + 4);
+    const gap = () => {
+      const mark = document.createElement('span');
+      mark.className = 'pagination-gap'; mark.textContent = '…';
+      mark.setAttribute('aria-hidden', 'true'); pager.append(mark);
+    };
+    if (page > 1) { addLink('«', 1, '처음 쪽'); addLink('‹', page - 1, '이전 쪽'); }
+    if (first > 1) gap();
+    for (let number = first; number <= last; number++) addLink(String(number), number, `${number}쪽`);
+    if (last < totalPages) gap();
+    if (page < totalPages) { addLink('›', page + 1, '다음 쪽'); addLink('»', totalPages, '마지막 쪽'); }
   };
 
   const readUrl = () => {
