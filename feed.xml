@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://maestro4u.kr/feed.xml" />
 <link rel="alternate" type="text/html" href="https://maestro4u.kr" />
-<updated>2026-10-18T08:42:37+00:00</updated>
+<updated>2026-10-18T08:53:59+00:00</updated>
 <id>https://maestro4u.kr/</id>
 <author>
   <name>Hoon Kim</name>
@@ -27,271 +27,39 @@
   <content type="html">
     &lt;div class=&quot;weekend-note&quot;&gt;
 
-  &lt;p&gt;이번 주말은 스타벅스에서 홈페이지와 씨름한 시간으로 기억될 것 같다.&lt;/p&gt;
+  &lt;p&gt;이번 주말은 스타벅스에서 홈페이지와 씨름하며 보냈다.&lt;/p&gt;
 
-  &lt;p&gt;처음에는 오래된 홈페이지를 조금 보기 좋게 바꾸려 했다. 그런데 화면을 고치다 보니 사진을 정리하게 됐고, 사진을 정리하다 보니 로그인과 가족 공유가 걸렸다. 주소 하나를 깔끔하게 유지하고 싶었을 뿐인데, 어느새 DNS와 인증서까지 들여다보고 있었다.&lt;/p&gt;
+  &lt;p&gt;처음에는 조금만 손보면 될 줄 알았다. 화면을 보기 좋게 바꾸고, 사진 몇 장을 올리면 끝날 것 같았다. 그런데 하나를 고치면 또 다른 것이 눈에 들어왔다. 그렇게 일이 점점 커졌다.&lt;/p&gt;
 
-  &lt;p&gt;&lt;strong&gt;홈페이지 하나 고치려다가, 주말의 큰 부분을 여기에 썼다.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;오늘은 결과만 남기고 싶지 않다. 개인의 일상을 정리하는 데 얼마나 많은 시간이 들었는지, 도메인 하나 때문에 얼마나 돌아갔는지, Codex와 무엇을 고쳤는지도 함께 적어두려 한다. 그리고 끝까지 붙잡고 있던 나에게도 한마디 남기고 싶다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;오늘까지 정말 고생했다.&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;홈페이지 하나 고치려다가, 주말이 다 갔다.&lt;/strong&gt;&lt;/p&gt;
 
   &lt;figure class=&quot;weekend-portrait&quot;&gt;
 &lt;div class=&quot;weekend-portrait-frame&quot;&gt;&lt;/div&gt;
 &lt;figcaption&gt;&lt;strong&gt;주말 작업의 얼굴&lt;/strong&gt;&lt;span&gt;2026년 10월 18일, 스타벅스에서.&lt;br /&gt;이 글을 남기며 Mac 카메라로 직접 촬영했다.&lt;/span&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-  &lt;p class=&quot;weekend-jump&quot;&gt;&lt;a href=&quot;#technical-memory&quot;&gt;나중에 다시 볼 기술 메모로 바로가기 ↓&lt;/a&gt;&lt;/p&gt;
-
-  &lt;h2 id=&quot;section&quot;&gt;가장 오래 붙잡은 것은 ‘개인의 일상’이었다&lt;/h2&gt;
-
-  &lt;p&gt;화면을 만드는 일보다 사진을 기록으로 바꾸는 일이 훨씬 오래 걸렸다.&lt;/p&gt;
-
-  &lt;p&gt;사진을 폴더째 올리면 끝날 줄 알았다. 실제로는 촬영일을 확인하고, 비슷한 사진을 고르고, 출장과 개인 시간을 나누고, 한 번의 여행을 하나의 글로 묶는 판단이 계속 필요했다. 사진 사이에는 화면 캡처와 문서, 영수증, 연락처도 섞여 있었다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;사진이 있다는 것과, 남겨둘 만한 기록이 있다는 것은 달랐다.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;파일 이름의 날짜와 현지 촬영일이 다른 경우도 있었다. HEIC와 JPEG가 같은 장면을 담고 있기도 했다. 회전 정보 때문에 사진이 옆으로 눕는 문제도 확인했다. 날짜가 없는 사진은 업로드한 날짜로 대신 채우지 않았다.&lt;/p&gt;
-
-  &lt;p&gt;2019년과 그 이전 자료를 정리한 배치에서만 사진 &lt;strong&gt;9,899개를 대조&lt;/strong&gt;했다. 그중 9,863개는 시각 검토했고, 36개는 같은 해시의 중복이었다. 그 작업으로 65편에 사진 809장을 선별했다. 이 숫자는 전체 보관함의 모든 사진과 영상을 끝냈다는 뜻은 아니다. 검토한 범위와 남은 범위를 따로 기록했다.&lt;/p&gt;
-
-  &lt;p&gt;오늘도 분류를 기다리던 후보 343장을 다시 살펴보고, 206장을 골라 출장 7건과 개인 일상 13건을 추가했다. 이제 목록에는 &lt;strong&gt;개인의 일상 152편, 업무상 출장 12편&lt;/strong&gt;이 있다.&lt;/p&gt;
-
-  &lt;p&gt;숫자로 쓰면 몇 줄이다. 실제로는 과거의 여러 해를 다시 열어보고, 사진마다 자리를 찾아주는 시간이었다.&lt;/p&gt;
-
-  &lt;h2 id=&quot;section-1&quot;&gt;사진이 잘 보이는 방식도 여러 번 고쳤다&lt;/h2&gt;
-
-  &lt;p&gt;개인 일상은 큰 표지와 짧은 글, 넓은 사진 묶음으로 구성했다. 사진 두 장을 나란히 놓을 때는 가로와 세로 비율을 함께 고려했다. 본문 사진은 원래 장면을 볼 수 있게 하고, 표지에서는 화면을 채우는 구성을 사용했다.&lt;/p&gt;
-
-  &lt;p&gt;출장은 다른 방식이 필요했다. 큰 지도 옆에 날짜별 기록을 두고, 사진과 촬영 지점을 연결했다. 지도에 찍힌 점은 확인된 사진 촬영 지점이다. 실제 이동 경로나 회의 결과를 사진만 보고 만들어 넣지는 않았다.&lt;/p&gt;
-
-  &lt;p&gt;분류도 내가 다시 정했다. 회의실이나 현장이 찍혔다고 모두 출장으로 보내지 않았다. 이번에 지정한 2014·2015년과 2016년 10월은 출장으로, 2016년 2~5월과 2017년 8·10월, 2018년과 2024년의 보류 자료는 개인 일상으로 정리했다.&lt;/p&gt;
-
-  &lt;p&gt;블로그 글은 &lt;strong&gt;‘도구와 배움’&lt;/strong&gt;, 사진 중심 기록은 &lt;strong&gt;‘일과 일상’&lt;/strong&gt;에 둔다. 이 글에 내 사진을 붙여도 블로그 글의 자리는 도구와 배움이다.&lt;/p&gt;
-
-  &lt;h2 id=&quot;section-2&quot;&gt;가족을 초대했다고 사진까지 열리는 것은 아니었다&lt;/h2&gt;
-
-  &lt;p&gt;가족이 로그인했는데 사진과 영상이 보이지 않는 일도 있었다.&lt;/p&gt;
-
-  &lt;p&gt;이메일을 허용 목록에 넣으면 해결될 것으로 생각하기 쉬웠다. 그러나 홈페이지에 들어오는 권한과 OneDrive 파일을 읽는 권한은 서로 달랐다. 기존 사진 코드는 로그인한 사람의 OneDrive를 찾는 구조였다. 가족이 들어오면 내 사진이 있는 드라이브를 읽을 수 없었다.&lt;/p&gt;
-
-  &lt;p&gt;결국 가족에게 Microsoft 계정을 추가로 요구하는 방향 대신, &lt;strong&gt;홈페이지에 사용한 사진과 영상의 웹용 사본을 기존 인증 기록실에서 제공하는 방식&lt;/strong&gt;으로 바꿨다. OneDrive 원본 전체를 공개하거나 가족에게 보관함 전체를 공유한 것은 아니다.&lt;/p&gt;
-
-  &lt;p&gt;여기서도 한 번 더 막혔다. 미디어를 정적 배포 묶음에 넣자 약 1.41GB가 되어 512MiB 게시 한도를 넘었다. 사진과 영상은 보호된 객체 저장소로, 화면과 제공 코드는 작은 Worker로 나눠야 했다.&lt;/p&gt;
-
-  &lt;p&gt;화면 하나의 뒤에 생각보다 많은 일이 있었다.&lt;/p&gt;
-
-  &lt;h2 id=&quot;section-3&quot;&gt;주소 하나가 이렇게 어려울 줄은 몰랐다&lt;/h2&gt;
-
-  &lt;p&gt;내가 원한 것은 단순했다. &lt;strong&gt;어느 메뉴를 열어도 주소창에는 maestro4u.kr이 남는 것.&lt;/strong&gt; 개인 일상에 들어갔다고 긴 별도 사이트 주소로 바뀌는 모습은 마음에 들지 않았다.&lt;/p&gt;
-
-  &lt;p&gt;처음에는 기존 Sites 쪽으로 도메인을 연결하려 했다. DNS를 바꾸고 소유 확인 값을 넣었지만 인증서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pending_validation&lt;/code&gt;에 머물렀다. 새 연결의 HTTPS가 실패해서, 10월 17일 밤에는 기존 GitHub Pages 주소로 되돌려 홈페이지를 살렸다.&lt;/p&gt;
-
-  &lt;p&gt;언제 발급될지도 확실하지 않은 인증서를 기다리는 일이 답답했다. 상태를 3시간마다 확인하는 예약까지 남겼다. 그 뒤에는 이 경로를 잠시 보류하고 Vercel에서 실제 도메인을 사용할 수 있는지 별도로 검증했다.&lt;/p&gt;
-
-  &lt;p&gt;Vercel에서도 한 번에 끝나지 않았다. 인증용 TXT 전파가 늦어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NXDOMAIN&lt;/code&gt; 오류가 났고, 다음 발급 시도에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ResponseError&lt;/code&gt;가 나왔다. 새 인증 요청을 만들고 DNS 전파를 다시 확인한 뒤 인증서를 발급받았다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;도메인 등록, 인증서 발급, DNS 전환, 실제 브라우저 확인은 각각 다른 일이었다.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;서버에서는 새 사이트가 보이는데 내 브라우저에는 옛 사이트가 남는 시간도 있었다. 테스트 주소에서 성공했다고 내가 원하는 실제 주소에서 끝난 것은 아니었다.&lt;/p&gt;
-
-  &lt;h2 id=&quot;section-4&quot;&gt;“수정했다”보다 “직접 열어보니 된다”가 중요했다&lt;/h2&gt;
-
-  &lt;p&gt;Vercel로 옮긴 뒤에도 개인 일상 상세가 기존 기록실 주소로 열렸다. 주소 통합을 원했는데, 비공개 상세를 새 창으로 남겨둔 부분이 요구와 맞지 않았다. 이 부분은 DNS가 퍼지기를 기다린다고 해결될 문제가 아니었다. 로그인과 콘텐츠 연결 구조를 다시 고쳤다.&lt;/p&gt;
-
-  &lt;p&gt;이제 공개 화면과 비공개 상세를 같은 홈페이지 틀 안에서 표시한다. 로그인 확인에만 팝업을 쓰고, 사진을 보는 화면과 목록으로 돌아오는 화면은 루트 주소 안에 둔다.&lt;/p&gt;
-
-  &lt;p&gt;사진을 보고 돌아왔더니 연도와 지역 필터가 풀리는 문제도 고쳤다. 내가 보던 목록의 &lt;strong&gt;연도·지역·페이지&lt;/strong&gt;를 함께 기억하도록 했다. 목록은 한 쪽에 10개씩 보여준다.&lt;/p&gt;
-
-  &lt;p&gt;Codex의 도움을 많이 받았다. 동시에 설명과 실제 화면이 맞지 않는 부분을 내가 다시 짚어야 했다. 요청을 정확히 전달하는 일, 시안을 고르는 일, 직접 눌러보고 이상한 점을 말하는 일도 적지 않은 작업이었다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;AI에게 일을 맡긴다고 내가 할 일이 없어지는 것은 아니었다.&lt;/strong&gt; 그래도 내가 방향을 정하고, Codex가 코드와 배포를 맡으며 이만큼 정리할 수 있었다.&lt;/p&gt;
-
-  &lt;h2 id=&quot;section-5&quot;&gt;오늘의 마무리는, 다음 기록을 쉽게 남길 준비다&lt;/h2&gt;
-
-  &lt;p&gt;Jekyll을 완전히 버리지는 않았다. 글을 만드는 원본과 기존 주소는 유지했다. 운영 화면을 내보내는 곳과 개인 미디어를 보호하는 곳을 나눴다. 앞으로는 사진이나 주제, 메모를 건네고 Codex의 도움으로 글과 기록을 남기려 한다.&lt;/p&gt;
-
-  &lt;p&gt;이번 주말에는 홈페이지를 만들면서 내 과거의 사진도 다시 만났다. 홈페이지를 정리하는 일이 쌓여 있던 시간을 정리하는 일로 이어졌다.&lt;/p&gt;
-
-  &lt;p&gt;아직 모든 기기와 모든 가족 계정의 동작을 다 확인한 것은 아니다. 남은 점검도 기록해뒀다. 하지만 오늘까지 붙잡고 고친 일과, 다시 찾아볼 수 있게 남긴 자료는 분명히 있다.&lt;/p&gt;
-
-  &lt;p&gt;스타벅스에서 노트북을 바라보던 이 얼굴도 그 기록의 일부로 남겨둔다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;고생했다, 나 자신. 다음에는 홈페이지를 고치는 시간보다 이곳에 기록을 남기는 시간이 더 많았으면 좋겠다.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;hr /&gt;
-
-  &lt;h2 id=&quot;technical-memory&quot;&gt;다시 헤매지 않기 위한 기술 메모&lt;/h2&gt;
-
-  &lt;p&gt;아래 내용은 &lt;strong&gt;2026년 10월 18일까지의 실제 작업 기록&lt;/strong&gt;이다. 서비스 일반 설명이나 앞으로의 요금제·정책을 보장하는 문서는 아니다. 비밀 키, 계정 이메일, 개인 사진의 정확한 위치와 원본 폴더 정보는 넣지 않았다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;section-6&quot;&gt;1. 현재 구조와 도구의 역할&lt;/h3&gt;
-
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;구성&lt;/th&gt;
-        &lt;th&gt;맡은 역할&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Jekyll·Markdown&lt;/td&gt;
-        &lt;td&gt;글과 페이지를 만드는 작성 원본. 기존 글 주소를 유지한다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;비공개 Git 저장소&lt;/td&gt;
-        &lt;td&gt;작성 소스와 운영 코드를 관리한다. 개인 미디어 전체를 올리지 않는다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;공개 export&lt;/td&gt;
-        &lt;td&gt;개인 사진·영상과 보호 대상 상세 본문을 제거한 공개 사본을 만든다. 승인한 공개 이미지만 해시로 허용한다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Vercel&lt;/td&gt;
-        &lt;td&gt;maestro4u.kr의 공개 화면과 루트 화면 틀, 인증된 비공개 전달 API를 제공한다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;기존 Sites 인증 기록실&lt;/td&gt;
-        &lt;td&gt;허용 사용자 확인과 보호된 기록·미디어 제공을 맡는다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;R2 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BUCKET&lt;/code&gt;&lt;/td&gt;
-        &lt;td&gt;선별한 웹용 사진·영상 객체를 보관한다. 공개 미디어 주소로 풀지 않는다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;OneDrive&lt;/td&gt;
-        &lt;td&gt;사진·영상 원본을 보존한다. 현재 가족 열람 때는 별도 Microsoft 로그인을 요구하지 않는다.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Hosting.kr&lt;/td&gt;
-        &lt;td&gt;기존 네임서버와 DNS를 관리한다. 다른 서브도메인은 유지했다.&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;p&gt;Cloudflare DNS나 Access로 도메인을 이전하지 않았다. R2는 기존 Sites가 제공하는 내부 객체 저장소로 사용한다. Supabase를 필수 구성으로 도입하지도 않았다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;section-7&quot;&gt;2. 사진 정리와 분류 기준&lt;/h3&gt;
+  &lt;p&gt;돌아보니 이런 일들을 했다.&lt;/p&gt;
 
   &lt;ul&gt;
-    &lt;li&gt;파일명·업로드일 대신 EXIF의 촬영일과 확인된 시간대를 우선한다. 날짜가 확인되지 않은 자료는 보류한다.&lt;/li&gt;
-    &lt;li&gt;원본 파일의 크기와 SHA256 해시를 대조한다. SHA256은 파일 내용이 같은지 확인하는 값이다. 같은 해시와 유사 장면을 구분해 중복을 정리한다.&lt;/li&gt;
-    &lt;li&gt;HEIC/JPEG의 회전 정보를 적용하고 웹용 JPEG를 만든다. 가족용 사진은 긴 변 최대 2400px·JPEG 품질 88을 기준으로 준비했다. 이 글의 카메라 사진은 별도 블로그용 사본이다.&lt;/li&gt;
-    &lt;li&gt;본문은 사진 비율을 고려해 짝을 맞추고, 큰 표지는 화면에 맞게 표시한다. 연속 일정은 한 기록으로 묶고, 연간 일상은 장별 날짜를 표시한다.&lt;/li&gt;
-    &lt;li&gt;지도는 MapLibre를 사용한다. 확인된 GPS만 핀으로 표시한다. 사진 지점 사이의 선은 참고선이며 실제 주행 경로가 아니다. 좌표가 없으면 임의 핀을 만들지 않는다.&lt;/li&gt;
-    &lt;li&gt;새 온두라스 기록에서는 북반구 지점도 현지 지도에 포함하도록 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;local_location_ids&lt;/code&gt;를 지정했다. 좌표가 없는 댐 기록은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_center&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_zoom&lt;/code&gt;으로 넓은 지역만 보여준다.&lt;/li&gt;
-    &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;daily_regions.json&lt;/code&gt;은 연도·지역 필터의 대응표다. 개인 일상 152편을 포함하고, 출장 목록은 12건이다. 모든 목록은 한 쪽 최대 10건이다.&lt;/li&gt;
-    &lt;li&gt;마지막 보류 자료 배치에서는 343장 중 206장을 선별했다. 출장 7건·개인 일상 13건을 추가했다. 전체 영상 전수 검토가 끝났다는 뜻은 아니다.&lt;/li&gt;
+    &lt;li&gt;메인 화면과 메뉴 다듬기&lt;/li&gt;
+    &lt;li&gt;오래된 사진과 영상을 골라 기록으로 묶기&lt;/li&gt;
+    &lt;li&gt;업무상 출장과 개인의 일상 나누기&lt;/li&gt;
+    &lt;li&gt;가족이 사진과 영상을 볼 수 있도록 준비하기&lt;/li&gt;
+    &lt;li&gt;홈페이지 주소와 로그인 문제 해결하기&lt;/li&gt;
+    &lt;li&gt;목록과 필터, 뒤로 돌아오는 화면 점검하기&lt;/li&gt;
   &lt;/ul&gt;
 
-  &lt;h3 id=&quot;onedrive----&quot;&gt;3. OneDrive 직접 연결에서 배운 점&lt;/h3&gt;
+  &lt;p&gt;가장 오래 붙잡고 있었던 것은 ‘개인의 일상’이었다. 지난 사진을 다시 보고, 고르고, 날짜와 장소에 맞게 묶는 일이 생각보다 훨씬 오래 걸렸다. 추억을 다시 만나는 반가움도 있었지만, 정리할 것이 계속 나오니 끝이 보이지 않았다.&lt;/p&gt;
 
-  &lt;p&gt;초기에는 MSAL로 Microsoft에 로그인하고 Microsoft Graph의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Files.Read&lt;/code&gt; 권한으로 사진과 영상을 읽었다. 임시 다운로드 주소는 세션에서만 사용하고 파일이나 Git에 저장하지 않았다.&lt;/p&gt;
+  &lt;p&gt;주소 문제도 만만치 않았다. 원하는 주소로 들어갔는데 다른 주소가 나오고, 고쳤다고 생각하면 또 확인할 것이 생겼다. 사진이 안 보이거나, 보고 돌아왔더니 골라둔 목록이 풀리는 일도 있었다. 같은 화면을 몇 번이고 다시 열어보다 보니 솔직히 지치고 답답했다.&lt;/p&gt;
 
-  &lt;p&gt;사진은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thumbnails&lt;/code&gt; 컬렉션의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c2400x2400&lt;/code&gt; 미리보기를 사용했다. 개별 미리보기 경로에서는 HTTP 200이면서 오류 JSON이 오는 경우가 있어, 상태 코드뿐 아니라 응답 내용을 확인해야 했다.&lt;/p&gt;
+  &lt;p&gt;Codex의 도움으로 하나씩 고쳤지만, 내가 원하는 모습을 설명하고 결과를 확인하는 일도 꽤 힘이 들었다. ‘이 정도면 됐다’ 싶다가도 다시 붙잡게 됐다. 쉬려고 맞은 주말인데, 어느새 홈페이지를 고치는 주말이 되어 있었다.&lt;/p&gt;
 
-  &lt;p&gt;직접 연결 샘플에서는 JPEG·HEIC 사진과 세로 4K 영상이 Microsoft 서버에서 전송되고 영상이 끝까지 재생되는 것까지 확인했다. 원본을 Vercel에 모두 옮기는 것만이 가능한 방식은 아니었다.&lt;/p&gt;
+  &lt;p&gt;그래도 사진과 글이 제자리를 찾아가는 모습을 보니 조금은 뿌듯하다. 흩어져 있던 내 시간들이 이제 한곳에 모이기 시작했다.&lt;/p&gt;
 
-  &lt;p&gt;다만 가족 열람은 별개였다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/me/drive&lt;/code&gt;는 로그인한 사람 자신의 드라이브를 가리킨다. 사이트의 viewer 권한만으로 소유자의 OneDrive 권한이 생기지 않는다. 특정인 공유 시도도 성공하지 않았으므로 공유 완료로 처리하지 않았다. 현재는 승인한 웹용 사본을 인증 기록실에서 제공한다.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;오늘까지, 정말 고생했다.&lt;/strong&gt;&lt;/p&gt;
 
-  &lt;h3 id=&quot;section-8&quot;&gt;4. 영상은 해상도를 우선 지키며 압축했다&lt;/h3&gt;
-
-  &lt;table&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;영상&lt;/th&gt;
-        &lt;th style=&quot;text-align: right&quot;&gt;원본 → 웹용 사본&lt;/th&gt;
-        &lt;th style=&quot;text-align: right&quot;&gt;용량 감소&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;평창&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;32.27MB → 18.77MB&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;41.83%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;일본&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;58.60MB → 41.62MB&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;28.98%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;합계&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;90.87MB → 60.39MB&lt;/td&gt;
-        &lt;td style=&quot;text-align: right&quot;&gt;약 33.54%&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;p&gt;두 영상은 4K 해상도와 약 60fps, HEVC Main10의 10비트·HLG/BT.2020을 유지했다. AAC 오디오는 다시 인코딩하지 않고 스트림 복사했다. 세로 영상은 회전 메타데이터에만 의존하지 않는 픽셀 배치로 저장했다.&lt;/p&gt;
-
-  &lt;p&gt;장면을 자르지는 않았다. 다만 컨테이너의 오디오 시작 패딩 때문에 길이가 약 0.019초 늘었다. Dolby Vision의 동적 메타데이터는 보존하지 않았고 압축본은 HLG HDR이다. 원본과 모든 정보가 같은 무손실 사본은 아니다.&lt;/p&gt;
-
-  &lt;p&gt;전체 프레임 비교의 평균 SSIM은 각각 0.98315와 0.98342였다. SSIM은 픽셀 유사도 지표다. 모든 HDR 기기에서 같은 화면으로 보인다는 뜻은 아니다. 업로드 뒤 다시 내려받아 SHA256을 대조했고, 실제 재생도 별도로 확인했다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;worker---&quot;&gt;5. 가족 미디어는 작은 Worker와 보호된 객체로 나눴다&lt;/h3&gt;
-
-  &lt;p&gt;정적 미디어 묶음 약 1.41GB가 512MiB 게시 한도를 넘었다. 그래서 기존 Site를 Worker ESM과 R2 저장소로 구성했다. Worker는 요청에 응답하는 서버 코드다. HTML·제공 코드를 미디어 바이트와 분리해 큰 배포 묶음을 피했다.&lt;/p&gt;
-
-  &lt;p&gt;첫 가족 제공 배치에는 사진 1,444장과 영상 10개가 있었다. 영상 청크 17개와 포스터 10개를 포함해 서버 객체 1,471개, 약 1.379GB를 올렸다. 마지막 사진 206장을 더한 현재 대응표는 &lt;strong&gt;사진 1,650장·영상 10개&lt;/strong&gt;, 서버 객체는 &lt;strong&gt;1,677개&lt;/strong&gt;다. 원본 미디어 수와 청크·포스터를 포함한 객체 수는 다르다.&lt;/p&gt;
-
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;family-object-registry.json&lt;/code&gt;에 허용 경로·바이트 수·SHA256을 둔다. 업로드마다 서버에서 크기와 해시를 확인한다. 임시 업로드 키는 작업 후 제거한다. 새 미디어 업로드와 검증이 끝난 뒤 새 HTML을 게시한다.&lt;/p&gt;
-
-  &lt;p&gt;응답에는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cache-Control: private, no-store&lt;/code&gt;를 적용한다. 임의 미디어 경로는 거절한다. HTML뿐 아니라 사진·영상 조각에도 인증이 적용돼야 한다. OneDrive 원본과 전체 폴더의 권한은 그대로 보존한다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;section-9&quot;&gt;6. 도메인·인증서 전환 순서&lt;/h3&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;&lt;strong&gt;10월 17일 밤:&lt;/strong&gt; 기존 Sites 대상에 A 레코드와 검증 TXT를 설정했다. 인증서가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pending_validation&lt;/code&gt;이고 HTTPS가 실패해 GitHub Pages의 기존 A 4개로 복구했다. 당시 TTL은 180초였다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Vercel 별도 검증:&lt;/strong&gt; 샘플에서 메뉴·새로고침의 루트 주소 유지를 확인했다. 이것만으로 실제 maestro4u.kr 전환 성공이라고 판단하지 않았다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;운영 DNS를 바꾸기 전 인증:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; TXT를 추가했다. 첫 요청은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NXDOMAIN&lt;/code&gt;, 다음 CLI 발급 완료 요청은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ResponseError&lt;/code&gt;였다. 새 인증 요청과 TXT를 준비하고 권한 네임서버·외부 DNS 전파를 다시 확인했다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;인증서 발급:&lt;/strong&gt; Vercel CLI와 같은 발급 완료 작업을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/v3/certs&lt;/code&gt; PATCH로 실행해 발급을 확인했다. 호스트 이름과 인증 체인 검증을 끄지 않고 TLS 1.3을 확인했다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;실제 도메인 검증:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl --resolve&lt;/code&gt;로 DNS를 전환하지 않은 상태에서도 해당 IP에 maestro4u.kr 이름으로 HTTPS 접속했다. HTTP 200과 시험 배포의 HTML·JS·데이터 해시 일치를 확인했다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;10월 18일 15:57경:&lt;/strong&gt; 운영 콘텐츠를 준비한 뒤 루트 A를 &lt;strong&gt;216.198.79.1&lt;/strong&gt;로 전환했다. Hosting.kr 네임서버와 기존 메일·다른 서브도메인은 유지했다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;16:24 실제 확인:&lt;/strong&gt; Safari의 maestro4u.kr에서 개인 사진 상세·목록·메뉴의 루트 주소 유지를 확인했다. 예전 기록실 북마크에서 루트로 돌아오는 것도 확인했다.&lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;p&gt;이번 글을 작성하며 다시 확인한 결과도 DNS A는 216.198.79.1, HTTPS는 HTTP 200·Vercel 응답이었다. TLS 1.3과 maestro4u.kr 인증서 이름을 검증했다. 현재 기록된 인증서 만료는 &lt;strong&gt;2027년 1월 16일 05:43:30 UTC&lt;/strong&gt;다. 갱신 상태는 별도 운영 점검 대상이다.&lt;/p&gt;
-
-  &lt;p&gt;복구용 이전 GitHub Pages A는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;185.199.108.153&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;185.199.109.153&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;185.199.110.153&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;185.199.111.153&lt;/code&gt;이다. 작업 당시 별도로 남겨둔 인증 TXT와 기존 Sites 인증서 점검 예약은 후속 정리 대상으로 기록했다. 이 글을 쓰면서 DNS나 예약을 다시 변경하지는 않았다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;section-10&quot;&gt;7. 주소창 고정과 로그인은 별도로 구현했다&lt;/h3&gt;
-
-  &lt;p&gt;DNS만 바꾸면 상세 주소까지 모두 사라지는 것은 아니다. 바깥 문서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;에 두고, 같은 출처의 iframe 안에서 기존 페이지 전체를 표시한다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shell.js&lt;/code&gt;가 첫 화면과 기존 상세 링크를 열고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bridge.js&lt;/code&gt;가 내부 링크·화면 상태·제목을 연결한다. 기존 개별 글 링크도 해당 화면을 루트 안에서 연다.&lt;/p&gt;
-
-  &lt;p&gt;비공개 상세와 사진·영상은 인증된 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/_private/&lt;/code&gt; 전달 경로를 사용한다. 서버는 기존 기록실에서 자료를 받아 전달하며, 개인 미디어를 Vercel 정적 폴더나 공개 Git에 복사하지 않는다. 따라서 현재 구조에서는 비공개 미디어 전송이 Vercel 서버를 거친다. OneDrive 직접 연결 샘플과 최종 운영 구조를 혼동하지 않아야 한다.&lt;/p&gt;
-
-  &lt;p&gt;로그인은 기존 Sites 제공자를 유지한다. 허용 사용자 확인 후 120초 유효 HMAC 확인값을 전달한다. HMAC은 비밀 키로 값의 변조 여부를 확인하는 서명 방식이다. 값은 URL fragment로 전달하고, 홈페이지의 상태 쿠키와 일치할 때 15분 세션을 발급한다. 세션 쿠키는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HttpOnly&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Secure&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SameSite=Lax&lt;/code&gt;를 사용한다. 비밀 키와 서비스 토큰은 서버 환경에만 둔다. 익명 상세·미디어 요청은 401로 차단하고, 업로드·관리 경로는 전달하지 않는다.&lt;/p&gt;
-
-  &lt;p&gt;외부 사이트와 다운로드는 별도로 열 수 있다. 로그인 확인 팝업에는 인증 제공자의 주소가 잠시 표시된다. 주소 고정은 내부 메뉴와 기록 화면에 적용한 동작이다.&lt;/p&gt;
-
-  &lt;p&gt;개인 일상 목록에서 상세로 이동하기 직전의 URL은 탭별 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sessionStorage&lt;/code&gt;에 보관한다. 저장 키는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;maestro.daily.return.v1&lt;/code&gt;이다. 상세에서 조건 없는 목록 링크로 돌아오면 연도·지역·페이지를 복원한다. 명시적 필터 초기화나 다른 메뉴 진입에는 이전 조건을 강제로 덮어쓰지 않는다.&lt;/p&gt;
-
-  &lt;h3 id=&quot;section-11&quot;&gt;8. 다음 게시 때 지킬 순서와 확인 경계&lt;/h3&gt;
-
-  &lt;p&gt;작성 소스의 Jekyll 빌드에서 시작한다. 스킬 원문 패키지는 Jekyll 변환 뒤 바이트 그대로 다시 배치한다. 사이트 검사 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export_public.py&lt;/code&gt;로 공개 사본을 만들고, 그 사본에서 Vercel 운영 빌드를 만든다. 원시 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt;를 그대로 공개 배포하지 않는다.&lt;/p&gt;
-
-  &lt;p&gt;새 가족 미디어가 있으면 별도로 원본·웹용 해시를 확인하고 보호된 저장소에 먼저 올린다. 사진·영상 바이트를 Git이나 큰 정적 배포 묶음에 넣지 않는다. 이번 카메라 사진 한 장은 이 글에 게시하도록 요청한 범위의 공개 예외로만 등록했다.&lt;/p&gt;
-
-  &lt;p&gt;점검은 구분해서 남긴다.&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;빌드·링크:&lt;/strong&gt; Jekyll, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;verify_site.py&lt;/code&gt;, JS 구문, 변경 파일과 공백 오류.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;목록·분류:&lt;/strong&gt; 촬영일순, 10개 단위 페이지, 연도·지역 필터와 복귀 상태.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;공개 범위:&lt;/strong&gt; 승인 이미지 경로·해시, 보호 대상 본문·개인 미디어 제외.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;서버 전송:&lt;/strong&gt; 업로드 크기·SHA256, 재다운로드 해시, 익명 접근 차단.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;실제 사용:&lt;/strong&gt; 로그인, 사진 표시·확대, 영상의 시간 진행과 재생 종료, 모바일 배치, 실제 도메인 주소 유지.&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;배포 성공이나 HTTP 200만으로 사진 표시와 영상 재생까지 확인했다고 쓰지 않는다. 마지막 206장 배치에서는 업로드 전체의 크기·해시와 읽기 표본 9장을 확인했다. 새 사진·지도 배치는 게시 서버 자료를 임시 로컬 중계로 점검했다. 가족 본인 기기의 로그인 성공을 대신 검증한 것은 아니다.&lt;/p&gt;
-
-  &lt;p&gt;마지막 Chrome 자동화 탭에서는 루트 iframe이 비어 보이는 현상도 관찰했다. 이 글을 게시하며 다시 확인하니 개발자 도구의 문서 요청이 연결 시작 단계에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Stalled&lt;/code&gt; 상태였다. 자동화 디버깅 연결을 종료하고 일반 Chrome에서 새로고침하자, 사이트 코드를 바꾸지 않고도 실제 maestro4u.kr의 글과 사진이 정상 표시됐다. 주소창도 루트를 유지했다. 자동화 연결이 영향을 준 정황을 확인했지만 내부 원인까지 확정한 것은 아니다. 자동화 화면의 실패와 일반 브라우저의 사이트 동작을 구분해야 한다는 점도 이번에 배웠다.&lt;/p&gt;
-
-  &lt;p&gt;예전 Make 글의 Liquid 경고, 촬영일이 없는 사진, 분류하지 않은 다른 업무 후보와 미검토 영상도 남아 있다. 비밀값 없는 작업 기록과 재개점을 파일에 남겼으므로, 다음에는 같은 지점에서 다시 시작할 수 있다.&lt;/p&gt;
-
-  &lt;p&gt;이전 글: &lt;a href=&quot;/blog/homepage-renewal-with-codex/&quot;&gt;Codex로 홈페이지를 다시 만들다&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;애써 만든 만큼 앞으로는 조금씩이라도 꾸준히 관리해야겠다. 사진 몇 장과 짧은 글이라도 제때 남기면서, 오래 들여다볼 수 있는 내 공간으로 가꾸고 싶다.&lt;/p&gt;
 
 &lt;/div&gt;
 
