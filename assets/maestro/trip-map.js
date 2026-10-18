@@ -128,7 +128,7 @@
   lightbox.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close();});
   showDay(selected,{push:false,animate:false});
   try{
-    map=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/liberty',center:data.map_center||[39.28,-6.78],zoom:11,attributionControl:true});
+    map=new maplibregl.Map({container:el,style:'https://tiles.openfreemap.org/styles/liberty',center:data.map_center||[39.28,-6.78],zoom:data.map_zoom??11,attributionControl:true});
     map.scrollZoom.disable();map.dragRotate.disable();map.touchZoomRotate.disableRotation();
     map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');map.addControl(new maplibregl.ScaleControl({maxWidth:90,unit:'metric'}),'bottom-left');
     map.on('load',()=>{
