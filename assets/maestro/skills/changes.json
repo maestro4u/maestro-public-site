@@ -122,6 +122,14 @@
       "version": "1.1.1",
       "date": "2026-10-18",
       "summary": "참고 사이트 데이터·클릭 링크·외부 공식 원문 연결 기능 추가. Remotion 공식 스킬12개 목록 반영."
+    },
+    {
+      "id": "direct-voicestudio",
+      "name": "voicestudio",
+      "action": "install",
+      "version": "d819ff54d930",
+      "date": "2026-10-18",
+      "summary": "음성 작업용 스킬 등록. Codex 원본과 Claude 공유 연결. 앱·모델·MCP는 별도 준비 필요."
     }
   ]
 }

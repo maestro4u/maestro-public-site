@@ -7782,6 +7782,108 @@
       ]
     },
     {
+      "id": "direct-voicestudio",
+      "name": "voicestudio",
+      "title": "음성 생성·전사·더빙",
+      "category": "영상·미디어",
+      "summary": "VoiceStudio의 로컬 음성 생성·녹음 전사·더빙을 AI로 제어합니다. 앱과 모델은 별도로 준비합니다.",
+      "example": "VoiceStudio 연결과 모델을 확인한 뒤 이 교육 원고의 한국어 내레이션을 만들어줘.",
+      "result": "내레이션 음성·전사 텍스트·자막·더빙 결과물",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "debpalash/VoiceStudio",
+      "modified": "2026-10-11T11:44:36Z",
+      "installed_at": "2026-10-18T00:43:52.958814+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Generate local speech with saved or designed voices, transcribe audio, and automate dubbing or narration workflows through VoiceStudio REST API or MCP.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-voicestudio",
+          "version": "d819ff54d930",
+          "license": "AGPL-3.0 (repository LICENSE; model and voice rights are separate)",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/debpalash/VoiceStudio",
+            "installed_upstream_commit": "d819ff54d93017bf4a5b34b605833162163c9e3c",
+            "skill_path": "skills/voicestudio",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/debpalash/VoiceStudio/blob/d819ff54d93017bf4a5b34b605833162163c9e3c/skills/voicestudio/SKILL.md",
+            "bundle_version": "d819ff54d930"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "voicestudio-agent-skill",
+            "skill_count": 1,
+            "skill_names": [
+              "voicestudio"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 6435,
+              "sha256": "619b1c90992d453f23a402f4847d86bcd33eb6621d3182056ef2c9ec34cd0d1e",
+              "url": "https://github.com/debpalash/VoiceStudio/blob/d819ff54d93017bf4a5b34b605833162163c9e3c/skills/voicestudio/SKILL.md"
+            }
+          ],
+          "dependency_audit": "Requires running VoiceStudio backend and task-specific installed models. App, models and MCP connection were not installed by this skill registration.",
+          "redistribution_review": "Official pinned source link and file metadata; no hosted source archive",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-voicestudio",
+              "name": "voicestudio",
+              "action": "install",
+              "version": "d819ff54d930",
+              "date": "2026-10-18",
+              "summary": "음성 작업용 스킬 등록. Codex 원본과 Claude 공유 연결. 앱·모델·MCP는 별도 준비 필요."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "voicestudio skill directory files in this manifest",
+            "owned_links": "only the Claude link pointing to this Codex original",
+            "shared_runtime": "retain VoiceStudio app, models and other shared runtimes",
+            "user_outputs": "retain voices, recordings and generated audio",
+            "recovery": "back up owned skill and link; reinstall the pinned source"
+          }
+        },
+        "texts": {}
+      },
+      "history": [
+        {
+          "id": "direct-voicestudio",
+          "name": "voicestudio",
+          "action": "install",
+          "version": "d819ff54d930",
+          "date": "2026-10-18",
+          "summary": "음성 작업용 스킬 등록. Codex 원본과 Claude 공유 연결. 앱·모델·MCP는 별도 준비 필요."
+        }
+      ],
+      "references": [
+        {
+          "title": "VoiceStudio 공식 저장소",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "purpose": "앱 설치·지원 기능·실행 조건 확인",
+          "type": "official"
+        },
+        {
+          "title": "VoiceStudio MCP 안내",
+          "url": "https://github.com/debpalash/VoiceStudio/blob/d819ff54d93017bf4a5b34b605833162163c9e3c/docs/mcp.md",
+          "purpose": "AI 연결 방법과 전송 방식 확인",
+          "type": "official"
+        }
+      ]
+    },
+    {
       "id": "direct-skill-catalog-manager",
       "name": "skill-catalog-manager",
       "title": "스킬 카탈로그 작성·관리",
