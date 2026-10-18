@@ -8,3 +8,28 @@
 /* Existing site navigation, retained on the approved homepage. */
 .header .menu-toggle{display:none}.header #site-nav{display:flex;align-items:center;gap:28px}.header .nav-group{position:relative}.header summary{cursor:pointer;list-style:none;font-size:12px}.header summary::-webkit-details-marker{display:none}.header .nav-children{position:absolute;top:30px;left:-18px;min-width:180px;display:flex;flex-direction:column;gap:0;padding:10px;background:#f7f6ef;color:#203e34;border:1px solid #d9ded1;box-shadow:0 15px 40px #0003;border-radius:5px}.header .nav-children a{display:block;padding:12px 10px;white-space:nowrap}.header .nav-children a:hover{background:#e7ecdf}.header .search-link{display:flex;gap:8px;align-items:center}.header .search-link svg{width:17px;height:17px}.header .search-link span{font-size:11px}.header a:hover{color:#dcb48e}.header .nav-children a:hover{color:#203e34}
 @media(max-width:800px){.header{height:90px}.header .menu-toggle{display:block;background:#fff1;border:1px solid #fff5;border-radius:22px;padding:9px 13px;color:white;cursor:pointer;font-size:12px}.header #site-nav{display:none;position:absolute;top:80px;left:5%;right:5%;padding:18px 22px;background:#f7f6ef;color:#203e34;border:1px solid #d9ded1;box-shadow:0 20px 50px #0003;border-radius:7px;align-items:stretch;gap:0;font-size:13px}.header #site-nav.is-open{display:flex;flex-direction:column}.header #site-nav>a,.header #site-nav summary{padding:13px 0;font-size:13px}.header .nav-children{position:static;box-shadow:none;border:0;padding:0 0 5px 15px;min-width:0;background:#eef0e6}.header .nav-children a{padding:12px}.header #site-nav>a:first-child{display:block}.header a:hover{color:#ad6d47}}
+
+/* Approved C photo motion: retain the existing learning chapter dimensions and copy. */
+.learning-cinematic{background:#162a24;color:#f2f1e6}
+.learning-cinematic:before{z-index:0;background:linear-gradient(90deg,#10241bed 0%,#10241bb0 36%,#10241b26 76%),linear-gradient(0deg,#10241bbd,transparent 45%);pointer-events:none}
+.learning-motion{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#162a24}
+.learning-motion img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 50%;will-change:transform,opacity}
+.learning-motion-base{animation:learning-photo-pan 24s ease-in-out infinite alternate}
+.learning-motion-frame{opacity:0;animation:learning-photo-crossfade 18s ease-in-out infinite both}
+.learning-motion-architecture{animation-delay:4.5s}
+.learning-motion-library{animation-delay:10.5s;object-position:50% 45%!important}
+.learning-cinematic .learning-copy>p:not(.eyebrow){color:#e1e6dc}
+.learning-cinematic .learning-topics{color:#b5c4b6}
+.learning-cinematic .learning-desk{z-index:2;display:flex;gap:22px;align-items:flex-end;padding:0 6% 0 3%;perspective:none}
+.learning-cinematic .model-sheet,.learning-cinematic .coordinate-sheet,.learning-cinematic .desk-note{position:static;flex:1;min-width:0;width:auto;transform:none;box-shadow:none;background:none;margin:0;border:0;padding:0}
+.learning-cinematic .sheet-bar{background:none;color:#c4cebf;padding:0 0 12px;display:block;font-size:7px;letter-spacing:1.2px;line-height:1.8;border-bottom:1px solid #e6e9db4a}
+.learning-cinematic .sheet-bar span{display:block}
+.learning-cinematic .model-sheet figcaption,.learning-cinematic .coordinate-sheet figcaption{background:none;color:#dbe1d2;font-size:10px;line-height:1.8;padding:13px 0 0}
+.learning-cinematic .desk-note>span{color:#d6b68c;font-size:23px;white-space:nowrap}
+.learning-cinematic .desk-note p{font-size:13px;color:#e1e6dc;line-height:1.8;margin-top:12px}
+.motion-paused .learning-motion img,.learning-motion.is-outside img{animation-play-state:paused}
+@keyframes learning-photo-pan{from{transform:scale(1.015)}to{transform:scale(1.075)}}
+@keyframes learning-photo-crossfade{0%{opacity:0;transform:scale(1.06)}10%,40%{opacity:1}50%,100%{opacity:0;transform:scale(1)}}
+@media(max-width:1000px) and (min-width:701px){.learning-cinematic .learning-desk{gap:14px;padding-right:5%}.learning-cinematic .desk-note>span{font-size:18px}}
+@media(max-width:700px){.learning-cinematic:before{background:linear-gradient(180deg,#10241bdf 0%,#10241b70 55%,#10241bbd 100%)}.learning-cinematic .learning-motion img{object-position:63% center}.learning-cinematic .learning-desk{position:absolute;left:7%;right:7%;bottom:65px;height:auto;margin:0;padding:0;gap:17px;align-items:flex-end}.learning-cinematic .sheet-bar{font-size:6px;letter-spacing:.6px}.learning-cinematic .model-sheet figcaption,.learning-cinematic .coordinate-sheet figcaption{font-size:9px}.learning-cinematic .desk-note>span{font-size:16px}.learning-cinematic .desk-note p{font-size:11px}.learning-cinematic .learning-copy{padding-top:0}}
+@media(prefers-reduced-motion:reduce){.learning-cinematic .learning-motion-base{opacity:1}.learning-cinematic .learning-motion-frame{opacity:0}}
