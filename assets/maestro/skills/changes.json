@@ -130,6 +130,15 @@
       "version": "d819ff54d930",
       "date": "2026-10-18",
       "summary": "음성 작업용 스킬 등록. Codex 원본과 Claude 공유 연결. 앱·모델·MCP는 별도 준비 필요."
+    },
+    {
+      "id": "direct-skill-catalog-manager",
+      "name": "skill-catalog-manager",
+      "action": "update",
+      "previous_version": "1.1.1",
+      "version": "1.1.2",
+      "date": "2026-10-18",
+      "summary": "기본 정렬을 최근저장순으로 변경. 저장·설치 시각 우선, 미확인 항목은 수정일 기준. 최근작성순은 선택 항목으로 유지."
     }
   ]
 }
