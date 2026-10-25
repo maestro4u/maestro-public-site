@@ -155,6 +155,14 @@
       "version": "4.7.1",
       "date": "2026-10-25",
       "summary": "프런트엔드 디자인 지침 스킬 설치. Codex 원본과 Claude 공유 연결. 프로젝트 hook·엔진 바이너리는 설치하지 않음(첫 실행 때 내려받음)."
+    },
+    {
+      "id": "direct-hallmark",
+      "name": "hallmark",
+      "action": "install",
+      "version": "2.0.0",
+      "date": "2026-10-25",
+      "summary": "웹페이지 디자인 제작 스킬 설치. Codex 원본과 Claude 공유 연결. 플러그인·hook·브라우저 검사 도구는 설치하지 않음."
     }
   ]
 }
