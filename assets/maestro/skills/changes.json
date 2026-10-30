@@ -171,6 +171,14 @@
       "version": "1.0.0",
       "date": "2026-10-31",
       "summary": "AI 코딩 행동 지침 스킬 설치. Codex 원본과 Claude 공유 연결. 플러그인·CLAUDE.md 덧붙이기는 사용하지 않음."
+    },
+    {
+      "id": "direct-security-audit",
+      "name": "security-audit",
+      "action": "install",
+      "version": "c1c8a8c",
+      "date": "2026-10-31",
+      "summary": "Cloudflare 코드 보안 감사 스킬 설치. Codex 원본과 Claude 공유 연결. MIT 고지를 위해 저장소 루트 LICENSE를 동반 파일로 함께 보존. npx skills add는 사용하지 않고 검증 스크립트는 실행하지 않음."
     }
   ]
 }

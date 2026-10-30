@@ -9882,6 +9882,257 @@
       ]
     },
     {
+      "id": "direct-security-audit",
+      "name": "security-audit",
+      "title": "코드 보안 감사",
+      "category": "개발·검증",
+      "summary": "Cloudflare가 공개한 소스 기반 보안 감사 스킬입니다. 정찰·탐색·반박 검증·구조화 기록·독립 재검증·보고의 6단계로 실제 신뢰 경계를 넘는 취약점만 확인하고, 평소에는 보안 질문 안내 방식으로 동작합니다.",
+      "example": "security-audit로 이 앱 저장소를 quick 단계로 보안 감사해줘.",
+      "result": "findings.json(확인·추가 확인 필요·기각), 점검 대장, REPORT.md 등 보고서 3종",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "cloudflare/security-audit-skill",
+      "created": "2026-06-18",
+      "modified": "2026-09-14T19:28:54Z",
+      "installed_at": "2026-10-30T21:27:16.303928+00:00",
+      "saved_at": "2026-10-30T21:27:16.303928+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests, full/comprehensive/end-to-end reviews, or requested report artifacts.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-security-audit",
+          "version": "c1c8a8c",
+          "license": "MIT, Copyright (c) 2025-2026 Cloudflare, Inc. (repository root LICENSE)",
+          "license_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/LICENSE",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/cloudflare/security-audit-skill",
+            "installed_upstream_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+            "skill_path": "skills/security-audit",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SKILL.md",
+            "bundle_version": "c1c8a8c"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true,
+            "upstream_skill_folder_files": 20,
+            "companion_files": [
+              "LICENSE"
+            ],
+            "note": "The skills/security-audit files are byte-identical to upstream. LICENSE is copied byte-identical from the same commit root so the MIT notice travels with the installed copy."
+          },
+          "bundle": {
+            "id": "security-audit-skill",
+            "skill_count": 1,
+            "skill_names": [
+              "security-audit"
+            ]
+          },
+          "files": [
+            {
+              "path": "AI-AND-LLM.md",
+              "bytes": 10617,
+              "sha256": "7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/AI-AND-LLM.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "ATTACK-CLASSES.md",
+              "bytes": 15695,
+              "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/ATTACK-CLASSES.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "CLIENT-SIDE.md",
+              "bytes": 8594,
+              "sha256": "613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/CLIENT-SIDE.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "CLOUD-AND-DEPLOYMENT.md",
+              "bytes": 8291,
+              "sha256": "3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "DATA-ISOLATION-AND-LIFECYCLE.md",
+              "bytes": 7798,
+              "sha256": "307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+              "bytes": 8739,
+              "sha256": "58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "HUNTING.md",
+              "bytes": 22446,
+              "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/HUNTING.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "MEMORY-SAFETY-AND-BINARY.md",
+              "bytes": 10513,
+              "sha256": "7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "PROTOCOLS-RPC-AND-MESSAGING.md",
+              "bytes": 7483,
+              "sha256": "8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "RECONNAISSANCE.md",
+              "bytes": 15902,
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/RECONNAISSANCE.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+              "bytes": 7476,
+              "sha256": "4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 22026,
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SKILL.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "SUPPLY-CHAIN-AND-RELEASE.md",
+              "bytes": 7258,
+              "sha256": "f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "VALIDATION-AND-REPORTING.md",
+              "bytes": 17843,
+              "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/VALIDATION-AND-REPORTING.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "WEB-PROTOCOL-AND-AUTH.md",
+              "bytes": 12300,
+              "sha256": "4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "report-schema.json",
+              "bytes": 14494,
+              "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/report-schema.json",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "validate-coverage-ledger.cjs",
+              "bytes": 33522,
+              "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-coverage-ledger.cjs",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "validate-coverage-ledger.test.cjs",
+              "bytes": 28483,
+              "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-coverage-ledger.test.cjs",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "validate-findings.cjs",
+              "bytes": 28806,
+              "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-findings.cjs",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "validate-findings.test.cjs",
+              "bytes": 26384,
+              "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit/validate-findings.test.cjs",
+              "origin": "upstream skills/security-audit"
+            },
+            {
+              "path": "LICENSE",
+              "bytes": 1078,
+              "sha256": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391",
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/LICENSE",
+              "origin": "companion: repository-root LICENSE"
+            }
+          ],
+          "dependency_audit": "SKILL.md, 14 companion guides, report-schema.json and zero-dependency Node validators with tests. Full audit mode needs a coding agent with parallel sub-agents; running target code needs an OS-enforced no-network sandbox. Validators and tests were not executed during this install.",
+          "redistribution_review": "MIT allows redistribution with the notice, but the catalog provides pinned source links and file metadata instead of republishing about 315 KB of upstream text.",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-security-audit",
+              "name": "security-audit",
+              "action": "install",
+              "version": "c1c8a8c",
+              "date": "2026-10-31",
+              "summary": "Cloudflare 코드 보안 감사 스킬 설치. Codex 원본과 Claude 공유 연결. MIT 고지를 위해 저장소 루트 LICENSE를 동반 파일로 함께 보존. npx skills add는 사용하지 않고 검증 스크립트는 실행하지 않음."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "security-audit skill directory files in this manifest",
+            "owned_links": "only the Claude link pointing to this Codex original",
+            "shared_runtime": "retain Node",
+            "user_outputs": "retain audit run directories",
+            "recovery": "back up owned skill and link; reinstall the pinned commit"
+          }
+        },
+        "texts": {}
+      },
+      "history": [
+        {
+          "id": "direct-security-audit",
+          "name": "security-audit",
+          "action": "install",
+          "version": "c1c8a8c",
+          "date": "2026-10-31",
+          "summary": "Cloudflare 코드 보안 감사 스킬 설치. Codex 원본과 Claude 공유 연결. MIT 고지를 위해 저장소 루트 LICENSE를 동반 파일로 함께 보존. npx skills add는 사용하지 않고 검증 스크립트는 실행하지 않음."
+        }
+      ],
+      "references": [
+        {
+          "title": "cloudflare/security-audit-skill 저장소",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "purpose": "원본 지침·검증 스크립트·라이선스 확인",
+          "type": "official"
+        },
+        {
+          "title": "Build your own vulnerability harness (Cloudflare 블로그)",
+          "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness",
+          "purpose": "이 스킬에서 발전한 Cloudflare 취약점 탐색 시스템 설명",
+          "type": "official"
+        }
+      ]
+    },
+    {
       "id": "direct-skill-catalog-manager",
       "name": "skill-catalog-manager",
       "title": "스킬 카탈로그 작성·관리",
