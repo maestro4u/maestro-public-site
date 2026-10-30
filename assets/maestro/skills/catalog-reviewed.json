@@ -10131,9 +10131,130 @@
           "type": "official"
         }
       ]
+    },
+    {
+      "id": "direct-dembrandt",
+      "name": "dembrandt",
+      "kind": "cli",
+      "title": "웹사이트 디자인 토큰 추출 (CLI)",
+      "category": "설계·시각화",
+      "summary": "명령줄 도구입니다. 웹사이트 주소로 색·글꼴·간격·테두리·그림자·부품을 추출해 DESIGN.md, W3C 디자인 토큰, Tailwind·shadcn 테마, 브랜드 가이드 PDF를 만들고 명도 대비와 디자인 변경을 검사합니다.",
+      "example": "dembrandt로 이 사이트를 5페이지 분석해서 DESIGN.md와 디자인 토큰을 만들어줘. 허락받은 사이트야.",
+      "result": "DESIGN.md, DTCG 토큰 JSON, 테마 CSS, HTML 보고서·브랜드 가이드 PDF",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "dembrandt/dembrandt",
+      "created": "2025-11-22",
+      "modified": "2026-10-11T14:07:40Z",
+      "installed_at": "2026-10-30T22:48:09.702947+00:00",
+      "saved_at": "2026-10-30T22:48:09.702947+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Extract any website’s design system into tokens in seconds: logo, colors, typography, borders & more. One command.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-dembrandt",
+          "kind": "cli",
+          "version": "0.39.2",
+          "license": "MIT, Copyright (c) 2025 thevangelist",
+          "entrypoint": "README.md",
+          "source": {
+            "repository": "https://github.com/dembrandt/dembrandt",
+            "npm_package": "https://www.npmjs.com/package/dembrandt/v/0.39.2",
+            "git_tag": "v0.39.2",
+            "installed_upstream_commit": "e6f527a5e210de01d37071d920121c524e51ec61",
+            "integrity": "sha512-p/YDQMIApb3rj7zBH0maabVxiBl+Pn4UyPK6qNqEUXbFYlNu8LGD3cbMMhpffkElJLvOYwUU1NLxu/voEhi4EA==",
+            "bundle_version": "0.39.2"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true,
+            "note": "The installed npm package is byte-identical to the registry tarball. A local launcher, not part of the package, sets an isolated browser path and blocks the paths that send extraction results to dembrandt.com (--key sync, --compare with a platform baseline id, mcp mode). --compare with a local baseline file stays offline."
+          },
+          "bundle": {
+            "id": "dembrandt-cli",
+            "skill_count": 0,
+            "skill_names": []
+          },
+          "files": [
+            {
+              "path": "README.md",
+              "bytes": 11632,
+              "sha256": "452be4472add3cc29b01df76f5ccebdbea2315fa8cf4ef9bebdaee6cbd2258fc",
+              "url": "https://github.com/dembrandt/dembrandt/blob/e6f527a5e210de01d37071d920121c524e51ec61/README.md",
+              "origin": "npm package file, byte-identical to git tag v0.39.2"
+            },
+            {
+              "path": "LICENSE",
+              "bytes": 1069,
+              "sha256": "c93571ddca290d98e4b6385cea93c8a24adbfbf9bb6fdecbd483646f2c7e9edc",
+              "url": "https://github.com/dembrandt/dembrandt/blob/e6f527a5e210de01d37071d920121c524e51ec61/LICENSE",
+              "origin": "npm package file, byte-identical to git tag v0.39.2"
+            },
+            {
+              "path": "dembrandt-0.39.2.tgz",
+              "bytes": 460876,
+              "sha256": "68982efad8962c6c7593568ce752ce28988eef36836584221c613455fc68d9a5",
+              "url": "https://registry.npmjs.org/dembrandt/-/dembrandt-0.39.2.tgz",
+              "origin": "npm registry tarball (installed package is byte-identical after extraction)"
+            }
+          ],
+          "dependency_audit": "Node.js 18+ and 130 npm packages (playwright-core 1.63.0, MCP SDK and others) with verified registry signatures. Chromium for Playwright 1.63.0 is installed once in the runtime folder. MCP server mode and the dembrandt-skills collection are not installed.",
+          "redistribution_review": "MIT allows redistribution, but the catalog provides pinned README, LICENSE and tarball links with hashes instead of republishing the package.",
+          "install_ready": false,
+          "runtime_verified": false,
+          "runtime_note": "A smoke extraction ran on the developer demo site; this is not a full runtime verification.",
+          "history": [
+            {
+              "id": "direct-dembrandt",
+              "name": "dembrandt",
+              "action": "install",
+              "version": "0.39.2",
+              "date": "2026-10-31",
+              "summary": "웹사이트 디자인 토큰 추출 CLI 설치(명령줄 도구, 스킬 아님). 관리 폴더 npm 설치·실행 스크립트·전용 Chromium. MCP 연결·동반 스킬은 쓰지 않고, 결과를 dembrandt.com으로 보내는 경로(--key 동기화·원격 기준 비교·MCP)는 실행 스크립트에서 막음."
+            }
+          ],
+          "uninstall": {
+            "owned": "runtime folder and launcher listed in the private ledger",
+            "shared_runtime": "retain Node",
+            "user_outputs": "retain output/<domain>/ folders created where the command ran",
+            "recovery": "restore the ledger backup; reinstall the pinned version"
+          },
+          "network": "The browser loads the analyzed pages and their third-party resources (fonts, CDNs, scripts). Remote result uploads to dembrandt.com are blocked by the local launcher."
+        },
+        "texts": {}
+      },
+      "history": [
+        {
+          "id": "direct-dembrandt",
+          "name": "dembrandt",
+          "action": "install",
+          "version": "0.39.2",
+          "date": "2026-10-31",
+          "summary": "웹사이트 디자인 토큰 추출 CLI 설치(명령줄 도구, 스킬 아님). 관리 폴더 npm 설치·실행 스크립트·전용 Chromium. MCP 연결·동반 스킬은 쓰지 않고, 결과를 dembrandt.com으로 보내는 경로(--key 동기화·원격 기준 비교·MCP)는 실행 스크립트에서 막음."
+        }
+      ],
+      "references": [
+        {
+          "title": "Dembrandt 공식 사이트",
+          "url": "https://www.dembrandt.com",
+          "purpose": "사용 예(recipes)·MCP 안내 확인",
+          "type": "official"
+        },
+        {
+          "title": "dembrandt/dembrandt 저장소",
+          "url": "https://github.com/dembrandt/dembrandt",
+          "purpose": "원본 코드·사용 문서·라이선스 확인",
+          "type": "official"
+        }
+      ]
     }
   ],
-  "counting": "직접 관리 항목은 실제 원본 경로로 중복 제거. 플러그인은 등록된 출처별 항목으로 구분. 예시 요청은 제안이며 사용 실적이 아님. 최근순은 SKILL.md 파일 수정 시각. 별도 앱에서 세션에 제공하는 미등록 확장과 내장 명령은 제외.",
+  "counting": "직접 관리 항목은 실제 원본 경로로 중복 제거. 플러그인은 등록된 출처별 항목으로 구분. 예시 요청은 제안이며 사용 실적이 아님. 최근순은 SKILL.md 파일 수정 시각. 별도 앱에서 세션에 제공하는 미등록 확장과 내장 명령은 제외. 스킬이 아닌 명령줄 도구는 kind: cli로 표시해 함께 기록하며 카드 표지에 CLI로 나타냄.",
   "reference_sites": [
     {
       "title": "Remotion Kit 마켓플레이스",
