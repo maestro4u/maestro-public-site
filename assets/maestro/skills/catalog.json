@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-25",
+  "checked": "2026-10-31",
   "entries": [
     {
       "id": "direct-ask-matt",
@@ -9773,6 +9773,111 @@
           "url": "https://github.com/Nutlope/hallmark",
           "purpose": "원본 코드·README·라이선스 확인",
           "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "direct-karpathy-guidelines",
+      "name": "karpathy-guidelines",
+      "title": "AI 코딩 실수 줄이기 지침",
+      "category": "개발·검증",
+      "summary": "Andrej Karpathy가 지적한 AI 코딩의 흔한 실수를 줄이는 행동 지침입니다. 코딩 전 가정 밝히기, 단순함 우선, 필요한 곳만 수정, 검증 가능한 목표로 실행하기의 4원칙을 적용합니다.",
+      "example": "karpathy-guidelines 기준으로 이 버그를 고쳐줘. 먼저 버그를 재현하는 시험부터 만들어.",
+      "result": "요청과 직접 연결된 최소 변경, 밝힌 가정과 단계별 검증 계획",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "multica-ai/andrej-karpathy-skills",
+      "created": "2026-01-28",
+      "modified": "2026-04-20T10:05:04Z",
+      "installed_at": "2026-10-30T21:19:11.926098+00:00",
+      "saved_at": "2026-10-30T21:19:11.926098+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-karpathy-guidelines",
+          "version": "1.0.0",
+          "license": "MIT (SKILL.md frontmatter and README; the repository has no separate LICENSE file)",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/multica-ai/andrej-karpathy-skills",
+            "former_repository": "https://github.com/forrestchang/andrej-karpathy-skills",
+            "installed_upstream_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+            "skill_path": "skills/karpathy-guidelines",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/skills/karpathy-guidelines/SKILL.md",
+            "bundle_version": "1.0.0"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true
+          },
+          "bundle": {
+            "id": "karpathy-guidelines-skill",
+            "skill_count": 1,
+            "skill_names": [
+              "karpathy-guidelines"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 2518,
+              "sha256": "6e22cc54cb02a5e98ae42d06d9d7292db0c1b43894831b32879beb0166b2aea7",
+              "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/skills/karpathy-guidelines/SKILL.md"
+            }
+          ],
+          "dependency_audit": "One text-only SKILL.md. No scripts, dependencies or network access.",
+          "redistribution_review": "MIT is stated, but the repository has no LICENSE file with a copyright notice, so the catalog provides the pinned source link and file metadata instead of republishing the text.",
+          "install_ready": false,
+          "runtime_verified": false,
+          "history": [
+            {
+              "id": "direct-karpathy-guidelines",
+              "name": "karpathy-guidelines",
+              "action": "install",
+              "version": "1.0.0",
+              "date": "2026-10-31",
+              "summary": "AI 코딩 행동 지침 스킬 설치. Codex 원본과 Claude 공유 연결. 플러그인·CLAUDE.md 덧붙이기는 사용하지 않음."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "karpathy-guidelines skill directory file in this manifest",
+            "owned_links": "only the Claude link pointing to this Codex original",
+            "shared_runtime": "none",
+            "user_outputs": "none",
+            "recovery": "back up owned skill and link; reinstall the pinned commit"
+          }
+        },
+        "texts": {}
+      },
+      "history": [
+        {
+          "id": "direct-karpathy-guidelines",
+          "name": "karpathy-guidelines",
+          "action": "install",
+          "version": "1.0.0",
+          "date": "2026-10-31",
+          "summary": "AI 코딩 행동 지침 스킬 설치. Codex 원본과 Claude 공유 연결. 플러그인·CLAUDE.md 덧붙이기는 사용하지 않음."
+        }
+      ],
+      "references": [
+        {
+          "title": "multica-ai/andrej-karpathy-skills 저장소",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "purpose": "원본 지침·README·예시(EXAMPLES.md) 확인",
+          "type": "official"
+        },
+        {
+          "title": "Andrej Karpathy의 원글 (X)",
+          "url": "https://x.com/karpathy/status/2015883857489522876",
+          "purpose": "지침의 출발점이 된 LLM 코딩 문제 지적 확인",
+          "type": "reference"
         }
       ]
     },
