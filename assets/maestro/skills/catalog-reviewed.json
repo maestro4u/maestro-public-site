@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-31",
+  "checked": "2026-11-08",
   "entries": [
     {
       "id": "direct-ask-matt",
@@ -10249,6 +10249,150 @@
           "title": "dembrandt/dembrandt 저장소",
           "url": "https://github.com/dembrandt/dembrandt",
           "purpose": "원본 코드·사용 문서·라이선스 확인",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "direct-craft-anything",
+      "name": "craft-anything",
+      "title": "소프트웨어 분석·재제작 (Craft Anything)",
+      "category": "개발·검증",
+      "summary": "웹사이트·앱·게임을 실제 검사 도구로 분석하고, Claude Code가 원하는 스택으로 새 프로젝트를 만든 뒤 원본과 비교해 다듬는 도구의 에이전트 스킬입니다. 데스크톱 앱·CLI(도구 320개)와 함께 설치했습니다. 기본은 대상 내부를 읽지 않는 Clean room이며, Deep 모드는 개인 용도로 코드·파일까지 분석합니다. 초기 알파입니다.",
+      "example": "Craft Anything로 내가 만든 이 웹사이트를 분석해서 같은 화면 구성을 Next.js로 새로 만들어줘. 내 사이트야.",
+      "result": "분석 근거 기록(evidence), 새로 만든 프로젝트 폴더(app/), 원본과의 비교 결과(checks/)",
+      "platforms": [
+        "Codex",
+        "Claude Code"
+      ],
+      "scope": "direct",
+      "origin": "storytold/craft-anything",
+      "created": "2026-10-31",
+      "modified": "2026-11-06T19:54:29Z",
+      "installed_at": "2026-11-08T04:20:13.144799+00:00",
+      "saved_at": "2026-11-08T04:20:13.144799+00:00",
+      "manual": false,
+      "rank": 50,
+      "original": "Investigate how shipped software works (programs, apps, packages, firmware, web bundles) with evidence-backed answers through the Craft Anything MCP tools, keeping a durable brief, plan, hypotheses, findings and handoff in the project.",
+      "package": {
+        "manifest": {
+          "schema_version": "1.0",
+          "id": "direct-craft-anything",
+          "version": "0.5.0",
+          "license": "MIT OR Apache-2.0, Copyright (c) 2026 ArtCraft Team and the Craft Anything contributors (LICENSE-MIT, LICENSE-APACHE, NOTICE)",
+          "license_url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/LICENSE-APACHE",
+          "entrypoint": "SKILL.md",
+          "source": {
+            "repository": "https://github.com/storytold/craft-anything",
+            "release": "https://github.com/storytold/craft-anything/releases/tag/v0.5.0",
+            "git_tag": "v0.5.0",
+            "installed_upstream_commit": "622d023cdfdb91c00df8b9a37c486a2a18fb0917",
+            "skill_path": "crates/setup/src/skill.md",
+            "skill_path_status": "confirmed",
+            "skill_md_url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/crates/setup/src/skill.md",
+            "bundle_version": "0.5.0"
+          },
+          "installed_copy": {
+            "local_policy_overrides": false,
+            "upstream_byte_identical": true,
+            "upstream_skill_folder_files": 2,
+            "companion_files": [
+              "LICENSE-MIT",
+              "LICENSE-APACHE",
+              "NOTICE"
+            ],
+            "note": "SKILL.md and references/recovery.md are byte-identical to the files the tool's own setup command installs. The license files are copied byte-identical from the same commit root. The desktop app (with the CLI inside) was installed from the signed, notarized v0.5.0 release; the app itself is not republished here."
+          },
+          "bundle": {
+            "id": "craft-anything-skill",
+            "skill_count": 1,
+            "skill_names": [
+              "craft-anything"
+            ]
+          },
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 6304,
+              "sha256": "f287e38b6b5e0a6e3452cd436c3a53b17604274db8b9d9482d9c795342cf55a2",
+              "url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/crates/setup/src/skill.md",
+              "origin": "upstream crates/setup/src/skill.md (setup installs it as SKILL.md)"
+            },
+            {
+              "path": "references/recovery.md",
+              "bytes": 1376,
+              "sha256": "f983ea2dfb9ea0706fcc49fe274964d79f84eda68cf0fc58e60541eb16376a3a",
+              "url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/crates/setup/src/skill_recovery.md",
+              "origin": "upstream crates/setup/src/skill_recovery.md (setup installs it as references/recovery.md)"
+            },
+            {
+              "path": "LICENSE-MIT",
+              "bytes": 1106,
+              "sha256": "777b5f0c65bd9c289cb234e32857b594745d5c76d613034870aa05bd00d32622",
+              "url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/LICENSE-MIT",
+              "origin": "companion file, repository root of the same commit"
+            },
+            {
+              "path": "LICENSE-APACHE",
+              "bytes": 10174,
+              "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+              "url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/LICENSE-APACHE",
+              "origin": "companion file, repository root of the same commit"
+            },
+            {
+              "path": "NOTICE",
+              "bytes": 1767,
+              "sha256": "16958e6200bd35164e2cab1dbfa3120d48123163dadc2c5b72c6c26ffb493d82",
+              "url": "https://github.com/storytold/craft-anything/blob/622d023cdfdb91c00df8b9a37c486a2a18fb0917/NOTICE",
+              "origin": "companion file, repository root of the same commit"
+            }
+          ],
+          "dependency_audit": "Needs the Craft Anything app or CLI (v0.5.0 installed). Building needs a signed-in coding agent (Claude Code first). Optional engines such as Ghidra, adb or Frida are not installed. The skill expects the MCP tools; MCP is not registered here, so agents use craft-anything-cli subcommands until the user approves MCP registration.",
+          "redistribution_review": "MIT or Apache-2.0 allows redistribution with notices, but the catalog provides pinned source links and file hashes instead of republishing the files or the app.",
+          "install_ready": false,
+          "runtime_verified": false,
+          "runtime_note": "craft-anything-cli doctor reported healthy and the MCP self-test listed 30 core tools. No rebuild or target analysis was run during install.",
+          "history": [
+            {
+              "id": "direct-craft-anything",
+              "name": "craft-anything",
+              "action": "install",
+              "version": "0.5.0",
+              "date": "2026-11-08",
+              "summary": "Craft Anything v0.5.0 설치: 서명·공증된 macOS 앱(CLI 포함)과 에이전트 스킬. 스킬은 Codex 원본과 Claude 공유 연결, MIT·Apache 고지를 동반 파일로 보존. MCP 등록(setup --yes)은 하지 않음."
+            }
+          ],
+          "uninstall": {
+            "owned_skill_files": "craft-anything skill directory files in this manifest",
+            "owned_links": "only the Claude link pointing to this Codex original",
+            "shared_runtime": "the desktop app and its CLI link are removed separately",
+            "user_outputs": "retain project folders under Documents/Craft Anything",
+            "recovery": "back up owned skill and link; reinstall from the pinned tag"
+          }
+        },
+        "texts": {}
+      },
+      "history": [
+        {
+          "id": "direct-craft-anything",
+          "name": "craft-anything",
+          "action": "install",
+          "version": "0.5.0",
+          "date": "2026-11-08",
+          "summary": "Craft Anything v0.5.0 설치: 서명·공증된 macOS 앱(CLI 포함)과 에이전트 스킬. 스킬은 Codex 원본과 Claude 공유 연결, MIT·Apache 고지를 동반 파일로 보존. MCP 등록(setup --yes)은 하지 않음."
+        }
+      ],
+      "references": [
+        {
+          "title": "storytold/craft-anything 저장소",
+          "url": "https://github.com/storytold/craft-anything",
+          "purpose": "원본 README·스킬·라이선스 확인",
+          "type": "official"
+        },
+        {
+          "title": "v0.5.0 릴리스",
+          "url": "https://github.com/storytold/craft-anything/releases/tag/v0.5.0",
+          "purpose": "설치한 서명·공증 앱과 체크섬",
           "type": "official"
         }
       ]
