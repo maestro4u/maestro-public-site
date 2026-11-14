@@ -1,0 +1,22 @@
+/* Original-frame compositions. Scoped to nodes created by media-layout.js. */
+.media-composition { display:grid; grid-template-columns:minmax(0,1fr); align-items:start; margin-block:0 36px; }
+.media-composition > .media-composition-item { display:block!important; width:100%!important; max-width:none!important; min-width:0; min-height:0; height:auto!important; margin:0!important; padding:0; aspect-ratio:auto!important; align-self:start; }
+.media-composition .media-composition-item > a { display:block!important; width:100%; height:auto!important; }
+.media-composition .media-composition-item img,
+.media-composition .media-composition-item video { display:block!important; width:100%!important; height:auto!important; max-width:none!important; max-height:none!important; object-fit:contain!important; border-radius:0; }
+.media-composition .private-video-shell { display:block!important; width:100%!important; height:auto!important; max-width:none!important; margin:0!important; }
+.media-composition figcaption { font:400 12px/1.7 'Pretendard Variable',Pretendard,sans-serif; color:#62685e; text-align:center; margin:9px 0 0!important; word-break:keep-all; overflow-wrap:anywhere; }
+.media-composition .private-video-actions { min-height:0; margin:8px 0; font-size:12px; }
+.trip-gallery.media-trip-gallery { display:block; }
+.media-trip-gallery .media-composition { width:100%; margin:0 0 20px; }
+.media-trip-gallery .media-composition-item > a { position:relative; }
+.media-example-flow { display:block; }
+.media-example-flow > a { display:block; }
+.media-example-flow img { display:block; width:100%; height:auto; margin-bottom:18px; }
+@media(max-width:760px) {
+  .media-composition { margin-bottom:24px; }
+  .media-composition figcaption { font-size:11px; line-height:1.6; margin-top:7px!important; }
+}
+
+.media-composition .private-video-play { max-width:calc(100% - 12px); padding:10px 12px; font-size:12px; white-space:normal; }
+.media-composition .private-video-actions { overflow-wrap:anywhere; }
